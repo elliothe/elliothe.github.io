@@ -1,20 +1,22 @@
 ---
 layout: member
 category: staff
-title: Researcher Name
-image: researcher.png
+title: Zhezhi (Elliot) He
+image: zhezhihe.png
 role: Lab Director
-permalink: 'team/researcher-name'
+permalink: 'team/zhezhi-he'
 social:
-    twitter: https://twitter.com/
-    linkedin: https://www.linkedin.com/
-    google-scholar: https://scholar.google.fr/
-    github: https://github.com/
-    website:
-    orcid: https://orcid.org/
-    research-gate: https://www.researchgate.net/
+    twitter: https://twitter.com/elliot_he
+    linkedin: https://www.linkedin.com/in/zhezhi-he/
+    google-scholar: https://scholar.google.com/citations?user=QzDf7GoAAAAJ&hl=en
+    github: https://github.com/elliothe
+    website: https://elliothe.github.io/
+    orcid: https://orcid.org/0000-0002-6357-236X
+    research-gate: https://www.researchgate.net/profile/Zhezhi_He
 education:
- - Education
+ - 2020 Arizona State University, Tempe
+ - 2015 Oregon State University, Corvallis
+ - 2012 Southeast University
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Hello.
