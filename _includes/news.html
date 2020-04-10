@@ -27,7 +27,7 @@
 <!-- small space between entries -->
 {% for article in site.data.news limit: 3 %}
 <small>{{ article.date }}</small>
-<p>{{ article.title }}</p>
+<p><small>{{ article.title }}</small></p>
 {% endfor %}
 
 <!-- link to news page -->
