@@ -14,9 +14,15 @@ social:
     orcid: https://orcid.org/0000-0002-6357-236X
     research-gate: https://www.researchgate.net/profile/Zhezhi_He
 education:
- - 2020 Arizona State University, Tempe
- - 2015 Oregon State University, Corvallis
- - 2012 Southeast University
+ - 2020  Ph.D. Arizona State University, Tempe
+ - 2015  M.E. Oregon State University, Corvallis
+ - 2012  B.S. Southeast University, Nanjing
 ---
 
-Hello.
+### Publication Highlight
+
+### Honors
+- Best Pape Award from ISVLSI @ 2017, 2018
+
+
+### Professional Activities

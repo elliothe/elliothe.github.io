@@ -67,10 +67,8 @@ mollit anim id est laborum.
 
 ### Add a new publication
 
-Publications are stored as `.json` file under
-[_data/publications.json](_data/publications.json).
-This json file is exported from [Zotero](https://www.zotero.org/)
-bibliography tool.
+Publications are stored as `.json` file under [_data/publications.json](_data/publications.json).
+This json file is exported from [Zotero](https://www.zotero.org/) bibliography tool.
 
 Just add a new entry to the list like this:
 

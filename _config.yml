@@ -7,6 +7,7 @@
 
 # Site settings
 title: Advanced Computing Research Laboratory
+title_abbr: ACRL
 email: zhezhihe@asu.edu
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -41,3 +42,6 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
+# Plugins
+plugins:
+  - jemoji
