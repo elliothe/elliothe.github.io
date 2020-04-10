@@ -1,21 +1,13 @@
-- date: 05/09/19
-  title: "Another great thing"
+- date: 04/09/2020
+  title: "ACRL is established"
   tags:
-    - some
-    - tags
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-    urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-    duis ultricies. Commodo viverra maecenas accumsan lacus vel.
+    - Important
+    - misc
+  content: The born of Advanced Computing Research Labratory (ACRL)
 
 - date: 03/09/19
-  title: "Something great"
+  title: "Two paper accepted by CVPR2020"
   tags:
-    - some
-    - tags
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Eu turpis egestas pretium aenean. Luctus venenatis lectus magna fringilla
-    urna porttitor. Lorem ipsum dolor sit amet. Pellentesque massa placerat
-    duis ultricies. Commodo viverra maecenas accumsan lacus vel.
+    - Publication
+    - Important
+  content: two papers

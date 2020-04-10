@@ -14,7 +14,15 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: ""
-url: ""
+url: "" # config for jekyll-sitemap
+
+institution: Arizona State University
+department: School of Electrical and Computer Engineering
+
+
+
+
+
 
 include:
   - .htaccess
@@ -42,6 +50,9 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
+# url: "http://127.0.0.1:4000/" # config for jekyll-sitemap
+  
 # Plugins
 plugins:
   - jemoji
+  - jekyll-sitemap
