@@ -1,41 +1,1621 @@
 [
-	{
-		"id": "http://zotero.org/groups/2386072/items/NU9LTX7C",
-		"type": "article-journal",
-		"title": "Segmentation of Nuclei in Histopathology Images by Deep Regression of the Distance Map",
-		"container-title": "IEEE Transactions on Medical Imaging",
-		"page": "448-459",
-		"volume": "38",
-		"issue": "2",
-		"source": "IEEE Xplore",
-		"abstract": "The advent of digital pathology provides us with the challenging opportunity to automatically analyze whole slides of diseased tissue in order to derive quantitative profiles that can be used for diagnosis and prognosis tasks. In particular, for the development of interpretable models, the detection and segmentation of cell nuclei is of the utmost importance. In this paper, we describe a new method to automatically segment nuclei from Haematoxylin and Eosin (H&E) stained histopathology data with fully convolutional networks. In particular, we address the problem of segmenting touching nuclei by formulating the segmentation problem as a regression task of the distance map. We demonstrate superior performance of this approach as compared to other approaches using Convolutional Neural Networks.",
-		"DOI": "10.1109/TMI.2018.2865709",
-		"author": [
-			{
-				"family": "Naylor",
-				"given": "P."
-			},
-			{
-				"family": "Laé",
-				"given": "M."
-			},
-			{
-				"family": "Reyal",
-				"given": "F."
-			},
-			{
-				"family": "Walter",
-				"given": "T."
-			}
-		],
-		"issued": {
-			"date-parts": [
-				[
-					"2019",
-					2
-				]
-			]
-		}
-	}
-
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 2016 international symposium on low power electronics and design",
+    "id": "he2016low",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "314-319",
+    "title": "A low power current-mode flash adc with spin hall effect based multi-threshold comparator",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Emerging Topics in Computing",
+    "id": "he2016energy",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "223-237",
+    "publisher": "IEEE",
+    "title": "Energy efficient reconfigurable threshold logic circuit with spintronic devices",
+    "type": "article-journal",
+    "volume": "5"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Magnetics Letters",
+    "id": "he2017current",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1-5",
+    "publisher": "IEEE",
+    "title": "Current-induced dynamics of multiple skyrmions with domain-wall pair and skyrmion-based majority gate design",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "DeMara",
+        "given": "Ronald F"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 18th international symposium on quality electronic design (isqed)",
+    "id": "angizi2017composite",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "391-396",
+    "publisher": "IEEE",
+    "title": "Composite spintronic accuracy-configurable adder for low power digital signal processing",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Design, automation & test in europe conference & exhibition (date), 2017",
+    "id": "he2017tunable",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "350-355",
+    "publisher": "IEEE",
+    "title": "A tunable magnetic skyrmion neuron cluster for energy efficient artificial neural network",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1705.02995",
+    "id": "he2017developing",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Developing all-skyrmion spiking neural network",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the on great lakes symposium on vlsi 2017",
+    "id": "he2017leveraging",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "83-88",
+    "title": "Leveraging dual-mode magnetic crossbar for ultra-low energy in-memory data encryption",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the on great lakes symposium on vlsi 2017",
+    "id": "angizi2017energy",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "77-82",
+    "title": "Energy efficient in-memory computing platform based on 4-terminal spin hall effect-driven domain wall motion devices",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "angizi2017rimpa",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "45-50",
+    "publisher": "IEEE",
+    "title": "Rimpa: A new reconfigurable dual-mode in-memory processing architecture with spin hall effect-driven domain wall motion device",
+    "title-short": "Rimpa",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "parveen2017hybrid",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "152-157",
+    "publisher": "IEEE",
+    "title": "Hybrid polymorphic logic gate with 5-terminal magnetic domain wall motion device",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      }
+    ],
+    "container-title": "2017 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "fan2017memory",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "683-688",
+    "publisher": "IEEE",
+    "title": "In-memory computing with spintronic devices",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee/acm international symposium on low power electronics and design (islped)",
+    "id": "parveen2017low",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1-6",
+    "publisher": "IEEE",
+    "title": "Low power in-memory computing based on dual-mode sot-mram",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee international symposium on circuits and systems (iscas)",
+    "id": "parveen2017hybrid",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1-4",
+    "publisher": "IEEE",
+    "title": "Hybrid polymorphic logic gate using 6 terminal magnetic domain wall motion device",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      }
+    ],
+    "container-title": "2017 ieee 60th international midwest symposium on circuits and systems (mwscas)",
+    "id": "fan2017leveraging",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1109-1112",
+    "publisher": "IEEE",
+    "title": "Leveraging spintronic devices for ultra-low power in-memory computing: Logic and neural network",
+    "title-short": "Leveraging spintronic devices for ultra-low power in-memory computing",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee/acm international symposium on nanoscale architectures (nanoarch)",
+    "id": "he2017high",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "97-102",
+    "publisher": "IEEE",
+    "title": "High performance and energy-efficient in-memory computing architecture based on sot-mram",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Bagherzadeh",
+        "given": "Nader"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+    "id": "angizi2017design",
+    "issue": "9",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "1788-1801",
+    "publisher": "IEEE",
+    "title": "Design and evaluation of a spintronic in-memory processing platform for nonvolatile data encryption",
+    "type": "article-journal",
+    "volume": "37"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2017 ieee international conference on computer design (iccd)",
+    "id": "he2017exploring",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "439-446",
+    "publisher": "IEEE",
+    "title": "Exploring stt-mram based in-memory computing paradigm with application of image edge extraction",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Gong",
+        "given": "Boqing"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1802.01549",
+    "id": "rakin2018robust",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Robust pre-processing: A robust defense method against adversary attack",
+    "title-short": "Robust pre-processing",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 23rd asia and south pacific design automation conference (asp-dac)",
+    "id": "parveen2018hielm",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "361-366",
+    "publisher": "IEEE",
+    "title": "Hielm: Highly flexible in-memory computing using stt mram",
+    "title-short": "Hielm",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 23rd asia and south pacific design automation conference (asp-dac)",
+    "id": "angizi2018imce",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "111-116",
+    "publisher": "IEEE",
+    "title": "IMCE: Energy-efficient bit-wise in-memory convolution engine for deep neural network",
+    "title-short": "IMCE",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Parveen",
+        "given": "Farhana"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Magnetics",
+    "id": "parveen2018imcs2",
+    "issue": "7",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "1-14",
+    "publisher": "IEEE",
+    "title": "IMCS2: Novel device-to-architecture co-design for low-power in-memory computing platform using coterminous spin switch",
+    "title-short": "IMCS2",
+    "type": "article-journal",
+    "volume": "54"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Bai",
+        "given": "Yu"
+      },
+      {
+        "family": "Han",
+        "given": "Jie"
+      },
+      {
+        "family": "Lin",
+        "given": "Mingjie"
+      },
+      {
+        "family": "DeMara",
+        "given": "Ronald F"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 2018 on great lakes symposium on vlsi",
+    "id": "angizi2018leveraging",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "397-402",
+    "title": "Leveraging spintronic devices for efficient approximate logic and stochastic neural networks",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Zhang",
+        "given": "Yang"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Gong",
+        "given": "Boqing"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Multi-Scale Computing Systems",
+    "id": "he2018exploring",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "676-685",
+    "publisher": "IEEE",
+    "title": "Exploring a sot-mram based in-memory computing for data processing",
+    "type": "article-journal",
+    "volume": "4"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 55th annual design automation conference",
+    "id": "he2018cmp",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "105",
+    "publisher": "ACM",
+    "title": "CMP-pim: An energy-efficient comparator-based processing-in-memory neural network accelerator",
+    "title-short": "CMP-pim",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 55th annual design automation conference",
+    "id": "angizi2018pima",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "1-6",
+    "title": "PIMA-logic: A novel processing-in-memory architecture for highly flexible and energy-efficient logic computation",
+    "title-short": "PIMA-logic",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Gong",
+        "given": "Boqing"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2019 ieee winter conference on applications of computer vision (wacv)",
+    "id": "he2019optimize",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "913-921",
+    "publisher": "IEEE",
+    "title": "Optimize deep convolutional neural network with ternarized weights and high accuracy",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Yang",
+        "given": "Li"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the international symposium on low power electronics and design",
+    "id": "yang2018fully",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "1-6",
+    "title": "A fully onchip binarized convolutional neural network fpga impelmentation with accurate inference",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "he2018accelerating",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "533-538",
+    "publisher": "IEEE",
+    "title": "Accelerating low bit-width deep convolution neural network in mram",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "he2018bd",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "130-135",
+    "publisher": "IEEE",
+    "title": "BD-net: A multiplication-less dnn with binarized depthwise separable convolution",
+    "title-short": "BD-net",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the ieee conference on computer vision and pattern recognition",
+    "id": "he2019simultaneously",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "11438-11446",
+    "title": "Simultaneously optimizing weight and quantizer of ternary neural network using truncated gaussian approximation",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 ieee/acm international conference on computer-aided design (iccad)",
+    "id": "angizi2018dima",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "1-8",
+    "publisher": "IEEE",
+    "title": "Dima: A depthwise cnn in-memory accelerator",
+    "title-short": "Dima",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2018 ieee 36th international conference on computer design (iccd)",
+    "id": "rakin2018pim",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "266-273",
+    "publisher": "IEEE",
+    "title": "Pim-tgan: A processing-in-memory accelerator for ternary generative adversarial networks",
+    "title-short": "Pim-tgan",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 24th asia and south pacific design automation conference",
+    "id": "angizi2019parapim",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "127-132",
+    "title": "ParaPIM: A parallel processing-in-memory accelerator for binary-weight deep neural networks",
+    "title-short": "ParaPIM",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Awad",
+        "given": "Amro"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+    "id": "angizi2019mrima",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "IEEE",
+    "title": "MRIMA: An mram-based in-memory accelerator",
+    "title-short": "MRIMA",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Yang",
+        "given": "Li"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 2019 on great lakes symposium on vlsi",
+    "id": "yang2019binarized",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "347-350",
+    "title": "Binarized depthwise separable neural network for object tracking in fpga",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Lin",
+        "given": "Jie"
+      },
+      {
+        "family": "Ewetz",
+        "given": "Rickard"
+      },
+      {
+        "family": "Yuan",
+        "given": "Jiann-Shiun"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 56th annual design automation conference 2019",
+    "id": "he2019noise",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "1-6",
+    "title": "Noise injection adaption: End-to-end reram crossbar non-ideal effect adaption for neural network mapping",
+    "title-short": "Noise injection adaption",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the ieee conference on computer vision and pattern recognition",
+    "id": "he2019parametric",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "588-597",
+    "title": "Parametric noise injection: Trainable randomness to improve deep neural network robustness against adversarial attack",
+    "title-short": "Parametric noise injection",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Yang",
+        "given": "Li"
+      },
+      {
+        "family": "Wang",
+        "given": "Yanzhi"
+      },
+      {
+        "family": "Wang",
+        "given": "Liqiang"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1905.13074",
+    "id": "rakin2019robust",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Robust sparse regularization: Simultaneously optimizing neural network robustness and compactness",
+    "title-short": "Robust sparse regularization",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1909.05193",
+    "id": "rakin2019tbt",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "TBT: Targeted neural network attack with bit trojan",
+    "title-short": "TBT",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Reis",
+        "given": "Dayane"
+      },
+      {
+        "family": "Hu",
+        "given": "Xiaobo Sharon"
+      },
+      {
+        "family": "Tsai",
+        "given": "Wilman"
+      },
+      {
+        "family": "Lin",
+        "given": "Shy Jay"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "2019 ieee computer society annual symposium on vlsi (isvlsi)",
+    "id": "angizi2019accelerating",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "197-202",
+    "publisher": "IEEE",
+    "title": "Accelerating deep neural networks in processing-in-memory platforms: Analog or digital approach?",
+    "title-short": "Accelerating deep neural networks in processing-in-memory platforms",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Zhibo"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Shah",
+        "given": "Milan"
+      },
+      {
+        "family": "Zhang",
+        "given": "Teng"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "Zhang",
+        "given": "Wei"
+      }
+    ],
+    "container-title": "Bioinformatics",
+    "id": "wang2020network",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1814-1822",
+    "publisher": "Oxford University Press",
+    "title": "Network-based multi-task learning models for biomarker selection and cancer outcome prediction",
+    "type": "article-journal",
+    "volume": "36"
+  },
+  {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Yanzhi"
+      },
+      {
+        "family": "Ye",
+        "given": "Shaokai"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Ma",
+        "given": "Xiaolong"
+      },
+      {
+        "family": "Zhang",
+        "given": "Linfeng"
+      },
+      {
+        "family": "Lin",
+        "given": "Sheng"
+      },
+      {
+        "family": "Yuan",
+        "given": "Geng"
+      },
+      {
+        "family": "Tan",
+        "given": "Sia Huat"
+      },
+      {
+        "family": "Li",
+        "given": "Zhengang"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:1907.02124",
+    "id": "wang2019non",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Non-structured dnn weight pruning considered harmful",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Chen",
+        "given": "An"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "IEEE Transactions on Magnetics",
+    "id": "angizi2020hybrid",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1-15",
+    "publisher": "IEEE",
+    "title": "Hybrid spin-cmos polymorphic logic gate with application in in-memory computing",
+    "type": "article-journal",
+    "volume": "56"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the ieee international conference on computer vision",
+    "id": "he2019bit",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "1211-1220",
+    "title": "Bit-flip attack: Crushing neural network with progressive bit search",
+    "title-short": "Bit-flip attack",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Ma",
+        "given": "Xiaolong"
+      },
+      {
+        "family": "Lin",
+        "given": "Sheng"
+      },
+      {
+        "family": "Ye",
+        "given": "Shaokai"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Zhang",
+        "given": "Linfeng"
+      },
+      {
+        "family": "Yuan",
+        "given": "Geng"
+      },
+      {
+        "family": "Huat Tan",
+        "given": "Sia"
+      },
+      {
+        "family": "Li",
+        "given": "Zhengang"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "Qian",
+        "given": "Xuehai"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "arXiv",
+    "id": "ma2019non",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "arXiv-1907",
+    "title": "Non-structured dnn weight pruning–Is it beneficial in any platform?",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Yang",
+        "given": "Li"
+      },
+      {
+        "family": "Angizi",
+        "given": "Shaahin"
+      },
+      {
+        "family": "Rakin",
+        "given": "Adnan Siraj"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "ACM Journal on Emerging Technologies in Computing Systems (JETC)",
+    "id": "he2020sparse",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1-24",
+    "publisher": "ACM New York, NY, USA",
+    "title": "Sparse bd-net: A multiplication-less dnn with sparse binarized depth-wise separable convolution",
+    "title-short": "Sparse bd-net",
+    "type": "article-journal",
+    "volume": "16"
+  },
+  {
+    "author": [
+      {
+        "family": "Dev",
+        "given": "Durjoy"
+      },
+      {
+        "family": "Krishnaprasad",
+        "given": "Adithi"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Das",
+        "given": "Sonali"
+      },
+      {
+        "family": "Shawkat",
+        "given": "Mashiyat Sumaiya"
+      },
+      {
+        "family": "Manley",
+        "given": "Madison"
+      },
+      {
+        "family": "Aina",
+        "given": "Olaleye"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "Jung",
+        "given": "Yeonwoong"
+      },
+      {
+        "family": "Roy",
+        "given": "Tania"
+      }
+    ],
+    "container-title": "2019 device research conference (drc)",
+    "id": "dev2019artificial",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "193-194",
+    "publisher": "IEEE",
+    "title": "Artificial neuron using ag/2D-mos 2/au threshold switching memristor",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Yang",
+        "given": "Li"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the aaai conference on artificial intelligence (aaai)",
+    "id": "yang2020harmonious",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Harmonious coexistence of structured weight pruning and ternarization for deep neural networks",
+    "type": "paper-conference"
+  }
 ]
