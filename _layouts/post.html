@@ -22,7 +22,8 @@ layout: default
   {% else %}
   "{{ site.url }}{{ site.baseurl }}/images/blog/{{ page.image.feature }}"
   {% endif %}
-  alt="{{ page.title }} feature image">
+  alt="{{ page.title }} feature image"
+  style="max-width: 500px;">
 
   {% if page.image.credit %}
   <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
