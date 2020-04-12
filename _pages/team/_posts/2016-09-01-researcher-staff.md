@@ -3,7 +3,7 @@ layout: member
 category: staff
 title: Zhezhi (Elliot) He
 image: zhezhihe.png
-role: Lab Director
+role: Principal Investigator
 permalink: 'team/zhezhi-he'
 social:
     twitter: https://twitter.com/elliot_he
@@ -20,6 +20,7 @@ education:
 ---
 
 ### Publication Highlight
+
 
 ### Honors
 - Best Pape Award from ISVLSI @ 2017, 2018
