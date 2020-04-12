@@ -1,13 +1,6 @@
-- date: 04/09/2020
-  title: "ACRL is established"
-  tags:
-    - Important
-    - misc
-  content: The born of Advanced Computing Research Labratory (ACRL).
-
-- date: 04/19/2020
+- date: 02/23/2020
   title: "Two paper about ML security are accepted by CVPR-2020"
   tags:
     - Publication
     - Important
-  content: two papers
+  content: Two papers focuses on the bit-flip based adversarial weight attack are accepted by the CVPR-2020. One is about the defense such adversarial weight attack using binarization-aware training. Another is using insert bit-flip based paraemter Trojan, which is known as Trojan attack and backdoor attack.
