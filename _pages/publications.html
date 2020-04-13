@@ -24,28 +24,43 @@ permalink: /publications/
             {{ authors | array_to_sentence_string }},
 
             <!-- title with link -->
-            "{{ publi.title }}",
+            "<i>{{ publi.title }}</i>",
 
             <!-- container -->
-            <!-- <b>{{ publi.container-title }}</b> -->
-            {{ publi.container-title }}
+            {{ publi.container-title }},
 
             <!-- issued date -->
-            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
+            {{ publi.issued.date-parts | jsonify | slice: 2,4 }}.
 
             <!-- DOI -->
             {% if publi.DOI %}
                 <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
             {% endif %}
+
+            {% if publi.annote == "(Accepted)" %}
+                {{ publi.annote }}
+            {% else %}
+                <b>{{ publi.annote }}</b>
+            {% endif %}            
             </a>
         </div>
 
         <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
             <div class="panel-body">
+                {% if publi.abstract %}
                 <p><b>Abstract:</b> {{ publi.abstract }}</p>
-
+                {% endif %} 
+                {% if publi.DOI %}
                 <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
-                   role="button" target="blank">Link</a>
+                   role="button" target="blank">Paper</a>
+                {% elsif publi.note %}
+                <a class="btn btn-outline-primary" href="{{publi.note}}"
+                   role="button" target="blank">Paper</a>                
+                {% endif %}
+                {% if publi.URL %}
+                <a class="btn btn-outline-primary" href="{{publi.URL}}"
+                   role="button" target="blank">Code</a>
+                {% endif %}
             </div>
         </div>
     {% endfor %}
