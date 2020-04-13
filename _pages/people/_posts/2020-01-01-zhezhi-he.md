@@ -4,7 +4,7 @@ category: staff
 title: Zhezhi (Elliot) He
 image: zhezhihe.png
 role: Principal Investigator
-permalink: 'team/zhezhi-he'
+permalink: 'people/zhezhi-he'
 social:
     twitter: https://twitter.com/elliot_he
     linkedin: https://www.linkedin.com/in/zhezhi-he/
