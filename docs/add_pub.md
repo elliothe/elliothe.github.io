@@ -7,7 +7,7 @@ The builder of the static website template mention the method of import ```.json
 
 Here you could use the [following command](https://tex.stackexchange.com/a/268305/201981) for `.bib` to `.json` conversion:
 ```bash
-$ pandoc-citeproc --bib2json publication.bib > publication.json
+$ pandoc-citeproc --bib2json publications.bib > publications.json
 ```
 If the above CLI is missing, check the [pandoc website](https://pandoc.org/installing.html):
 ```bash

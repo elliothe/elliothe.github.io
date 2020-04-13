@@ -1,51 +1,29 @@
 [
-	{
-		"id": "http://zotero.org/users/local/OxAUafqm/items/GYCIEWDE",
-		"type": "paper-conference",
-		"abstract": "Recent developments in the ﬁeld of Deep Learning have exposed the underlying vulnerability of Deep Neural Network (DNN) against adversarial examples. In image classiﬁcation, an adversarial example is a carefully modiﬁed image that is visually imperceptible to the original image but can cause DNN model to misclassify it. Training the network with Gaussian noise is an effective technique to perform model regularization, thus improving model robustness against input variation. Inspired by this classical method, we explore to utilize the regularization characteristic of noise injection to improve DNN’s robustness against adversarial attack. In this work, we propose ParametricNoise-Injection (PNI) 1 which involves trainable Gaussian noise injection at each layer on either activation or weights through solving the Min-Max optimization problem, embedded with adversarial training. These parameters are trained explicitly to achieve improved robustness. The extensive results show that our proposed PNI technique effectively improves the robustness against a variety of powerful whitebox and black-box attacks such as PGD, C & W, FGSM, transferable attack, and ZOO attack. Last but not the least, PNI method improves both clean- and perturbed-data accuracy in comparison to the state-of-the-art defense methods, which outperforms current unbroken PGD defense by 1.1 % and 6.8 % on clean- and perturbed- test data respectively, using ResNet-20 architecture.",
-		"container-title": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-		"DOI": "10.1109/CVPR.2019.00068",
-		"event": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
-		"event-place": "Long Beach, CA, USA",
-		"ISBN": "978-1-72813-293-8",
-		"language": "en",
-		"page": "588-597",
-		"publisher": "IEEE",
-		"publisher-place": "Long Beach, CA, USA",
-		"source": "DOI.org (Crossref)",
-		"title": "Parametric Noise Injection: Trainable Randomness to Improve Deep Neural Network Robustness Against Adversarial Attack",
-		"title-short": "Parametric Noise Injection",
-		"URL": "https://ieeexplore.ieee.org/document/8954187/",
-		"author": [
-			{
-				"family": "He",
-				"given": "Zhezhi"
-			},
-			{
-				"family": "Rakin",
-				"given": "Adnan Siraj"
-			},
-			{
-				"family": "Fan",
-				"given": "Deliang"
-			}
-		],
-		"accessed": {
-			"date-parts": [
-				[
-					"2020",
-					4,
-					10
-				]
-			]
-		},
-		"issued": {
-			"date-parts": [
-				[
-					"2019",
-					6
-				]
-			]
-		}
-	}
+  {
+    "URL": "https://github.com/elliothe",
+    "author": [
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      }
+    ],
+    "container-title": "Proceedings of the 2016 international symposium on low power electronics and design",
+    "id": "he2016low",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "keyword": "conference",
+    "page": "314-319",
+    "publisher": "ACM; <https://dl.acm.org/doi/10.1145/2934583.2934642>",
+    "title": "A low power current-mode flash adc with spin hall effect based multi-threshold comparator",
+    "type": "paper-conference"
+  }
 ]
