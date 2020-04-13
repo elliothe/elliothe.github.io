@@ -34,18 +34,6 @@
   annote={(Accepted)}
 }
 
-@article{yang2019harmonious,
-  title={Harmonious Coexistence of Structured Weight Pruning and Ternarization for Deep Neural Networks},
-  author={Yang, Li and He, Zhezhi and Fan, Deliang},
-  journal={Thirty-third AAAI Conference on Artificial Intelligence (AAAI)},
-  abstract={Deep convolutional neural network (DNN) has demonstrated phenomenal success and been widely used in many computer vision tasks. However, its enormous model size and high computing complexity prohibits its wide deployment into resource limited embedded system, such as FPGA and mGPU. As the two most widely adopted model compression techniques, weight pruning and quantization compress DNN model through introducing weight sparsity (i.e., forcing partial weights as zeros) and quantizing weights into limited bitwidth values, respectively. Although there are works attempting to combine the weight pruning and quantization, we still observe disharmony between weight pruning and quantization, especially when more aggressive compression schemes (e.g., Structured pruning and low bit-width quantization) are used. In this work, taking FPGA as the test computing platform and Processing Elements (PE) as the basic parallel computing unit, we first propose a PE-wise structured pruning scheme, which introduces weight sparsification with considering of the architecture of PE. In addition, we integrate it with an optimized weight ternarization approach which quantizes weights into ternary values ({−1, 0, +1}), thus converting the dominant convolution operations in DNN from multiplication-and-accumulation (MAC) to addition-only, as well as compressing the original model (from 32-bit floating point to 2-bit ternary representation) by at least 16 times. Then, we investigate and solve the coexistence issue between PE-wise Structured pruning and ternarization, through proposing a Weight Penalty Clipping (WPC) technique with self-adapting threshold. Our experiment shows that the fusion of our proposed techniques can achieve the best state-of-theart ∼ 21× PE-wise structured compression rate with merely 1.74\%/0.94\% (top-1/top-5) accuracy degradation of ResNet18 on ImageNet dataset.},
-  year={2020},
-  keywords={conference},
-  note={https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangL.9289.pdf},
-  annote={(Spotlight)}
-}
-
-
 @article{he2020tnnls,
   title={Non-Structured DNN Weight Pruning--Is It Beneficial in Any Platform?},
   author={Ma, Xiaolong and Lin, Sheng and Ye, Shaokai and He, Zhezhi and Zhang, Linfeng and Yuan, Geng and Huat Tan, Sia and Li, Zhengang and Fan, Deliang and Qian, Xuehai and others},
@@ -63,6 +51,18 @@
   year={2020},
   keywords={journal},
   annote={(Accepted)}
+}
+
+
+@article{yang2019harmonious,
+  title={Harmonious Coexistence of Structured Weight Pruning and Ternarization for Deep Neural Networks},
+  author={Yang, Li and He, Zhezhi and Fan, Deliang},
+  journal={Thirty-third AAAI Conference on Artificial Intelligence (AAAI)},
+  abstract={Deep convolutional neural network (DNN) has demonstrated phenomenal success and been widely used in many computer vision tasks. However, its enormous model size and high computing complexity prohibits its wide deployment into resource limited embedded system, such as FPGA and mGPU. As the two most widely adopted model compression techniques, weight pruning and quantization compress DNN model through introducing weight sparsity (i.e., forcing partial weights as zeros) and quantizing weights into limited bitwidth values, respectively. Although there are works attempting to combine the weight pruning and quantization, we still observe disharmony between weight pruning and quantization, especially when more aggressive compression schemes (e.g., Structured pruning and low bit-width quantization) are used. In this work, taking FPGA as the test computing platform and Processing Elements (PE) as the basic parallel computing unit, we first propose a PE-wise structured pruning scheme, which introduces weight sparsification with considering of the architecture of PE. In addition, we integrate it with an optimized weight ternarization approach which quantizes weights into ternary values ({−1, 0, +1}), thus converting the dominant convolution operations in DNN from multiplication-and-accumulation (MAC) to addition-only, as well as compressing the original model (from 32-bit floating point to 2-bit ternary representation) by at least 16 times. Then, we investigate and solve the coexistence issue between PE-wise Structured pruning and ternarization, through proposing a Weight Penalty Clipping (WPC) technique with self-adapting threshold. Our experiment shows that the fusion of our proposed techniques can achieve the best state-of-theart ∼ 21× PE-wise structured compression rate with merely 1.74\%/0.94\% (top-1/top-5) accuracy degradation of ResNet18 on ImageNet dataset.},
+  year={2020},
+  keywords={conference},
+  note={https://www.aaai.org/Papers/AAAI/2020GB/AAAI-YangL.9289.pdf},
+  annote={(Spotlight)}
 }
 
 
@@ -84,9 +84,11 @@
   title={Network-based multi-task learning models for biomarker selection and cancer outcome prediction},
   author={Wang, Zhibo and He, Zhezhi and Shah, Milan and Zhang, Teng and Fan, Deliang and Zhang, Wei},
   journal={Oxford academic Bioinformatics},
+  abstract={Detecting cancer gene expression and transcriptome changes with mRNA-sequencing or array-based data are important for understanding the molecular mechanisms underlying carcinogenesis and cellular events during cancer progression. In previous studies, the differentially expressed genes were detected across patients in one cancer type. These studies ignored the role of mRNA expression changes in driving tumorigenic mechanisms that are either universal or specific in different tumor types. To address the problem, we introduce two network-based multi-task learning frameworks, NetML and NetSML, to discover common differentially expressed genes shared across different cancer types as well as differentially expressed genes specific to each cancer type. The proposed frameworks consider the common latent gene co-expression modules and gene–sample biclusters underlying the multiple cancer datasets to learn the knowledge crossing different tumor types. Large-scale experiments on simulations and real cancer high-throughput datasets validate that the proposed network-based multi-task learning frameworks perform better sample classification compared with the models without the knowledge sharing across different cancer types. The common and cancer-specific molecular signatures detected by multi-task learning frameworks on The Cancer Genome Atlas ovarian, breast and prostate cancer datasets are correlated with the known marker genes and enriched in cancer-relevant Kyoto Encyclopedia of Genes and Genome pathways and gene ontology terms.},
   year={2019},
   keywords  = {journal},
-  note={https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz809/5613179}
+  note={https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz809/5613179},
+  url={https://github.com/compbiolabucf/NetML}
 }
 
 
