@@ -4,7 +4,7 @@ category: student
 title: Researcher Name
 image: researcher.png
 role: PhD Student
-permalink: 'team/researcher-name'
+permalink: 'people/researcher-name'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
