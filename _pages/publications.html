@@ -37,15 +37,17 @@ permalink: /publications/
                 <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
             {% endif %}
 
-            {% if publi.annote %}
+            {% if publi.annote == "(Accepted)" %}
                 {{ publi.annote }}
+            {% else %}
+                <b>{{ publi.annote }}</b>
             {% endif %}            
             </a>
         </div>
 
         <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
             <div class="panel-body">
-                {% if pub.abstract %}
+                {% if publi.abstract %}
                 <p><b>Abstract:</b> {{ publi.abstract }}</p>
                 {% endif %} 
                 {% if publi.DOI %}

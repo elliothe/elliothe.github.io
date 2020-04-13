@@ -141,6 +141,7 @@
     "type": "article-journal"
   },
   {
+    "abstract": "Deep convolutional neural network (DNN) has demonstrated phenomenal success and been widely used in many computer vision tasks. However, its enormous model size and high computing complexity prohibits its wide deployment into resource limited embedded system, such as FPGA and mGPU. As the two most widely adopted model compression techniques, weight pruning and quantization compress DNN model through introducing weight sparsity (i.e., forcing partial weights as zeros) and quantizing weights into limited bitwidth values, respectively. Although there are works attempting to combine the weight pruning and quantization, we still observe disharmony between weight pruning and quantization, especially when more aggressive compression schemes (e.g., Structured pruning and low bit-width quantization) are used. In this work, taking FPGA as the test computing platform and Processing Elements (PE) as the basic parallel computing unit, we first propose a PE-wise structured pruning scheme, which introduces weight sparsification with considering of the architecture of PE. In addition, we integrate it with an optimized weight ternarization approach which quantizes weights into ternary values (−1, 0, +1), thus converting the dominant convolution operations in DNN from multiplication-and-accumulation (MAC) to addition-only, as well as compressing the original model (from 32-bit floating point to 2-bit ternary representation) by at least 16 times. Then, we investigate and solve the coexistence issue between PE-wise Structured pruning and ternarization, through proposing a Weight Penalty Clipping (WPC) technique with self-adapting threshold. Our experiment shows that the fusion of our proposed techniques can achieve the best state-of-theart ∼ 21× PE-wise structured compression rate with merely 1.74%/0.94% (top-1/top-5) accuracy degradation of ResNet18 on ImageNet dataset.",
     "annote": "(Spotlight)",
     "author": [
       {
@@ -157,7 +158,7 @@
       }
     ],
     "container-title": "Thirty-third AAAI Conference on Artificial Intelligence (AAAI)",
-    "id": "yang2019harmony",
+    "id": "yang2019harmonious",
     "issued": {
       "date-parts": [
         [
@@ -271,7 +272,7 @@
         "given": "Tania"
       }
     ],
-    "container-title": "IEEE Electron Device Letters",
+    "container-title": "IEEE Electron Device Letters (EDL)",
     "id": "Durjoy2020ACSNANO",
     "issued": {
       "date-parts": [
@@ -447,7 +448,7 @@
         "given": "Tania"
       }
     ],
-    "container-title": "2019 device research conference (drc)",
+    "container-title": "Device research conference (drc)",
     "id": "dev2019artificial",
     "issued": {
       "date-parts": [
@@ -894,7 +895,7 @@
     "type": "paper-conference"
   },
   {
-    "annote": "Best Paper Award",
+    "annote": "(Best Paper Award)",
     "author": [
       {
         "family": "He",
@@ -1444,7 +1445,7 @@
     "type": "paper-conference"
   },
   {
-    "annote": "Best Paper Award",
+    "annote": "(Best Paper Award)",
     "author": [
       {
         "family": "Parveen",
