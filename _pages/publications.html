@@ -27,7 +27,6 @@ permalink: /publications/
             "<i>{{ publi.title }}</i>",
 
             <!-- container -->
-            <!-- <b>{{ publi.container-title }}</b> -->
             {{ publi.container-title }},
 
             <!-- issued date -->
@@ -37,22 +36,29 @@ permalink: /publications/
             {% if publi.DOI %}
                 <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
             {% endif %}
+
+            {% if publi.annote %}
+                {{ publi.annote }}
+            {% endif %}            
             </a>
         </div>
 
         <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
             <div class="panel-body">
+                {% if pub.abstract %}
                 <p><b>Abstract:</b> {{ publi.abstract }}</p>
+                {% endif %} 
                 {% if publi.DOI %}
                 <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
                    role="button" target="blank">Paper</a>
-                {% else %}
-                <a class="btn btn-outline-primary" href="{{publi.URL}}"
+                {% elsif publi.note %}
+                <a class="btn btn-outline-primary" href="{{publi.note}}"
                    role="button" target="blank">Paper</a>                
                 {% endif %}
+                {% if publi.URL %}
                 <a class="btn btn-outline-primary" href="{{publi.URL}}"
                    role="button" target="blank">Code</a>
-
+                {% endif %}
             </div>
         </div>
     {% endfor %}
