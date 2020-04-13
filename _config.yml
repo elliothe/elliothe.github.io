@@ -21,9 +21,6 @@ department: School of Electrical and Computer Engineering
 
 
 
-
-
-
 include:
   - .htaccess
   - _pages
@@ -50,9 +47,8 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
-# url: "http://127.0.0.1:4000/" # config for jekyll-sitemap
   
 # Plugins
 plugins:
   - jemoji
-  - jekyll-sitemap
+  # - jekyll-sitemap

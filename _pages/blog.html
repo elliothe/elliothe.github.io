@@ -1,0 +1,71 @@
+---
+title: "Blog"
+layout: default
+excerpt: "ARCL -- Blog."
+sitemap: false
+permalink: /blog/
+---
+
+<h1>{{page.title}}</h1>
+
+<ul>
+  {% assign blogs = site.posts | where: 'layout', 'post' | sort: 'date' %}
+  {% for post in blogs %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+<!-- organize the blogs in topics -->
+<!-- <h3>Archive</h3> -->
+<!-- 
+<div class="archive">
+    <div class="timeline" id="timeline">
+      {% assign blogs = site.posts | where: 'layout', 'post' | sort: 'date' %} 
+      {% for post in blogs %}
+      {% unless post.next %}
+      <div class="archive-title">
+        <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
+      </div>
+  
+      <ul>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+      {% if year != nyear %}
+      </ul>
+      <div class="archive-title">
+        <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
+      </div>
+  
+      <ul>
+      {% endif %}
+      {% endunless %}
+      <li>
+        <div style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+  
+    </div>
+  
+  </div> -->
+
+
+<!-- organize the blogs in timeline -->
+<!-- <h3>Categories</h3>
+
+<div class="tag-list">
+  {% for cat in site.categories %}
+    <div class="tag-group">
+      {% capture cat_name %}{{ cat | first }}{% endcapture %}
+      <h4 class="tag-group-title" id="{{ cat_name | slugize }}">{{ cat_name }}</h4>
+      {% for post in site.categories[cat_name] %}
+      <article class="tag-item">
+        <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
+      </article>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  </div> -->

@@ -1,13 +1,3 @@
-
-<style>
-.city {
-    background-color: tomato;
-    color: white;
-    padding: 10px;
-}
-</style>
-
-
 <!-- a division as the container of the html elements -->
 <div class="media"> 
 <h4> News </h4>
@@ -26,8 +16,9 @@
 
 <!-- small space between entries -->
 {% for article in site.data.news limit: 3 %}
-<small>{{ article.date }}</small>
-<p><small>{{ article.title }}</small></p>
+<p>
+    <small>[{{ article.date }}] {{ article.title }}.</small>
+</p>
 {% endfor %}
 
 <!-- link to news page -->
