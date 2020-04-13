@@ -20,16 +20,3 @@ Current research interests at ACRL focuses on:
 - Machine Learning Aided Design 
 
 
-
------
-
-### Position openning
-
-We are always looking for new group members with passion, talent, and grit!
-
-Benefits of becoming a ACRLer:
-- Friendly advisor and group members. :wink:
-- Collaborative and active team atmosphere.
-- Work on topics that matters.
-- Build extraordinary research skills.
-<!-- - Obtain strong resume and brilliant future career. -->
