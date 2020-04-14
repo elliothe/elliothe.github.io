@@ -11,7 +11,7 @@ permalink: /research/
 Current research interests focuses on:
 - Efficient and secure Machine Learning
     - Neural Network Compression
-    - Dynamic inference
+    - Dynamic Inference
     - Adversarial attack and defense
     - Intellectual Property (IP) protection     
 - Brain-inspired Neuromorphic Computing
