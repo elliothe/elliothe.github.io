@@ -19,6 +19,9 @@ Current research interests focuses on:
 - Automated Machine Learning
 - Machine Learning Aided Design 
 
+<p align="right">
+<small><a href="{{ site.url }}{{ site.baseurl }}/research"> ... see more</a></small>
+</p>
 
 <!-- ### About the Laboratory
 
