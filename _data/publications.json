@@ -1,5 +1,6 @@
 [
   {
+    "abstract": "In this work, we use a two-terminal 2D MoS2-based memristive device to emulate an artificial neuron. The Au/MoS2/Ag device exhibits volatile resistance switching characteristics with a low threshold voltage and a high ON-OFF ratio of 106, originating from an Ag diffusion-based filamentary process. The leaky integrate-and-fire neuron implemented with this device successfully emulates the key characteristics of a biological neuron.",
     "annote": "(Accepted)",
     "author": [
       {
@@ -49,6 +50,7 @@
       ]
     },
     "keyword": "journal",
+    "note": "https://ieeexplore.ieee.org/document/9069258",
     "title": "2D mos2 based threshold switching memristor for artificial neuron",
     "type": "article-journal"
   },
