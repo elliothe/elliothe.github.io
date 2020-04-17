@@ -1,5 +1,58 @@
 [
   {
+    "annote": "(Accepted)",
+    "author": [
+      {
+        "family": "Dev",
+        "given": "Durjoy"
+      },
+      {
+        "family": "Krishnaprasad",
+        "given": "Adithi"
+      },
+      {
+        "family": "Shawkat",
+        "given": "Mashiyat"
+      },
+      {
+        "family": "He",
+        "given": "Zhezhi"
+      },
+      {
+        "family": "Das",
+        "given": "Sonali"
+      },
+      {
+        "family": "Chung",
+        "given": "Hee-Suk"
+      },
+      {
+        "family": "Fan",
+        "given": "Deliang"
+      },
+      {
+        "family": "Jung",
+        "given": "Yeonwoong"
+      },
+      {
+        "family": "Roy",
+        "given": "Tania"
+      }
+    ],
+    "container-title": "IEEE Electron Device Letters (EDL)",
+    "id": "Durjoy2020ACSNANO",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "keyword": "journal",
+    "title": "2D mos2 based threshold switching memristor for artificial neuron",
+    "type": "article-journal"
+  },
+  {
     "URL": "https://github.com/elliothe/BFA",
     "abstract": "Recently, a new paradigm of the adversarial attack on the quantized neural network weights has attracted great attention, namely, the Bit-Flip based adversarial weight attack, aka. Bit-Flip Attack (BFA). BFA has shown extraordinary attacking ability, where the adversary can malfunction a quantized Deep Neural Network (DNN) as a random guess, through malicious bit-flips on a small set of vulnerable weight bits (e.g., 13 out of 93 millions bits of 8-bit quantized ResNet-18). However, there are no effective defensive methods to enhance the fault-tolerance capability of DNN against such BFA. In this work, we conduct comprehensive investigations on BFA and propose to leverage binarizationaware training and its relaxation – piece-wise clustering as simple and effective countermeasures to BFA. The experiments show that, for BFA to achieve the identical prediction accuracy degradation (e.g., below 11% on CIFAR-10), it requires 19.3× and 480.1× more effective malicious bitflips on ResNet-20 and VGG-11 respectively, compared to defend-free counterparts.",
     "annote": "(Accepted)",
@@ -205,59 +258,6 @@
     "type": "article-journal"
   },
   {
-    "annote": "(Accepted)",
-    "author": [
-      {
-        "family": "Dev",
-        "given": "Durjoy"
-      },
-      {
-        "family": "Krishnaprasad",
-        "given": "Adithi"
-      },
-      {
-        "family": "Shawkat",
-        "given": "Mashiyat"
-      },
-      {
-        "family": "He",
-        "given": "Zhezhi"
-      },
-      {
-        "family": "Das",
-        "given": "Sonali"
-      },
-      {
-        "family": "Chung",
-        "given": "Hee-Suk"
-      },
-      {
-        "family": "Fan",
-        "given": "Deliang"
-      },
-      {
-        "family": "Jung",
-        "given": "Yeonwoong"
-      },
-      {
-        "family": "Roy",
-        "given": "Tania"
-      }
-    ],
-    "container-title": "IEEE Electron Device Letters (EDL)",
-    "id": "Durjoy2020ACSNANO",
-    "issued": {
-      "date-parts": [
-        [
-          2020
-        ]
-      ]
-    },
-    "keyword": "journal",
-    "title": "2D mos2 based threshold switching memristor for artificial neuron",
-    "type": "article-journal"
-  },
-  {
     "abstract": "Deep convolutional neural network (DNN) has demonstrated phenomenal success and been widely used in many computer vision tasks. However, its enormous model size and high computing complexity prohibits its wide deployment into resource limited embedded system, such as FPGA and mGPU. As the two most widely adopted model compression techniques, weight pruning and quantization compress DNN model through introducing weight sparsity (i.e., forcing partial weights as zeros) and quantizing weights into limited bitwidth values, respectively. Although there are works attempting to combine the weight pruning and quantization, we still observe disharmony between weight pruning and quantization, especially when more aggressive compression schemes (e.g., Structured pruning and low bit-width quantization) are used. In this work, taking FPGA as the test computing platform and Processing Elements (PE) as the basic parallel computing unit, we first propose a PE-wise structured pruning scheme, which introduces weight sparsification with considering of the architecture of PE. In addition, we integrate it with an optimized weight ternarization approach which quantizes weights into ternary values (−1, 0, +1), thus converting the dominant convolution operations in DNN from multiplication-and-accumulation (MAC) to addition-only, as well as compressing the original model (from 32-bit floating point to 2-bit ternary representation) by at least 16 times. Then, we investigate and solve the coexistence issue between PE-wise Structured pruning and ternarization, through proposing a Weight Penalty Clipping (WPC) technique with self-adapting threshold. Our experiment shows that the fusion of our proposed techniques can achieve the best state-of-theart ∼ 21× PE-wise structured compression rate with merely 1.74%/0.94% (top-1/top-5) accuracy degradation of ResNet18 on ImageNet dataset.",
     "annote": "(Spotlight)",
     "author": [
@@ -411,6 +411,7 @@
     "volume": "56"
   },
   {
+    "abstract": "The phenomenal evolution of information and communication drives future technologies towards highly parallel, energy-efficient self-learning systems like the human brain. The limitations of current von Neumann computation systems have paved the way for artificial neural networks (ANN) to meet these criteria. The memristor has become an emerging candidate to realize ANN through emulating biological synapse and neuron behavior. We previously reported an artificial neuron with 2D Mos2 and graphene electrode, but the operating voltage was high, and the output current was low. In this work, we harness threshold switching in Mos2 enabled by Ag electrode, to emulate integration and firing behavior of neuron and demonstrate digit recognition application with these devices. The simple vertical structure of Ag/MoS2/Au threshold switching memristor (TSM), with very low threshold voltage (Vth=0.4−0.5V) , displays the four crucial features of neuron─ all-or-nothing spiking, threshold-driven firing, post firing refractory period and stimulus strength based frequency response.",
     "author": [
       {
         "family": "Dev",
