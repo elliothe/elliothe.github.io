@@ -1,6 +1,13 @@
+- date: 04/23/2020
+  title: "Zhezhi receives the University Graduate Fellowship (UGF) "
+  tags:
+    - Award
+  content: Zhezhi has been awarded [University Graduate Fellowship (UGF)](https://graduate.asu.edu/current-students/funding-opportunities/awards-and-fellowships/university-graduate-fellowships) due to his excellent academic performance. He is the only UGF award receipent for school of Electrical, Computer, Engery Engineering (ECEE) at Arizona State University (ASU).
+
+
+
 - date: 02/23/2020
   title: "Two paper about ML security are accepted by CVPR-2020"
   tags:
     - Publication
-    - Important
   content: Two papers focuses on the bit-flip based adversarial weight attack are accepted by the CVPR-2020. One is about the defense such adversarial weight attack using binarization-aware training. Another is using insert bit-flip based paraemter Trojan, which is known as Trojan attack and backdoor attack.
