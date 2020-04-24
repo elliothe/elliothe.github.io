@@ -27,7 +27,7 @@ permalink: /publications/
             "<i>{{ publi.title }}</i>",
 
             <!-- container -->
-            {{ publi.container-title }},
+            <b>{{ publi.container-title }}</b>,
 
             <!-- issued date -->
             {{ publi.issued.date-parts | jsonify | slice: 2,4 }}.
