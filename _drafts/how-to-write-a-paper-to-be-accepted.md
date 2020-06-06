@@ -7,7 +7,9 @@ author: Elliot He
 comments: false
 ---
 
-> This tutorial gives the instruction about writing a paper in Latex.
+> For a paper to be a good paper, at least make it looks like a good paper.
+
+This tutorial gives the instruction about writing a paper in Latex.
 
 List of the Content:
 - [Latex IDE](##Latex_IDE)
