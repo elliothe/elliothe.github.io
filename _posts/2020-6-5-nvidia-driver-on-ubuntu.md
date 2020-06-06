@@ -4,6 +4,7 @@ title:  "Install Nvidia Driver on Ubuntu System"
 excerpt: "nvidia driver"
 categories: [tutorial]
 author: Elliot He
+date:   2020-6-5 23:59:00
 comments: false
 ---
 
