@@ -9,7 +9,7 @@ comments: false
 ---
 
 
-1. Install with recommanded configuration
+## 1. Install with recommanded configuration
 Detecting the graphic card:
 
 ```bash
@@ -52,13 +52,14 @@ CUDA 7.5 (7.5.16)	>= 352.31
 CUDA 7.0 (7.0.28)	>= 346.46
 ```
 
-2. Install the driver manually.
+## 2. Install the driver manually.
 
 ```bash
 sudo apt-get purge nvidia*
 sudo apt autoremove
 sudo add-apt-repository ppa:graphics-drivers
 sudo apt-get update
-sudo apt-get install nvidia-driver-440
+sudo apt-get install nvidia-driver-440 # if 440 available
+sudo reboot
 ```
 To check the available driver version for your system, check the [ppa website](https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa/+packages).
