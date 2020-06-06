@@ -8,9 +8,9 @@ date:   2020-6-5 23:59:00
 comments: false
 ---
 
-# Nvidia Driver on Ubuntu
 
-1. Detecting the graphic card:
+1. Install with recommanded configuration
+Detecting the graphic card:
 
 ```bash
 $ ubuntu-drivers devices
@@ -52,7 +52,7 @@ CUDA 7.5 (7.5.16)	>= 352.31
 CUDA 7.0 (7.0.28)	>= 346.46
 ```
 
-2. Manual install
+2. Install the driver manually.
 
 ```bash
 sudo apt-get purge nvidia*
