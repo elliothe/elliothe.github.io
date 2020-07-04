@@ -1,3 +1,11 @@
+- date: 07/07/2020
+  title: "Zhezhi defend his Ph.D. dissertation"
+  tags:
+    - Award
+  content: Zhezhi defend his Ph.D. dissertation titled "Efficient and Secure Deep Learning Inference System:A Software and Hardware Co-design Perspective"
+
+
+
 - date: 05/04/2020
   title: "Zhezhi receives the Engineering Graduate Fellowship"
   tags:
@@ -11,6 +19,13 @@
   tags:
     - Award
   content: Zhezhi has been awarded <a href="https://graduate.asu.edu/current-students/funding-opportunities/awards-and-fellowships/university-graduate-fellowships">University Graduate Fellowship (UGF)</a> due to his excellent academic performance. He is the only UGF award receipent for school of Electrical, Computer, Engery Engineering (ECEE) at Arizona State University (ASU). 
+
+
+- date: 02/27/2020
+  title: "Two paper are accepted by DAC-2020"
+  tags:
+    - Publication
+  content: One paper is focus on defending the bit-flip based adversarial weight attack via weight reconstruction technique. Another one is to leverage the group lasso based non-uniform pruning to construct dynamic neural network, which could trade-off the inference accuracy and latency of running hardware on-the-fly.
 
 
 - date: 02/23/2020
