@@ -17,7 +17,7 @@ baseurl: ""
 url: "" # config for jekyll-sitemap
 
 institution: Arizona State University
-department: School of Electrical and Computer Engineering
+department: School of Electrical, Computer and Energy Engineering
 
 
 
@@ -46,6 +46,33 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+# jekyii-scholar
+scholar:
+  last_name: He
+  first_name: Zhezhi
+
+  style: _bibliography/my_ieee.cls
+  locale: en
+
+  source: ./_bibliography
+  bibliography: references.bib
+
+  group_by: year
+  group_order: descending
+
+  replace_strings: true
+  join_strings: true
+
+  bibliography_template: bibliography
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*" 
+
+  type_order: [article, inproceedings]
 
   
 # Plugins

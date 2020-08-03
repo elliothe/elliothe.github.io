@@ -8,61 +8,12 @@ permalink: /publications/
 
 <h1>{{page.title}}</h1>
 
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+<b>Copyright disclaimer:</b> The documents contained in this page are included to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder.
+<br>
+<br>
 
-    {% for publi in site.data.publications %}
-        <div class="panel-heading">
-            <a data-toggle="collapse" data-parent="#accordion"
-               href="#collapse{{forloop.index}}"
-               style="color: inherit;">
-            <!-- authors -->
-            {% assign authors = "" | split:"/" %}
-            {% for author in publi.author %}
-                {% assign authors = authors | push: author.family %}
-            {% endfor %}
-            {{ authors | array_to_sentence_string }},
+<p>Remark: <sup>=</sup> indicates equal contribution</p>
 
-            <!-- title with link -->
-            "<i>{{ publi.title }}</i>",
+{% bibliography %}
 
-            <!-- container -->
-            <b>{{ publi.container-title }}</b>,
-
-            <!-- issued date -->
-            {{ publi.issued.date-parts | jsonify | slice: 2,4 }}.
-
-            <!-- DOI -->
-            {% if publi.DOI %}
-                <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
-            {% endif %}
-
-            {% if publi.annote == "(Accepted)" %}
-                {{ publi.annote }}
-            {% else %}
-                <b>{{ publi.annote }}</b>
-            {% endif %}            
-            </a>
-        </div>
-
-        <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
-            <div class="panel-body">
-                {% if publi.abstract %}
-                <p><b>Abstract:</b> {{ publi.abstract }}</p>
-                {% endif %} 
-                {% if publi.DOI %}
-                <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
-                   role="button" target="blank">Paper</a>
-                {% elsif publi.note %}
-                <a class="btn btn-outline-primary" href="{{publi.note}}"
-                   role="button" target="blank">Paper</a>                
-                {% endif %}
-                {% if publi.URL %}
-                <a class="btn btn-outline-primary" href="{{publi.URL}}"
-                   role="button" target="blank">Code</a>
-                {% endif %}
-            </div>
-        </div>
-    {% endfor %}
-    </div>
-</div>
+<!-- {% bibliography --query @*[group=journal] %} -->
