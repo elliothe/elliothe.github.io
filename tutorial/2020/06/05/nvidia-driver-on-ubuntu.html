@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhezhi (Elliot) He - Install Nvidia Driver on Ubuntu System</title>
+  <meta name="description" content="nvidia driver">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/tutorial/2020/06/05/nvidia-driver-on-ubuntu.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">Zhezhi (Elliot) He</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">People</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Install Nvidia Driver on Ubuntu System</li>
+    </ol>
+    </nav>
+</div>
+
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="Install Nvidia Driver on Ubuntu System">Install Nvidia Driver on Ubuntu System</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        5 JUN 2020
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <p></p> 
+
+  <article class="post-content">
+    <h2 id="1-install-with-recommanded-configuration">1. Install with recommanded configuration</h2>
+<p>Detecting the graphic card:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ubuntu-drivers devices
+</code></pre></div></div>
+<p>which outputs:</p>
+<pre><code class="language-txt">== /sys/devices/pci0000:00/0000:00:02.0/0000:07:00.0/0000:08:10.0/0000:09:00.0 ==
+modalias : pci:v000010DEd00001B02sv000010DEsd000011DFbc03sc00i00
+vendor   : NVIDIA Corporation
+driver   : nvidia-430 - third-party free recommended
+driver   : nvidia-418 - third-party free
+driver   : nvidia-384 - third-party free
+driver   : nvidia-410 - third-party free
+driver   : nvidia-387 - third-party non-free
+driver   : xserver-xorg-video-nouveau - distro free builtin
+driver   : nvidia-415 - third-party free
+</code></pre>
+
+<p>If you want to directly install the recommand driver, use:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>ubuntu-drivers autoinstall
+</code></pre></div></div>
+
+<p>The <a href="https://docs.nvidia.com/deploy/cuda-compatibility/index.html">compatibility</a> between CUDA version and nvidia-driver version:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CUDA Toolkit	Linux x86_64 Driver Version
+CUDA 11.0 (11.0.171)	&gt;= 450.36.06
+CUDA 10.2 (10.2.89)	&gt;= 440.33
+CUDA 10.1 (10.1.105)	&gt;= 418.39
+CUDA 10.0 (10.0.130)	&gt;= 410.48
+CUDA 9.2 (9.2.88)	&gt;= 396.26
+CUDA 9.1 (9.1.85)	&gt;= 390.46
+CUDA 9.0 (9.0.76)	&gt;= 384.81
+CUDA 8.0 (8.0.61 GA2)	&gt;= 375.26
+CUDA 8.0 (8.0.44)	&gt;= 367.48
+CUDA 7.5 (7.5.16)	&gt;= 352.31
+CUDA 7.0 (7.0.28)	&gt;= 346.46
+</code></pre></div></div>
+
+<h2 id="2-install-the-driver-manually">2. Install the driver manually.</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get purge nvidia<span class="k">*</span>
+<span class="nb">sudo </span>apt autoremove
+<span class="nb">sudo </span>add-apt-repository ppa:graphics-drivers
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>nvidia-driver-440 <span class="c"># if 440 available</span>
+<span class="nb">sudo </span>reboot
+</code></pre></div></div>
+<p>To check the available driver version for your system, check the <a href="https://launchpad.net/~graphics-drivers/+archive/ubuntu/ppa/+packages">ppa website</a>.</p>
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2020/06/05/nvidia-driver-on-ubuntu.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2020/06/05/nvidia-driver-on-ubuntu.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/tutorial/2020/06/05/nvidia-driver-on-ubuntu.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2020/06/05/nvidia-driver-on-ubuntu.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>Elliot</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<img class="img-fluid" src="/images/logo/institution-logo.png"
+					 style="max-width: 100px;">
+				</div>
+				<p>Elliot is currently at School of Electrical, Computer and Energy Engineering at Arizona State University</p>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<!-- <li><a href="/vacancies">Vacancies</a></li> -->
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhihe@asu.edu"><i class="fas fa-paper-plane"></i></a> zhezhihe at asu dot edu</p>
+				<p><a href="https://goo.gl/maps/W3qd3RiXeXALMePh7"><i class="fas fa-map-marked-alt"></i></a> 650 E Tyler Mall, Tempe, AZ 85281  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2020 Elliot. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

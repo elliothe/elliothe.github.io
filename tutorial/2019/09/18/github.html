@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zhezhi (Elliot) He - Using github for hosting a project</title>
+  <meta name="description" content="step-by-step about hosting a repository.">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/tutorial/2019/09/18/github.html">
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">Zhezhi (Elliot) He</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">People</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Using github for hosting a project</li>
+    </ol>
+    </nav>
+</div>
+
+
+<div class="post-image-feature">
+  <img class="feature-image" src=
+  
+  "https://kinsta.com/wp-content/uploads/2018/04/what-is-github-1-1.png"
+  
+  alt="Using github for hosting a project feature image"
+  style="max-width: 500px;">
+
+  
+</div><!-- /.image-wrap -->
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="Using github for hosting a project">Using github for hosting a project</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        18 SEP 2019
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      4 mins read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <p></p> 
+
+  <article class="post-content">
+    <blockquote>
+  <p>Anything in <code class="language-plaintext highlighter-rouge">master</code> branch is always deployable</p>
+</blockquote>
+
+<p>Read the github post &lt;<a href="https://guides.github.com/introduction/flow/">Understanding the github flow</a>&gt; before start this tutorial.</p>
+
+<p>Making changes on a repository consists following steps</p>
+<ul>
+  <li>Stage</li>
+  <li>Commit</li>
+  <li>Push</li>
+</ul>
+
+<h1 id="create-a-repository">Create a repository</h1>
+
+<p>You can either create a brand-new repository directory from scratch or use some template for better project management.</p>
+
+<p>Example templates:</p>
+<ul>
+  <li><a href="https://github.com/ericdaat/template-python">Template repository for a python package</a></li>
+</ul>
+
+<h1 id="collaboration-with-group-member">Collaboration with group member</h1>
+
+<h2 id="invite-the-collaborator">Invite the collaborator</h2>
+
+<p>navigate to the setting under the repository webpage, add the collaborator as shown in the figure.</p>
+
+<!-- the image path cannot be within '_xxx' style folder, it   -->
+<p><img src="/images/blog/collaborator.png" alt="drawing" width="800" />
+<!-- ![Add collaborator](/images/blog/collaborator.png) --></p>
+
+<h2 id="collaborator-contribute">Collaborator contribute</h2>
+
+<blockquote>
+  <p>If you are vscode user, there is git GUI for workflow management.</p>
+</blockquote>
+
+<p>When the collaborate contribute, they normally create a new branch.</p>
+
+<ol>
+  <li>Keep the <code class="language-plaintext highlighter-rouge">master</code> branch up-to-date.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> &lt;/path-to-the-repository&gt;
+<span class="nv">$ </span>git pull
+</code></pre></div>    </div>
+  </li>
+  <li>Create a new branch from the master branch, and work on it
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout <span class="nt">-b</span> &lt;name-of-new-branch&gt;
+</code></pre></div>    </div>
+    <p>which is equivalent as</p>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git branch &lt;name-of-new-branch&gt;
+<span class="nv">$ </span>git checkout &lt;name-of-new-branch&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>working on the new feature locally, and dont forget to push it to the remote server (allow others see your code).
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git push origin &lt;name-of-new-branch&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>Merge the created branch to <code class="language-plaintext highlighter-rouge">master</code> branch, then delete the branch.
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git checkout master <span class="c"># change to the master branch</span>
+<span class="nv">$ </span>git merge &lt;name-of-new-branch&gt;
+<span class="nv">$ </span>git commit
+<span class="nv">$ </span>git push
+<span class="nv">$ </span>git branch <span class="nt">-d</span> &lt;name-of-new-branch&gt;
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="branch-types">Branch types</h2>
+<p><img src="https://pic1.zhimg.com/v2-86810fd98b9f40c9d098b4b65aceef0f_1200x500.jpg" alt="branch graph" height="80%" width="80%" /></p>
+
+<blockquote>
+  <p>Recommand to use <a href="https://github.com/nvie/gitflow/wiki/Mac-OS-X">git-flow</a> for branch organization. Use this <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">tutorial</a> for gitflow.</p>
+</blockquote>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">master</code> branch：perform tagging and release on this branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">develop</code> branch: checkout from <code class="language-plaintext highlighter-rouge">master</code> branch. This branch normally won’t be modified directly, instead it checkout new feature branches, then merge them back on this <code class="language-plaintext highlighter-rouge">develop</code> branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">release</code> branch: checkout from <code class="language-plaintext highlighter-rouge">develop</code> branch. This branch is used for the test before version release, with minor bug fix. If bug fix is complicated, merge back to the develop branch then may working from other branches. After this branch is well-tested, merge it back to both develop and master branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">feature</code> branch: checkout from <code class="language-plaintext highlighter-rouge">develop</code> branch. Every team-member host independent <code class="language-plaintext highlighter-rouge">feature</code> branches for feature development. When the development is done, merge it back to <code class="language-plaintext highlighter-rouge">develop</code> branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">fix</code> branch: checkout from <code class="language-plaintext highlighter-rouge">develop</code> branch for bug fix. After the bug is fixed, merge it back to the develop branch, then delete this <code class="language-plaintext highlighter-rouge">fix</code> branch.</li>
+  <li><code class="language-plaintext highlighter-rouge">hotfix</code> branch: checkout from <code class="language-plaintext highlighter-rouge">master</code> branch for bug fix. After the bug is fixed, merge back to both <code class="language-plaintext highlighter-rouge">master</code> and <code class="language-plaintext highlighter-rouge">develop</code> branch, then delete this <code class="language-plaintext highlighter-rouge">hotfix</code> branch.</li>
+</ul>
+
+<h3 id="exmaple-commands-in-git-flow">Exmaple commands in git-flow</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git flow init <span class="c"># initialization with git-flow</span>
+<span class="nv">$ </span>git flow feature start &lt;feature_branch&gt;
+<span class="nv">$ </span>git flow feature finish &lt;feature_branch&gt;
+<span class="nv">$ </span>git flow release start &lt;0.1.0&gt;
+<span class="nv">$ </span>git flow release finish <span class="s1">'0.1.0'</span>
+</code></pre></div></div>
+
+<h2 id="other-commands-to-be-used">Other commands to be used</h2>
+<p>Commands for branch management:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git branch <span class="c"># show local branches</span>
+<span class="nv">$ </span>git branch <span class="nt">-a</span> <span class="c"># show local and remote branches</span>
+<span class="nv">$ </span>git branch <span class="nt">-d</span> &lt;name-of-new-branch&gt; <span class="c"># delete the local branch</span>
+<span class="nv">$ </span>git branch <span class="nt">-D</span> &lt;name-of-new-branch&gt; <span class="c"># force delete the local branch</span>
+<span class="nv">$ </span>git push &lt;remote_name&gt; <span class="nt">--delete</span> &lt;branch_name&gt; <span class="c"># delete remote branch$ git push &lt;remote_name&gt; :&lt;branch_name&gt;</span>
+<span class="nv">$ </span>git push &lt;remote_name&gt; :&lt;branch_name&gt; <span class="c"># delete remote branch</span>
+</code></pre></div></div>
+
+<p>The remote name can be shown by:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote <span class="c"># the remote is &lt;origin&gt; in github</span>
+</code></pre></div></div>
+
+<h1 id="other-useful-tutorials">Other useful tutorials</h1>
+<p>Basically, I rank the tutorial based on the value I found in it:</p>
+
+<ul>
+  <li><a href="https://guides.github.com/introduction/flow/">Understanding the github flow</a></li>
+  <li><a href="https://zhuanlan.zhihu.com/p/23478654">团队协作开发</a></li>
+  <li><a href="https://segmentfault.com/a/1190000015798490">Github 多人协作</a></li>
+  <li><a href="https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches">Branch management</a></li>
+  <li><a href="https://git-scm.com/book/zh/v1/Git-分支-分支的新建与合并">分支的新建与合并</a></li>
+  <li><a href="https://help.github.com/articles/deleting-unused-branches">Delete branch on github</a></li>
+</ul>
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2019/09/18/github.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2019/09/18/github.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/tutorial/2019/09/18/github.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2019/09/18/github.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>Elliot</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<img class="img-fluid" src="/images/logo/institution-logo.png"
+					 style="max-width: 100px;">
+				</div>
+				<p>Elliot is currently at School of Electrical, Computer and Energy Engineering at Arizona State University</p>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<!-- <li><a href="/vacancies">Vacancies</a></li> -->
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhihe@asu.edu"><i class="fas fa-paper-plane"></i></a> zhezhihe at asu dot edu</p>
+				<p><a href="https://goo.gl/maps/W3qd3RiXeXALMePh7"><i class="fas fa-map-marked-alt"></i></a> 650 E Tyler Mall, Tempe, AZ 85281  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2020 Elliot. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
