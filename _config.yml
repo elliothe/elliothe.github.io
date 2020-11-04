@@ -6,9 +6,9 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Zhezhi (Elliot) He
+title: Advanced Computing Research Group
 title_abbr: Elliot
-email: zhezhihe@asu.edu
+email: zhezhi.he@sjtu.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -16,8 +16,8 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: "" # config for jekyll-sitemap
 
-institution: Arizona State University
-department: School of Electrical, Computer and Energy Engineering
+institution: Shanghai Jiao Tong University
+department: Department of Computer Science and Engineering
 
 
 
