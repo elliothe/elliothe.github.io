@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Advanced Computing Research Group
+title: ACRG@SJTU
 title_abbr: Elliot
 email: zhezhi.he@sjtu.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
