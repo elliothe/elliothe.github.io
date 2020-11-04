@@ -23,6 +23,7 @@ Current research interests focuses on:
     * Efficiet and Secure Machine Learning  
     * Automated Machine Learning
 - Architecture & Circuit
+    * In-memory Computing
     * Brian-inspired Neuromorphic Computing
     * Machine Learning Aided Electronics Design Automation (ML-EDA)
 - Device
