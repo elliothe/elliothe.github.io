@@ -1,23 +1,22 @@
 ---
 title: "Home"
 layout: homelay
-excerpt: "ARCL at Institut Curie"
+excerpt: "ARCG"
 sitemap: false
 permalink: /
 ---
 
 ------
 
-### About Me
+<!-- ### About Me
 
-The mission of my research is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware.
-The conducted cross-layer research span across algorithms, architecture, circuit, and device.
+The mission of our group is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware.
+The conducted cross-layer research span across algorithms, architecture, circuit, and device. -->
 
 
-<!-- ### About the Group
+### About the Group
 
-The mission of __Advanced Computing Research Group__ (ACRL) is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ACRL conduct the cross-layer research
-The research activities at ACRL span across algorithms, software stack, architecture, circuit, and device. -->
+The mission of __Advanced Computing Research Group__ (ACRG) is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ACRG conduct the cross-layer research which spans across algorithms, software stack, architecture, circuit, and device.
 
 Current research interests focuses on:
 - Algorithm
@@ -25,7 +24,7 @@ Current research interests focuses on:
     * Automated Machine Learning
 - Architecture & Circuit
     * Brian-inspired Neuromorphic Computing
-    * Machine Learning Aided Design Automation
+    * Machine Learning Aided Electronics Design Automation (ML-EDA)
 - Device
     * Post-CMOS Emerging Devices
 
