@@ -5,11 +5,11 @@ excerpt: "Openings"
 sitemap: false
 permalink: /vacancies
 ---
-### For prospective team member
+### For Prospective Team Member
 
 We are always looking for new group members with passion, talent, and grit!
 
-Benefits of join  ACRL:
+Benefits of joining ACRG:
 - Friendly advisor and group members. :wink:
 - Collaborative and active team atmosphere.
 - Work on topics that matters.
