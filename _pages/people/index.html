@@ -10,7 +10,7 @@ permalink: /people/
 
 <!-- Staff -->
 
-<!-- <h2><a id="staff"></a>Staff</h2> -->
+<h2><a id="staff"></a>Staff</h2>
 {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
 {% for member in members %}
 <div class="card team-member-card">
@@ -36,7 +36,7 @@ permalink: /people/
 
 <!-- Students -->
 
-<!-- <h2><a id="student"></a>Students</h2>
+<h2><a id="student"></a>Students</h2>
 {% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
 {% for member in members %}
 <div class="card team-member-card">
@@ -52,10 +52,11 @@ permalink: /people/
         <div class="col-md-10">
             <div class="card-body">
             <h4 class="card-title">{{ member.title }}</h4>
+            <p class="card-text">{{ member.c_name }}</p>
             <p class="card-text">{{ member.role }}</p>
             </div>
         </div>
     </div>
 </div>
 
-{% endfor %} -->
+{% endfor %}
