@@ -9,7 +9,7 @@ permalink: /vacancies
 
 We are always looking for new group members with passion, talent, and grit!
 
-Benefits of joining ACRG:
+Benefits of joining ICRG:
 - Friendly advisor and group members. :wink:
 - Collaborative and active team atmosphere.
 - Work on topics that matters.

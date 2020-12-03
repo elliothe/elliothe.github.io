@@ -1,7 +1,7 @@
 ---
 title: "Home"
 layout: homelay
-excerpt: "ARCG"
+excerpt: "IRCG"
 sitemap: false
 permalink: /
 ---
@@ -16,7 +16,9 @@ The conducted cross-layer research span across algorithms, architecture, circuit
 
 ### About the Group
 
-The mission of __Advanced Computing Research Group__ (ACRG) is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ACRG conduct the cross-layer research which spans across algorithms, software stack, architecture, circuit, and device.
+The mission of __Intelligent Computing Research Group__ (ICRG), a subgroup under the Advanced Computer Architecture Laboratory (ACA-Lab), is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ICRG conduct the cross-layer research which spans across algorithms, software stack, architecture, circuit, and device.
+
+
 
 Current research interests focuses on:
 - Algorithm
