@@ -31,9 +31,9 @@ To be added. -->
 
 Current research interests focuses on:
 - [Algorithm](#algorithm)
-    * Efficiet and Secure Machine Learning  
-    * Automated Machine Learning
+    * Efficiet and Secure Machine Learning
 - [Architecture & Circuit](#arch&circuit)
+    * In-memory Computing
     * Brian-inspired Neuromorphic Computing
     * Machine Learning Aided Design Automation
 - [Device](#device)
@@ -44,8 +44,6 @@ Current research interests focuses on:
 ### <a name="algorithms"></a> Algorithm
 
 #### Efficiet and Secure Machine Learning
-
-The success of machine learning nowadays lead to a 
 
 - Neural Network Compression
 - Adversarial Attack & Defense
@@ -64,12 +62,15 @@ The success of machine learning nowadays lead to a
 
 #### Machine Learning Aided Design Automation
 
+Research undergoing...
+
+
 ------------------------
 
 ### <a name="device"></a> Device
 
 #### Post-CMOS Emerging Devices
 
-- Spintronics
+- Spintronics (STT-MRAM, SOT-MRAM, etc.)
 
 - ReRAM
