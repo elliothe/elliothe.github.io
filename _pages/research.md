@@ -30,26 +30,34 @@ To be added. -->
 
 
 Current research interests focuses on:
-- [Algorithm](#algorithm)
+<!-- - [Algorithm](#algorithm) -->
+
+- <a href="{{ site.url }}{{ site.baseurl }}/research/algorithm/">Algorithm</a>
     * Efficiet and Secure Machine Learning
+        - Neural Network Compression
+        - Adversarial Attack & Defense
 - [Architecture & Circuit](#arch&circuit)
     * In-memory Computing
     * Brian-inspired Neuromorphic Computing
     * Machine Learning Aided Design Automation
 - [Device](#device)
     * Post-CMOS Emerging Devices
+        - Spintronics 
+        - ReRAM
 
 ------------------------
 
-### <a name="algorithms"></a> Algorithm
+## <a name="algorithms"></a> Algorithm
 
-#### Efficiet and Secure Machine Learning
+### Efficiet and Secure Machine Learning
 
-- Neural Network Compression
-- Adversarial Attack & Defense
-- Dynamic Neural Inference
+#### Neural Network Compression
 
-#### Automated Machine Learning
+Neural Network Compression (e.g., quantization, pruning) is a very important techniques
+
+
+#### Adversarial Attack & Defense
+
 
 ------------------------
 
