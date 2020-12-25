@@ -34,3 +34,7 @@ Current research interests focuses on:
 <p align="right">
 <small><a href="{{ site.url }}{{ site.baseurl }}/research"> ... see more</a></small>
 </p>
+
+------------------------
+
+__We are always looking for new group members (undergraduates or graduats) with passion, talent, and grit!__ Email me or drop by my office if you are interested.
