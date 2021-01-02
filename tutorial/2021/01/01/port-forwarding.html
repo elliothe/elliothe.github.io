@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ICRG @ Shanghai Jiao Tong University - Research</title>
-  <meta name="description" content="ARCL -- Research">
+  <title>ICRG @ Shanghai Jiao Tong University - Configuration of Port Forwarding</title>
+  <meta name="description" content="Port Fowarding">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/research/">
+  <link rel="canonical" href="/tutorial/2021/01/01/port-forwarding.html">
   <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
   <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
   <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
@@ -52,99 +52,89 @@
     <div class="container-fluid">
       <div class="col-sm-12">
         <div class="row">
-          <h1 id="research">Research</h1>
-
-<!-- Current research interests focuses on:
-- [Efficient and Secure Deep Learning](#efficient_secure_dl)
-    - Neural Network Compression
-    - Dynamic Inference
-    - Adversarial attack and defense
-    - Intellectual Property (IP) protection     
-- [Brain-inspired Neuromorphic Computing](#neuromorphic)
-    - in-memory computing architecture/device/circuit  -->
-
-<!-- ### <a name="efficient_secure_dl"></a> Efficient and Secure Deep Learning
-
-To be added.
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Configuration of Port Forwarding</li>
+    </ol>
+    </nav>
+</div>
 
 
-### <a name="neuromorphic"></a> Brain-inspired Neuromorphic Computing
 
-To be added. -->
 
-<p>Current research interests focuses on:
-<!-- - [Algorithm](#algorithm) --></p>
+<div id="post">
+  <header class="post-header">
+    <h2 title="Configuration of Port Forwarding">Configuration of Port Forwarding</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        1 JAN 2021
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+  </span>
+    </span>
+  </header>
 
-<ul>
-  <li><a href="/research/algorithm/">Algorithm</a>
-    <ul>
-      <li>Efficiet and Secure Machine Learning
-        <ul>
-          <li>Neural Network Compression</li>
-          <li>Adversarial Attack &amp; Defense</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#arch&amp;circuit">Architecture &amp; Circuit</a>
-    <ul>
-      <li>In-memory Computing</li>
-      <li>Brian-inspired Neuromorphic Computing</li>
-      <li>Machine Learning Aided Design Automation</li>
-    </ul>
-  </li>
-  <li><a href="#device">Device</a>
-    <ul>
-      <li>Post-CMOS Emerging Devices
-        <ul>
-          <li>Spintronics</li>
-          <li>ReRAM</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+  <!-- add dummy space -->
+  <p></p> 
 
-<hr />
-
-<h2 id="-algorithm"><a name="algorithms"></a> Algorithm</h2>
-
-<h3 id="efficiet-and-secure-machine-learning">Efficiet and Secure Machine Learning</h3>
-
-<h4 id="neural-network-compression">Neural Network Compression</h4>
-
-<p>Neural Network Compression (e.g., quantization, pruning) is a very important techniques</p>
-
-<h4 id="adversarial-attack--defense">Adversarial Attack &amp; Defense</h4>
-
-<hr />
-
-<h3 id="-architecture--circuit"><a name="arch&amp;circuit"></a> Architecture &amp; Circuit</h3>
-
-<h4 id="brian-inspired-neuromorphic-computing">Brian-inspired Neuromorphic Computing</h4>
+  <article class="post-content">
+    <p>Problem:</p>
 
 <ul>
-  <li>Mixed-signal In-Memory Computing</li>
+  <li>Only single Ethernet jack in the Lab.</li>
+  <li>Use the router (cisco brand) for ethernet connectio.</li>
+  <li>Need to access the server or the desktop remotely through SSH.</li>
 </ul>
 
-<h4 id="machine-learning-aided-design-automation">Machine Learning Aided Design Automation</h4>
+<p>Here we consider the solution of Port Forwarding (端口映射).</p>
 
-<p>Research undergoing…</p>
+<p>Assuming the connection medium: Laptop =&gt; Router =&gt; Server. The default port used is 22 if not specified.</p>
 
-<hr />
+<ol>
+  <li>Choose single port forwarding.</li>
+  <li>Map the internal port 22 of server (e.g., 192.168.1.X) to a external port (777 for example)</li>
+  <li>Perform the ssh access as:</li>
+</ol>
 
-<h3 id="-device"><a name="device"></a> Device</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh elliot@{Public-IP} -p 777
+</code></pre></div></div>
 
-<h4 id="post-cmos-emerging-devices">Post-CMOS Emerging Devices</h4>
-
+<p>Some useful links:</p>
 <ul>
-  <li>
-    <p>Spintronics (STT-MRAM, SOT-MRAM, etc.)</p>
-  </li>
-  <li>
-    <p>ReRAM</p>
-  </li>
+  <li><a href="https://blog.csdn.net/honululu/article/details/78127107">设置路由器 从外网访问内网服务器 端口映射</a></li>
 </ul>
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2021/01/01/port-forwarding.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2021/01/01/port-forwarding.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/tutorial/2021/01/01/port-forwarding.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2021/01/01/port-forwarding.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
 
         </div>
       </div>
