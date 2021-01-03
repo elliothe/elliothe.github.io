@@ -22,38 +22,19 @@ permalink: /blog/
 
 
 <!-- organize the blogs in timeline -->
-<!-- <h3>Archive</h3> -->
-<div class="archive">
-    <div class="timeline" id="timeline">
-      {% assign blogs = site.posts | where: 'layout', 'post' | sort: 'date' %} 
-      {% for post in blogs reversed %}
-      {% unless post.next %}
-      <div class="archive-title">
-        <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-      </div>
-  
-      <ul>
-      {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-      </ul>
-      <div class="archive-title">
-        <h4 class="archive-year">{{ post.date | date: '%Y' }}</h4>
-      </div>
-  
-      <ul>
-      {% endif %}
-      {% endunless %}
-      <li>
-        <div style="width:60px;float:left;">{{ post.date | date: "%b %-d" }}</div> <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-      </ul>
-  
-    </div>
-  
-</div>
 
+<div class="archive">
+  {% assign postsByYear =
+    site.posts | where: 'layout', 'post' | group_by_exp:"post", "post.date | date: '%Y'" %}
+  {% for year in postsByYear %}
+  <h4>{{ year.name }}</h4>
+    <ul>
+      {% for post in year.items %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>
 
 <hr>
 
