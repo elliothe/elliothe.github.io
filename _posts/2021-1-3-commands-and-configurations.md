@@ -1,9 +1,24 @@
-# Useful commands
-____
+---
+layout: post
+title:  "Useful Commands and Configuration"
+excerpt: "Useful commands"
+categories: [misc]
+tags: [misc]
+author: Elliot He
+date:   2021-1-2 12:00:01
+comments: false
+---
 
-# Table of Content:
-- [System Monitoring](#system-monitoring)
-- [Pdf Processing](#pdf-processing)
+
+# Useful commands
+---
+## Table of Content:
+
+- [1. System Configuration](#system-configuration)
+- [2. System Monitoring](#system-monitoring)
+- [3. PDF Processing](#pdf-processing)
+
+---
 
 ## System Configuration
 
@@ -23,6 +38,7 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 ```
 then paste the key in github/setting/ssh and GPG keys.
 
+---
 
 ## System Monitoring
 
@@ -34,10 +50,16 @@ $ watch -n0.1 nvidia-smi #refresh every 0.1 Sec
 ```
 
 
+---
 ## Pdf Processing
 
 ### Crop the white space for pdf figure
 
+Easiest way to do is using the pdfcrop:
+```bash
+pdfcrop input.pdf output.pdf
+```
+Another available one could be found at [this post](https://superuser.com/questions/1487564/is-there-a-linux-tool-that-can-autocrop-the-white-margins-in-a-pdf-file).
 
 
 ### Embed font for IEEE express format check
