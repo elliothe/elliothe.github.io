@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICRG @ Shanghai Jiao Tong University - Useful Commands and Configuration</title>
+  <meta name="description" content="Useful commands">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/misc/2021/01/02/commands-and-configurations.html">
+  <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">ICRG @ Shanghai Jiao Tong University</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">People</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#misc">misc</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Useful Commands and Configuration</li>
+    </ol>
+    </nav>
+</div>
+
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="Useful Commands and Configuration">Useful Commands and Configuration</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        2 JAN 2021
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <hr>
+  <p></p> 
+
+  <article class="post-content">
+    <h1 id="useful-commands">Useful commands</h1>
+<hr />
+<h2 id="table-of-content">Table of Content:</h2>
+
+<ul>
+  <li><a href="#system-configuration">1. System Configuration</a></li>
+  <li><a href="#system-monitoring">2. System Monitoring</a></li>
+  <li><a href="#pdf-processing">3. PDF Processing</a></li>
+</ul>
+
+<hr />
+
+<h2 id="system-configuration">System Configuration</h2>
+
+<h3 id="connecting-github-with-ssh">Connecting Github with SSH</h3>
+
+<p>To use the ssh secure protocol to access the git repository, you need to generate the ssh keypair on the local computer and add the public key to the github account. There are two steps:</p>
+
+<ol>
+  <li><a href="https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">ssh key generation</a>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>ssh-keygen <span class="nt">-t</span> rsa <span class="nt">-b</span> 4096 <span class="nt">-C</span> <span class="s2">"your_email@example.com"</span>
+</code></pre></div>    </div>
+  </li>
+  <li><a href="https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">add ssh to github</a>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pbcopy &lt; ~/.ssh/id_rsa.pub
+<span class="c"># Copies the contents of the id_rsa.pub file to your clipboard</span>
+</code></pre></div>    </div>
+    <p>then paste the key in github/setting/ssh and GPG keys.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="system-monitoring">System Monitoring</h2>
+
+<h3 id="gpu-monitoring">GPU monitoring</h3>
+
+<p><a href="https://stackoverflow.com/questions/8223811/top-command-for-gpus-using-cuda/8225492">Get real-time of GPU usage</a>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>watch <span class="nt">-n0</span>.1 nvidia-smi <span class="c">#refresh every 0.1 Sec</span>
+</code></pre></div></div>
+
+<hr />
+<h2 id="pdf-processing">Pdf Processing</h2>
+
+<h3 id="crop-the-white-space-for-pdf-figure">Crop the white space for pdf figure</h3>
+
+<p>Easiest way to do is using the pdfcrop:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pdfcrop input.pdf output.pdf
+</code></pre></div></div>
+<p>Another available one could be found at <a href="https://superuser.com/questions/1487564/is-there-a-linux-tool-that-can-autocrop-the-white-margins-in-a-pdf-file">this post</a>.</p>
+
+<h3 id="embed-font-for-ieee-express-format-check">Embed font for IEEE express format check</h3>
+
+<p>For the camera ready version, IEEE normally request the format check, where the font embedding is the most common error you may encount. The following commands will do the job.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pdftops yourfile.pdf
+<span class="nv">$ </span>ps2pdf14 <span class="nt">-dPDFSETTINGS</span><span class="o">=</span>/prepress yourfile.pdf yourfile-output.pdf
+</code></pre></div></div>
+
+<h3 id="image-resize">Image resize</h3>
+
+<p>A <a href="https://resizeimage.net/">online tool</a> for image resize and format conversion.</p>
+
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/misc/2021/01/02/commands-and-configurations.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/misc/2021/01/02/commands-and-configurations.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/misc/2021/01/02/commands-and-configurations.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/misc/2021/01/02/commands-and-configurations.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>ICRG@SJTU</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<p></p> 
+					<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+					 style="max-width: 275px;">
+				</div>
+				<!-- <p>ICRG@SJTU is currently at Department of Computer Science and Engineering at Shanghai Jiao Tong University</p> -->
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<li><a href="/vacancies">Vacancies</a></li>
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhi.he@sjtu.edu.cn"><i class="fas fa-paper-plane"></i></a> zhezhi.he at sjtu dot edu dot cn</p>
+				<p><a href="https://j.map.baidu.com/fc/Sil"><i class="fas fa-map-marked-alt"></i></a> 800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2021 ICRG@SJTU. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

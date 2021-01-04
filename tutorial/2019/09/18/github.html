@@ -205,10 +205,19 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git remote <span class="c"># the remote is &lt;origin&gt; in github</span>
 </code></pre></div></div>
 
+<h2 id="include-a-third-party-repository-in-the-current-repo">Include a third-party repository in the current repo</h2>
+
+<p>We follow the commands described in this <a href="https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97">post</a> using <code class="language-plaintext highlighter-rouge">git submodule</code>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git submodule add https://github.com/ufoym/imbalanced-dataset-sampler
+</code></pre></div></div>
+
+<p>Moreover, a very important setting of the 3rd-party repo (fork the repo but can sync with the original repo) is discussed in the this <a href="https://www.jianshu.com/p/e27a978ddb88">post</a>.</p>
+
 <h1 id="other-useful-tutorials">Other useful tutorials</h1>
 <p>Basically, I rank the tutorial based on the value I found in it:</p>
 
 <ul>
+  <li><a href="https://developer.ibm.com/zh/devpractices/devops/articles/os-cn-git-and-github-2/">IBM git and github 基础配置</a></li>
   <li><a href="https://guides.github.com/introduction/flow/">Understanding the github flow</a></li>
   <li><a href="https://zhuanlan.zhihu.com/p/23478654">团队协作开发</a></li>
   <li><a href="https://segmentfault.com/a/1190000015798490">Github 多人协作</a></li>
