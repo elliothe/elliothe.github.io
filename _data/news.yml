@@ -1,3 +1,22 @@
+- date: Mar./1/2021
+  title: One paper accepted by CVPR-2021 (CCF-A).
+  tages: 
+    - Publication
+  content: One paper working on the fast domain adaption is accepted by the CVPR-2020, whose title is "KSM-Fast Multiple Task Adaption via Kernel-wise Soft Mask Learning".
+
+- date: Feb./20/2021
+  title: One paper accepted by DAC-2021 (CCF-A).
+  tages:
+    - Publication
+  content: In this work, we propose a ReRAM-based accelerator for graph neural network inference with specific optimization on load-balance.
+
+
+- date: Feb./2/2021
+  title: One paper accepted by MobiCom-2021 (CCF-A).
+  tages: 
+    - Publication
+  content: This paper propose a framework to support edge-cloud collabrative computing for mobile vision task, which is collabrated between Ruguster Univeristy, SJTU, Google, Nvidia, Microsoft, USTC.
+
 - date: Dec./22/2020
   title: "Zhezhi is awarded with Explore-X talent project (¥450K）"
   tages:
