@@ -102,12 +102,11 @@
 </ul>
 
 <h2 id="objective">Objective</h2>
-
+<hr>
 <p>The objective of this post can be summarized as follows:</p>
 
 <ul>
-  <li>Go through the steps of deploying a self-trained and quantized neural network to the VTA.</li>
-  <li>Understand of flow entire tool chain.</li>
+  <li>Get the TVM successfully installed and run.</li>
 </ul>
 
 <h2 id="installation">Installation</h2>
@@ -116,7 +115,7 @@
 
 <h3 id="pre-install-configuration">pre-install configuration</h3>
 
-<p>As we may need to use the GPU (cuda and cudnn) for TVM, need to ensure the CUDA and cudnn are properly installed in <code class="language-plaintext highlighter-rouge">/usr/local/cuda</code> path. The potential issue is that user may install the CUDA together with GPU driver (i.e., runfile), thus the CUDA path may not be <code class="language-plaintext highlighter-rouge">/usr/local/cuda</code>, which makes it difficult to let the TVM <code class="language-plaintext highlighter-rouge">config.cmake</code> file find the CUDA and cudnn path.</p>
+<p>As we may need to use the GPU for TVM, CUDA and cudnn should be installed within <code class="language-plaintext highlighter-rouge">/usr/local/cuda</code> path. The potential issue is that user may install the CUDA together with GPU driver (i.e., runfile), thus the CUDA path may not be <code class="language-plaintext highlighter-rouge">/usr/local/cuda</code>, which makes it difficult for TVM <code class="language-plaintext highlighter-rouge">config.cmake</code> file to locate the CUDA and cudnn path.</p>
 
 <blockquote>
   <p><img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> double check the compatibility between GPU driver, CUDA, cudnn on <a href="https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility">website</a></p>
@@ -124,12 +123,12 @@
 
 <h4 id="cuda">CUDA</h4>
 
-<p>Download the CUDA (e.g., v-11) following instructions from <a href="https://developer.nvidia.com/cuda-11.1.0-download-archive">site</a>. Remeber to choose the <code class="language-plaintext highlighter-rouge">deb(local)</code> if it is Ubuntu.</p>
+<p>Download the CUDA (e.g., v-11) following instructions from <a href="https://developer.nvidia.com/cuda-11.1.0-download-archive">site</a>. Remeber to choose <code class="language-plaintext highlighter-rouge">deb(local)</code> if it is Ubuntu.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
 </code></pre></div></div>
 
-<p>However, the above <code class="language-plaintext highlighter-rouge">wget</code> download cmd may fail due to the some technical issue of website. It routes connection to <code class="language-plaintext highlighter-rouge">developer.download.nvidia.com</code> to <code class="language-plaintext highlighter-rouge">developer.download.nvidia.cn</code>.</p>
+<p>However, the above <code class="language-plaintext highlighter-rouge">wget</code> download cmd may fail due to the technical issue of website IP addr. It routes the connection to <code class="language-plaintext highlighter-rouge">developer.download.nvidia.com</code> to <code class="language-plaintext highlighter-rouge">developer.download.nvidia.cn</code>.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(base) elliot@HomeWS:~/Documents/CUDA$ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin --no-check-certificate
 --2021-03-09 21:44:14--  https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
@@ -146,7 +145,7 @@ HTTP request sent, awaiting response... 404 Not Found
 2021-03-09 21:44:17 ERROR 404: Not Found.
 </code></pre></div></div>
 
-<p>Alternative approach is use a computer with VPN to download the cudnn package then send it to the target host:</p>
+<p>Alternative approach is using a computer with VPN to download the cudnn package, then send it to the target host:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>scp cuda-repo-ubuntu2004-11-0-local_11.0.2-450.51.05-1_amd64.deb user@&lt;IP-addr&gt;:&lt;target directory&gt;
 <span class="nv">$ </span>scp cuda-ubuntu2004.pin user@&lt;IP-addr&gt;:&lt;target directory&gt;
@@ -163,7 +162,7 @@ HTTP request sent, awaiting response... 404 Not Found
 
 <h4 id="cudnn">cudnn</h4>
 
-<p>Download the cudnn from the following <a href="https://developer.nvidia.com/cudnn">website</a>. The downloading issue sustain. Use a computer with VPN to download the cudnn package then send it to the target host:</p>
+<p>Download the cudnn from the following <a href="https://developer.nvidia.com/cudnn">website</a>. As the downloading issue sustain, use a computer with VPN to download the cudnn package then send it to the target host:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>scp cudnn-9.0-linux-x64-v7.tgz user@&lt;IP-addr&gt;:&lt;target directory&gt;
 </code></pre></div></div>
