@@ -1,6 +1,6 @@
 ---
 layout: member
-category: student
+category: undergraduate student
 title: Haoyu Huang
 c_name: 黄皓俞
 image: researcher.png
