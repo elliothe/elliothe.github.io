@@ -1,32 +1,39 @@
+- date: Apr./12/2021
+  title: One paper accepted by GLSVLSI-2021.
+  tags:
+    - Publication
+  content: Congratulation to Nie Chen for his first publication as a senior undergraduate student. The paper's title is "Energy-Efficient Hybrid-RAM with Hybrid Bit-Serial Based VMM Support", working on novel in-memory computing micro-architecture design.
+
+
 - date: Mar./1/2021
   title: One paper accepted by CVPR-2021 (CCF-A).
-  tages: 
+  tags: 
     - Publication
   content: One paper working on the fast domain adaption is accepted by the CVPR-2020, whose title is "KSM-Fast Multiple Task Adaption via Kernel-wise Soft Mask Learning".
 
 - date: Feb./20/2021
   title: One paper accepted by DAC-2021 (CCF-A).
-  tages:
+  tags:
     - Publication
   content: In this work, we propose a ReRAM-based accelerator for graph neural network inference with specific optimization on load-balance.
 
 
 - date: Feb./2/2021
   title: One paper accepted by MobiCom-2021 (CCF-A).
-  tages: 
+  tags: 
     - Publication
   content: This paper propose a framework to support edge-cloud collabrative computing for mobile vision task, which is collabrated between Ruguster Univeristy, SJTU, Google, Nvidia, Microsoft, USTC.
 
 - date: Dec./22/2020
   title: "Zhezhi is awarded with Explore-X talent project (¥450K）"
-  tages:
+  tags:
     - Award
   content: Zhezhi He receives the ¥450K from Explore-X fundation to support his research in neuromorphic computing and machine learning for EDA.
 
 
 - date: Nov./14/2020
   title: "One paper accepted by DATE 2021"
-  tages:
+  tags:
     - Publication
   content: One paper working on the adversarial weight attack detection and accuracy recovery has been accpetd by Design, Automation, and Test in Europe (DATE) 2021.
 

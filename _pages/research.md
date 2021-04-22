@@ -32,11 +32,11 @@ To be added. -->
 Current research interests focuses on:
 <!-- - [Algorithm](#algorithm) -->
 
-- <a href="{{ site.url }}{{ site.baseurl }}/research/algorithm/">Algorithm</a>
+- <a href="{{ site.url }}{{ site.baseurl }}/research/algorithm">Algorithm</a>
     * Efficiet and Secure Machine Learning
         - Neural Network Compression
         - Adversarial Attack & Defense
-- [Architecture & Circuit](#arch&circuit)
+- <a href="{{ site.url }}{{ site.baseurl }}/research/research/arch-and-circuit/">Architecture & Circuit</a>
     * In-memory Computing
     * Brian-inspired Neuromorphic Computing
     * Machine Learning Aided Design Automation
@@ -46,14 +46,12 @@ Current research interests focuses on:
         - ReRAM
 
 ------------------------
-
+<!-- 
 ## <a name="algorithms"></a> Algorithm
 
 ### Efficiet and Secure Machine Learning
 
 #### Neural Network Compression
-
-Neural Network Compression (e.g., quantization, pruning) is a very important techniques
 
 
 #### Adversarial Attack & Defense
@@ -72,7 +70,6 @@ Neural Network Compression (e.g., quantization, pruning) is a very important tec
 
 Research undergoing...
 
-
 ------------------------
 
 ### <a name="device"></a> Device
@@ -81,4 +78,4 @@ Research undergoing...
 
 - Spintronics (STT-MRAM, SOT-MRAM, etc.)
 
-- ReRAM
+- ReRAM -->

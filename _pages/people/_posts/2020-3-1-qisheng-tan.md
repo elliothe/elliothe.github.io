@@ -1,11 +1,11 @@
 ---
 layout: member
-category: graduate student
-title: Chen Nie
-c_name: 聂晨
-image: chennie.jpg
-role: PhD Student
-permalink: 'people/chen-nie'
+category: undergraduate student
+title: Qisheng Tan
+c_name: 谭淇升
+image: researcher.png
+role: Undergraduate Student
+permalink: 'people/qisheng-tan'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -18,11 +18,10 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2021 &nbsp; B.S., Electrical Engineering, [Wuhan University](https://www.seu.edu.cn/english/), Wuhan, China.
+- 2023 &nbsp; B.S., Electrical Engineering, Shanghai Jiao Tong University.
 
 
 
 
 ### Expertise
-- In-Memory Computing
-- Computer Architecture
+- Machine Learning for EDA
