@@ -3,7 +3,7 @@ layout: member
 category: graduate student
 title: Chenyu Tang
 c_name: 汤晨宇
-image: researcher.png
+image: chenyu_tang.jpg
 role: Master Student
 permalink: 'people/chenyu-tang'
 social:
@@ -18,7 +18,7 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2021 &nbsp; B.S., Information Security, [Tongji University](https://www.seu.edu.cn/english/), Shanghai, China.
+- 2021 &nbsp; B.S., Information Security, [Tongji University](https://www.tongji.edu.cn/), Shanghai, China.
 
 
 

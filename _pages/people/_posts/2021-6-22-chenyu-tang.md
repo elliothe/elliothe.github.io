@@ -3,7 +3,7 @@ layout: member
 category: graduate student
 title: Chenyang Lv
 c_name: 吕晨阳
-image: researcher.png
+image: chenyang_lv.jpg
 role: Master Student
 permalink: 'people/chenyang-lv'
 social:
@@ -18,10 +18,11 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2014 &nbsp; B.S., Computer Science and Technology, [Hunan Normal University](https://www.seu.edu.cn/english/), Changsha, China.
+- 2014 &nbsp; B.S., Computer Science and Technology, [Hunan Normal University](https://www.hunnu.edu.cn/), Changsha, China.
 
 
 
 
 ### Expertise
 - Machine Learning
+- Brain-inspired Computing
