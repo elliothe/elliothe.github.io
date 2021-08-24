@@ -24,5 +24,5 @@ social:
 
 
 ### Expertise
-- Machine Learning
 - Brain-inspired Computing
+- Machine Learning
