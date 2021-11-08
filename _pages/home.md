@@ -25,9 +25,8 @@ The mission of __Intelligent Computing Research Group__ (ICRG), a subgroup under
 
 Current research interests focuses on:
 - **Algorithm**
-    * Efficiency in Machine Learning (机器学习的能效)
-    * Security in Machine Learning (机器学习的安全)
-    * Quantum Computing and its Application (量子计算及其应用)  
+    * Efficiency and Security in Machine Learning (机器学习的能效与安全)
+    * Algorithm for Intelligent System (智能系统算法)
 - **Architecture & Circuit**
     * Processing-in-Memory (存内计算/存算一体)
     * Brian-inspired Neuromorphic Computing (神经模态计算)
