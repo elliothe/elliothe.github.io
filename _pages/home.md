@@ -7,14 +7,13 @@ permalink: /
 ---
 
 ------
-
-<!-- ### About Me
-
-The mission of our group is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware.
-The conducted cross-layer research span across algorithms, architecture, circuit, and device. -->
-
+### Recruitment 
 
 __We are always looking for new group members (undergraduates or graduats) with passion, talent, and grit!__ Email me or drop by my office if you are interested in our research.
+
+招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
+- 招收本科研究助理，从事芯片架构设计与流片，图神经网络的研究。
+- 2022年有硕士研究生名额，欢迎对ICRG的研究感兴趣的同学报考。
 
 ------------------------
 ### About the Group
