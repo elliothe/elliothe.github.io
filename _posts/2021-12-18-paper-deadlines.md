@@ -3,6 +3,7 @@ layout: post
 title:  "Premium Submission Deadlines"
 excerpt: "paper drafting tutorial"
 categories: [paper submission]
+tags: [paper submission]
 author: Elliot He
 comments: true
 ---
