@@ -2,7 +2,7 @@
 layout: post
 title:  "How to arxiv the paper"
 excerpt: "tutoiral for post paper on arxiv."
-date:   2021-12-16 16:0:0
+date:   2021-12-15 16:0:0
 categories: [paper submission]
 tags: [paper submission]
 author: Elliot He
