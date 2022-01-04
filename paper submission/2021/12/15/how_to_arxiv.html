@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICRG @ Shanghai Jiao Tong University - How to arxiv the paper</title>
+  <meta name="description" content="tutoiral for post paper on arxiv.">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/paper%20submission/2021/12/15/how_to_arxiv.html">
+  <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">ICRG @ Shanghai Jiao Tong University</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">People</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#paper submission">paper submission</a></li>
+        <li class="breadcrumb-item active" aria-current="page">How to arxiv the paper</li>
+    </ol>
+    </nav>
+</div>
+
+
+<div class="post-image-feature">
+  <img class="feature-image" src=
+  
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/1200px-ArXiv_web.svg.png"
+  
+  alt="How to arxiv the paper feature image"
+  style="max-width: 500px;">
+
+  
+</div><!-- /.image-wrap -->
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="How to arxiv the paper">How to arxiv the paper</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        15 DEC 2021
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <hr>
+  <p></p> 
+
+  <article class="post-content">
+    <h1 id="how-to-submit-a-pre-print-to-arxiv">How to Submit A Pre-print to Arxiv</h1>
+
+<h2 id="some-useful-links">some useful links</h2>
+<ul>
+  <li><a href="https://www.acm.org/publications/openaccess">Open Access Requirement from ACM</a></li>
+  <li><a href="https://www.acm.org/publications/openaccess">Open Access Requirement from IEEE</a></li>
+  <li><a href="https://zonca.dev/2018/05/pearc18-preprint-arxiv.html">arxiv tutorial</a></li>
+  <li><a href="https://rvprasad.medium.com/typesetting-a-document-in-acm-style-for-arxiv-46967b306f2f">Typesetting a document in ACM style for Arxiv</a></li>
+</ul>
+
+<h2 id="submit-to-arxiv-via-overleaf">submit to arxiv via overleaf</h2>
+
+<blockquote>
+  <p>[Note] Suggest to use the overleaf for arxiv submission, as it is simple. More details can be found at <a href="https://www.overleaf.com/learn/how-to/LaTeX_checklist_for_arXiv_submissions">here</a></p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>Within the overleaf project, select the submit button on the upper-right corner.</p>
+  </li>
+  <li>
+    <p>You need to make sure there is no compiling error.</p>
+  </li>
+</ul>
+
+<p>TL,DR</p>
+
+<h2 id="1-do-not-directly-upload-the-camera-ready-version-remove-the-copyright">1. Do not directly upload the camera ready version, remove the copyright.</h2>
+
+<p>For ACM paper, the copyright block can be remove with following command in latex:</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\settopmatter</span><span class="p">{</span>printacmref=false<span class="p">}</span>
+<span class="k">\setcopyright</span><span class="p">{</span>none<span class="p">}</span>
+<span class="k">\renewcommand\footnotetextcopyrightpermission</span><span class="na">[1]</span><span class="p">{}</span>
+<span class="k">\pagestyle</span><span class="p">{</span>plain<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Put the above code before <code class="language-plaintext highlighter-rouge">\maketitle</code></p>
+
+<h2 id="2-create-the-latex-source-file">2. Create the latex source file</h2>
+
+<ul>
+  <li>directly download the latex code from overleaf as <code class="language-plaintext highlighter-rouge">.zip</code> file</li>
+  <li>include the reference file <code class="language-plaintext highlighter-rouge">.bbl</code> in the zip file
+    <ul>
+      <li>in overleaf, it can be found at <code class="language-plaintext highlighter-rouge">logs and output file</code>, and you should download it</li>
+      <li>if the main tex file is <code class="language-plaintext highlighter-rouge">main.tex</code>, make sure the reference is <code class="language-plaintext highlighter-rouge">main.bbl</code></li>
+      <li>unzip the latex file and move the .bbl file into it, then re-compress to a zip file</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3-submit-the-file-to-arxiv">3. Submit the file to Arxiv</h2>
+
+<ul>
+  <li>The Arxiv website is: https://arxiv.org/submit</li>
+  <li>For license:
+    <ul>
+      <li>I prefer to choose
+        <ul>
+          <li><a href="http://creativecommons.org/licenses/by/4.0/">CC BY: Creative Commons Attribution</a></li>
+          <li><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA: Creative Commons Attribution-Noncommercial-ShareAlike</a></li>
+        </ul>
+      </li>
+      <li>the above license prohibit the commercial use</li>
+    </ul>
+  </li>
+  <li>Something to note:
+    <ul>
+      <li>make sure all files do not contain space</li>
+    </ul>
+  </li>
+</ul>
+
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/paper%20submission/2021/12/15/how_to_arxiv.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/paper%20submission/2021/12/15/how_to_arxiv.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/paper%20submission/2021/12/15/how_to_arxiv.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/paper%20submission/2021/12/15/how_to_arxiv.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>ICRG@SJTU</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<!-- <p></p> 
+					<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+					 style="max-width: 275px;"> -->
+					<p style="width: 250px;">
+						<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&cl=ffffff&w=a"></script> -->
+						<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+					</p>
+				</div>
+				<!-- <p>ICRG@SJTU is currently at Department of Computer Science and Engineering at Shanghai Jiao Tong University</p> -->
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<li><a href="/vacancies">Vacancies</a></li>
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhi.he@sjtu.edu.cn"><i class="fas fa-paper-plane"></i></a> zhezhi.he at sjtu dot edu dot cn</p>
+				<p><a href="https://j.map.baidu.com/fc/Sil"><i class="fas fa-map-marked-alt"></i></a> 800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2022 ICRG@SJTU. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+
+		<div>
+			<p class="text-center">
+			<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+			style="max-width: 275px;">
+			</p>
+		</div>
+
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
