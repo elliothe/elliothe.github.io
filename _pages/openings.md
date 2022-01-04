@@ -14,11 +14,15 @@ Benefits of joining ICRG:
 - Collaborative and active team atmosphere.
 - Work on topics that matters.
 - Build extraordinary research skills. -->
+## Motto
+- You never know if you do not try.
+- “取法于上，仅得为中，取法于中，故为其下” --- 李世民《帝范》
 
-## 对成员的期望：
-- 出于兴趣选择科研，并珍视自己的工作。
-- 自我驱动。自驱的将工作做到精益求精
-- 具有良好的逻辑分析能力。对于从事过的项目能够说清楚宏观意义，关键问题，解决方案和自己相应的贡献。
+----
+## Expectation to Prospective Member (对成员的期望)：
+- Motivated by your interest and value your work -- 出于兴趣选择科研，并珍视自己的工作。
+- Self-motivated for high-quality research -- 自我驱动的将工作做到精益求精。
+- Outstanding logical and analytical skills -- 具有良好的逻辑分析能力。对于从事过的项目能够说清楚宏观意义，关键问题，解决方案和自己相应的贡献。
 
 <!-- ### Vacancies
 
@@ -39,7 +43,7 @@ ICRG希望招收对计算机系统架构和集成电路设计方法学感兴趣�
     4. 芯片测试: 包括芯片封装/COB及测试PCB设计 (例如使用Altium designer, Cadence Allegro)，芯片选型，使用示波器与逻辑分析仪，并与FPGA开发版集成进行测试。
     5. 算法部署：神经网络模型的训练与部署，神经网络的一些模型压缩的技术（量化，压缩等）。了解设计空间探索的算法（贝叶斯优化，强化学习等）。
 
-- 在计算机体系架构，集成电路，电子设计自动化领域有论文发表
+- 在计算机体系架构，集成电路，电子设计自动化领域有论文发表。
 
 -------
 ### 招收本科研究助理 -- 智能芯片

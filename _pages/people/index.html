@@ -1,7 +1,7 @@
 ---
 title: "People"
 layout: default
-excerpt: "ARCL: Team members"
+excerpt: "ICRG: Team members"
 sitemap: false
 permalink: /people/
 ---
@@ -37,30 +37,32 @@ permalink: /people/
 <!-- Graduate Students -->
 
 <h2><a id="Graduate Student"></a>Graduate Student</h2>
+<!-- <div class="card-deck two-col"> -->
 {% assign members = site.posts | where: 'category', 'graduate student' | sort: 'date' %}
 {% for member in members %}
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(0%); max-width: 100px;"/>
-            </a>
-        </div>
+    <div class="card team-member-card">
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <a href={{member.url}}>
+                    <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
+                        class="card-img img-responsive img-thumbnail"
+                        style="filter: grayscale(0%); max-width: 100px;"/>
+                </a>
+            </div>
 
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.c_name }}</p>
-            <p class="card-text">{{ member.role }}</p>
+            <div class="col-md-10">
+                <div class="card-body">
+                <h4 class="card-title">{{ member.title }}</h4>
+                <p class="card-text">{{ member.c_name }}</p>
+                <p class="card-text">{{ member.role }}</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 {% endfor %}
 
+<!-- </div> -->
 
 <!-- Undergraduate Students -->
 
