@@ -3,9 +3,10 @@ layout: member
 category: undergraduate student
 title: Qisheng Tan
 c_name: 谭淇升
-image: researcher.png
+image: qisheng_tan.png
 role: Undergraduate Student
 permalink: 'people/qisheng-tan'
+research_topic: 'Digital Design'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/

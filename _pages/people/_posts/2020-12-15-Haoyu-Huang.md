@@ -1,11 +1,12 @@
 ---
 layout: member
-category: undergraduate student
+category: former
 title: Haoyu Huang
 c_name: 黄皓俞
 image: researcher.png
 role: Undergraduate Student
 permalink: 'people/haoyu-huang'
+research_topic: Architecture Modeling
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
