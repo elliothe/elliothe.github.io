@@ -1,11 +1,12 @@
 ---
 layout: member
-category: graduate student
+category: staff
 title: Chenyu Tang
 c_name: 汤晨宇
 image: chenyu_tang.jpg
 role: Master Student
 permalink: 'people/chenyu-tang'
+research_topic: High-Performance Computing
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/

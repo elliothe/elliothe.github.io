@@ -28,11 +28,15 @@ permalink: /blog/
     site.posts | where: 'layout', 'post' | group_by_exp:"post", "post.date | date: '%Y'" %}
   {% for year in postsByYear %}
   <h4>{{ year.name }}</h4>
+  <div class='row'>
     <ul>
       {% for post in year.items %}
+        <div class='col-md-6'>
         <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        </div>
       {% endfor %}
     </ul>
+  </div>
   {% endfor %}
 </div>
 
@@ -46,15 +50,20 @@ permalink: /blog/
     <div class="tag-group">
       {% capture tag_name %}{{ tag | first }}{% endcapture %}
       <h4 class="tag-group-title" id="{{ tag_name | slugize }}">{{ tag_name }}</h4>
+      <div class='row'>
       {% for post in site.tags[tag_name] %}
+      <div class='col-md-6'>
       <article class="tag-item">
         <a class="tag-item-title" href="{{ site.url }}{{ post.url }}">{{post.title}}</a>
       </article>
+      </div>
       {% endfor %}
+      </div>
     </div>
   {% endfor %}
 </div>
 
+<hr>
 
 
   <!-- <div class="tag-list">

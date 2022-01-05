@@ -1,11 +1,12 @@
 ---
 layout: member
-category: graduate student
+category: staff
 title: Chenyang Lv
 c_name: 吕晨阳
 image: chenyang_lv.jpg
 role: Master Student
 permalink: 'people/chenyang-lv'
+research_topic: Deep Learning
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/

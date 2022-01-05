@@ -29,21 +29,18 @@ To be added.
 To be added. -->
 
 
-Current research interests focuses on:
-<!-- - [Algorithm](#algorithm) -->
 
+
+Current research interests focuses on:
 - <a href="{{ site.url }}{{ site.baseurl }}/research/algorithm">Algorithm</a>
-    * Efficiet and Secure Machine Learning
-        - Neural Network Compression
-        - Adversarial Attack & Defense
-- <a href="{{ site.url }}{{ site.baseurl }}/research/research/arch-and-circuit/">Architecture & Circuit</a>
-    * In-memory Computing
-    * Brian-inspired Neuromorphic Computing
-    * Machine Learning Aided Design Automation
-- [Device](#device)
-    * Post-CMOS Emerging Devices
-        - Spintronics 
-        - ReRAM
+    * Efficiency and Security in Machine Learning (机器学习的能效与安全)
+    * Algorithm for Intelligent System (智能系统算法)
+- <a href="{{ site.url }}{{ site.baseurl }}/research/arch-and-circuit">Architecture & Circuit</a>
+    * Processing-in-Memory (存内计算/存算一体)
+    * Brian-inspired Neuromorphic Computing (神经模态计算)
+    * Machine Learning Aided Electronics Design Automation (机器学习辅助电子设计自动化)
+- <a href="{{ site.url }}{{ site.baseurl }}/research/device">Device</a>
+    * Post-CMOS Emerging Devices (后CMOS新型器件)
 
 ------------------------
 <!-- 

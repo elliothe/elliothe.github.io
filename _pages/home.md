@@ -6,21 +6,12 @@ sitemap: false
 permalink: /
 ---
 
-------
-### Recruitment 
-
-__We are constantly looking for new group members (undergraduates or graduats) who are interested in intelligent computing, electronic design automation and computer architecture!__ Email me or drop by my office if you are interested.
-
-招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
-- <font color=red>Multiple funded graduate research Assistant positions available! 2022年有多个硕士研究生名额，欢迎对ICRG的研究感兴趣的同学报考。</font>
-- 招收本科研究助理，从事芯片架构设计与流片，图神经网络的研究。
-
 ------------------------
-### About the Group
+<!-- ### About the Group -->
 
-The mission of __Intelligent Computing Research Group__ (ICRG), a subgroup under the Advanced Computer Architecture Laboratory (ACA-Lab), is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ICRG conduct the cross-layer research which spans across algorithms, software stack, architecture, circuit, and device.
+The mission of __Intelligent Computing Research Group (ICRG)__, a subgroup under the Advanced Computer Architecture Laboratory (ACA-Lab), is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ICRG conduct the interdisciplinary research which spans across algorithms, software stack, architecture, circuit, and device.
 
-
+<!-- 
 
 Current research interests focuses on:
 - **Algorithm**
@@ -31,9 +22,23 @@ Current research interests focuses on:
     * Brian-inspired Neuromorphic Computing (神经模态计算)
     * Machine Learning Aided Electronics Design Automation (机器学习辅助电子设计自动化)
 - **Device**
-    * Post-CMOS Emerging Devices (后CMOS新型器件)
+    * Post-CMOS Emerging Devices (后CMOS新型器件) -->
 
 
 <p align="right">
 <small><a href="{{ site.url }}{{ site.baseurl }}/research"> ... see more</a></small>
 </p>
+
+------
+#### Recruitment 
+We are constantly looking for new group members (graduats and undergraduates) who are interested in intelligent computing, electronic design automation and computer architecture! Email me or drop by my office if you are interested.
+
+招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
+- <font color=red>Multiple funded graduate research assistant positions available. 2022年有多个硕士研究生名额，欢迎对ICRG的研究感兴趣的同学报考。</font>
+- 招收本科研究助理，从事芯片架构设计与流片，图神经网络的研究。
+
+
+<p align="right">
+<small><a href="{{ site.url }}{{ site.baseurl }}/vacancies"> ... see more</a></small>
+</p>
+------------------------
