@@ -58,6 +58,10 @@
     <a href="{{ entry.preprint }}"><input class="button2" type="button" value="Preprint" /></a>
 {% endif %}
  
+{% if entry.slides %}
+    <a href="{{ entry.slides }}"><input class="button5" type="button" value="slides" /></a>
+{% endif %}
+
 {% if entry.link %}
     <a href="{{ entry.link }}"><input class="button4" type="button" value="Link" /></a>
 {% endif %}
