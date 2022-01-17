@@ -2612,6 +2612,8 @@ figcaption { text-align: right; margin-top: -20px; margin-bottom: 20px; }
 
 .button4 { background-color: #d3585e; border: none; color: white; padding: 4px 8px; text-align: center; text-decoration: none; display: inline-block; font-size: 10px; font-weight: bold; margin: 2px 1px; cursor: pointer; border-radius: 5px; }
 
+.button5 { background-color: #587fd3; border: none; color: white; padding: 4px 8px; text-align: center; text-decoration: none; display: inline-block; font-size: 10px; font-weight: bold; margin: 2px 1px; cursor: pointer; border-radius: 5px; }
+
 .bibliography { margin-bottom: 50px; margin-top: 20px; list-style-type: circle; }
 
 .bibliography li { margin: 10px 0; position: relative; }
