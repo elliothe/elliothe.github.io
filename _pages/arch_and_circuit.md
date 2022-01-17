@@ -10,6 +10,14 @@ permalink: /research/arch-and-circuit/
 
 ----
 
-## Efficient and Secure Machine Learning
+Conventional computing architecture has gradually reaching, especially for the data-centric computinng tasks.
 
-### Neural Network Compression
+
+
+## 1. Processing-in-Memory (aka 存内计算，存算一体)
+
+Processing-in-Memory is an emerging computing architecture paradigm that  
+
+## 2. Brian-inspired Neuromorphic Computing
+
+## 3. Machine Learning Aided Electronics Design Automation
