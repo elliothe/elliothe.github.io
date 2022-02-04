@@ -1,8 +1,15 @@
+- date: Feb./5/2022
+  title: "Best Paper Award from DATE 2022"
+  tags:
+    - Award
+  content: Our paper titled "Self-Terminated Write of Multi-Level Cell ReRAM  for Efficient Neuromorphic Computing" receives Best Paper Award from DATE 2022.
+
+
 - date: Oct./1/2021
   title: "Zhezhi serves as TPC for DAC 2022"
   tags:
     - Misc
-  content: Zhezhi He will serve as a technical program committee member for design automation coonference 2022.
+  content: Zhezhi He will serve as a technical program committee member for design automation conference 2022.
 
 
 - date: Aug./20/2021
