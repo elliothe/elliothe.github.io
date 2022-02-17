@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ICRG @ Shanghai Jiao Tong University - Configuration of Port Forwarding</title>
-  <meta name="description" content="Port Fowarding">
+  <title>ICRG @ Shanghai Jiao Tong University - General Matrix Multiplication</title>
+  <meta name="description" content="GEMM">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="/tutorial/2021/01/02/port-forwarding.html">
+  <link rel="canonical" href="/tutorial/2022/02/16/GEMM.html">
   <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
   <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
   <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
@@ -69,7 +69,7 @@
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
         <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Configuration of Port Forwarding</li>
+        <li class="breadcrumb-item active" aria-current="page">General Matrix Multiplication</li>
     </ol>
     </nav>
 </div>
@@ -79,10 +79,10 @@
 
 <div id="post">
   <header class="post-header">
-    <h2 title="Configuration of Port Forwarding">Configuration of Port Forwarding</h2>
+    <h2 title="General Matrix Multiplication">General Matrix Multiplication</h2>
     <span class="post-meta">
       <span class="post-date">
-        2 JAN 2021
+        16 FEB 2022
       </span>
       •
       <span class="read-time" title="Estimated read time">
@@ -99,31 +99,17 @@
   <p></p> 
 
   <article class="post-content">
-    <p>Problem:</p>
-
+    <p>List of the Content:</p>
 <ul>
-  <li>Only single Ethernet jack in the Lab.</li>
-  <li>Use the router (cisco brand) for ethernet connectio.</li>
-  <li>Need to access the server or the desktop remotely through SSH.</li>
+  <li><a href="##Introduction">Introduction</a></li>
+  <li><a href="##math_equation">Mathematical Equation</a></li>
 </ul>
 
-<p>Here we consider the solution of Port Forwarding (端口映射).</p>
+<h2 id="-introduction"><a name="Introduction"></a> Introduction</h2>
 
-<p>Assuming the connection medium: Laptop =&gt; Router =&gt; Server. The default port used is 22 if not specified.</p>
+<p>General Matrix Multiplication (GEMM)</p>
 
-<ol>
-  <li>Choose single port forwarding.</li>
-  <li>Map the internal port 22 of server (e.g., 192.168.1.X) to a external port (777 for example)</li>
-  <li>Perform the ssh access as:</li>
-</ol>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ssh elliot@{Public-IP} -p 777
-</code></pre></div></div>
-
-<p>Some useful links:</p>
-<ul>
-  <li><a href="https://blog.csdn.net/honululu/article/details/78127107">设置路由器 从外网访问内网服务器 端口映射</a></li>
-</ul>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msubsup><mo>∫</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mi mathvariant="normal">∞</mi></msubsup><mover accent="true"><mi>f</mi><mo>^</mo></mover><mo stretchy="false">(</mo><mi>ξ</mi><mo stretchy="false">)</mo><mtext> </mtext><msup><mi>e</mi><mrow><mn>2</mn><mi>π</mi><mi>i</mi><mi>ξ</mi><mi>x</mi></mrow></msup><mtext> </mtext><mi>d</mi><mi>ξ</mi></mrow><annotation encoding="application/x-tex">f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x} \,d\xi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.384573em;vertical-align:-0.970281em;"></span><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;position:relative;top:-0.0011249999999999316em;">∫</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.414292em;"><span style="top:-1.7880500000000001em;margin-left:-0.44445em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">∞</span></span></span></span><span style="top:-3.8129000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">∞</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.970281em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9578799999999998em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span><span style="top:-3.26344em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.08332999999999999em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.04601em;">ξ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8991079999999999em;"><span style="top:-3.1130000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight">πi</span><span class="mord mathnormal mtight" style="margin-right:0.04601em;">ξ</span><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.04601em;">ξ</span></span></span></span></span>
 
   </article>
 </div>
@@ -132,16 +118,16 @@
   <h6>Share on: </h6>
   <ul>
     <li>
-      <a href="https://twitter.com/intent/tweet?text=/tutorial/2021/01/02/port-forwarding.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2022/02/16/GEMM.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
     </li>
     <li>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2021/01/02/port-forwarding.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2022/02/16/GEMM.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
     </li>
     <li>
-      <a href="https://plus.google.com/share?url=/tutorial/2021/01/02/port-forwarding.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+      <a href="https://plus.google.com/share?url=/tutorial/2022/02/16/GEMM.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
     </li>
     <li>
-      <a href="https://www.reddit.com/submit?url=/tutorial/2021/01/02/port-forwarding.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2022/02/16/GEMM.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
 </div> -->
