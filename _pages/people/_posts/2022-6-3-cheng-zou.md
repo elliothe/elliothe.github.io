@@ -4,7 +4,7 @@ category: staff
 title: Cheng Zou
 c_name: 邹铖
 image: cheng_zou.jpg
-role: Undergraduate Student
+role: Master Student
 permalink: 'people/cheng-zou'
 research_topic: 'Domain Specific Accelerator'
 social:
@@ -19,7 +19,7 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2022 &nbsp; B.S., Computer Science, Nanjing University Of Finance & Economics.
+- 2022 &nbsp; B.S., Computer Science, Nanjing University of Finance & Economics.
 
 
 
