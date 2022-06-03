@@ -1,12 +1,12 @@
 ---
 layout: member
 category: staff
-title: Chenyang Lv
-c_name: 吕晨阳
-image: chenyang_lv.jpg
+title: Boning Zhang
+c_name: 张博宁
+image: boning_zhang.jpeg
 role: Master Student
-permalink: 'people/chenyang-lv'
-research_topic: ML for EDA
+permalink: 'people/boning-zhang'
+research_topic: 'Artificial Intelligence'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -19,11 +19,8 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2014 &nbsp; B.S., Computer Science and Technology, [Hunan Normal University](https://www.hunnu.edu.cn/), Changsha, China.
-
-
+- 2023 &nbsp; B.S., Software Engineering, South China University of Technology
 
 
 ### Expertise
-- reinforcement learning
-- Machine Learning for electronics design automation
+- perception
