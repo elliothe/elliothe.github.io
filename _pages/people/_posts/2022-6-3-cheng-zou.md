@@ -1,12 +1,12 @@
 ---
 layout: member
 category: staff
-title: Chenyang Lv
-c_name: 吕晨阳
-image: chenyang_lv.jpg
-role: Master Student
-permalink: 'people/chenyang-lv'
-research_topic: ML for EDA
+title: Cheng Zou
+c_name: 邹铖
+image: cheng_zou.jpg
+role: Undergraduate Student
+permalink: 'people/cheng-zou'
+research_topic: 'Domain Specific Accelerator'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -19,11 +19,10 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2014 &nbsp; B.S., Computer Science and Technology, [Hunan Normal University](https://www.hunnu.edu.cn/), Changsha, China.
-
+- 2022 &nbsp; B.S., Computer Science, Nanjing University Of Finance & Economics.
 
 
 
 ### Expertise
-- reinforcement learning
-- Machine Learning for electronics design automation
+- Domain Specific Accelerator
+- FPGA
