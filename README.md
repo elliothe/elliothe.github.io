@@ -17,6 +17,7 @@ Clone this repository, then install the dependencies:
 
 ``` bash
 bundle install
+bundle add webrick
 ```
 
 ## Run

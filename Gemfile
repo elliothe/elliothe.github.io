@@ -10,3 +10,4 @@ gem 'jekyll-sitemap' # Silently generate a sitemaps.org compliant sitemap
 gem 'kramdown-math-katex'
 gem 'katex'
 gem 'execjs'
+gem "webrick", "~> 1.7"
