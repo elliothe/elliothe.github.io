@@ -1,12 +1,12 @@
 ---
 layout: member
-category: former
-title: Qisheng Tan
-c_name: 谭淇升
-image: qisheng_tan.png
+category: undergraduate student
+title: Tianhao Xu
+c_name: 徐天昊
+image: tianhao_xu.jpg
 role: Undergraduate Student
-permalink: 'people/qisheng-tan'
-research_topic: 'Digital Design'
+permalink: 'people/tianhao-xu'
+research_topic: 'Processing-in-Memory'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -19,10 +19,12 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2023 &nbsp; B.S., Electrical Engineering, Shanghai Jiao Tong University.
+- 2023 &nbsp; B.S., Computer Science and Technology, University of Chinese Academy of Sciences.
 
 
 
 
 ### Expertise
-- Machine Learning for EDA
+- Computer Architecture (CPU, Cache, etc.)
+- FPGA
+- Digital Design 
