@@ -6,7 +6,7 @@ c_name: 汤晨宇
 image: chenyu_tang.jpg
 role: Master Student
 permalink: 'people/chenyu-tang'
-research_topic: High-Performance Computing
+research_topic: SW of Processing-in-Memory
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -25,4 +25,4 @@ social:
 
 
 ### Expertise
-- Software-stack for Acceleration of Data-intensive Application
+- Software-stack for Processing-in-Memory

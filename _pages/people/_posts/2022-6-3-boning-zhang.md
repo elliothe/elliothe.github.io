@@ -6,7 +6,7 @@ c_name: 张博宁
 image: boning_zhang.jpeg
 role: Master Student
 permalink: 'people/boning-zhang'
-research_topic: 'Artificial Intelligence'
+research_topic: 'Intelligent Vision System'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -23,4 +23,6 @@ social:
 
 
 ### Expertise
-- perception
+- Computer Vision
+- Machine Learning
+- FPGA

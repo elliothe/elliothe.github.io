@@ -25,5 +25,5 @@ social:
 
 
 ### Expertise
-- reinforcement learning
 - Machine Learning for electronics design automation
+- Reinforcement Learning
