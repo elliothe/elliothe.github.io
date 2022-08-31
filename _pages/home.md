@@ -35,7 +35,7 @@ We are constantly looking for new group members (graduats and undergraduates) wh
 
 招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
 - <font color=red>Multiple funded graduate research assistant positions available. 2022年有多个硕士研究生名额，欢迎对ICRG的研究感兴趣的同学报考。</font>
-- 招收本科研究助理，从事芯片架构设计与流片，图神经网络的研究。
+- 招收本科研究助理，从事芯片架构设计，电子设计自动化(EDA)的研究。
 
 
 <p align="right">
