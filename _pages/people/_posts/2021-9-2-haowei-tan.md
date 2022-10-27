@@ -1,6 +1,6 @@
 ---
 layout: member
-category: staff
+category: former
 title: Tan Hao Wei
 c_name: 陈浩惟
 image: haowei_tan.jpeg
