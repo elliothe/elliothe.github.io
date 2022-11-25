@@ -61,10 +61,7 @@ Note that, CACTI has undergoing seven versions, it is better to fully understand
 
 Based on the above evolution, the technical report of version 5.1 is the best option to understand the cache and memory.
 
-
-
-## <a name="CACTI Setuo"></a> CACTI Setup
-
+In addition to the circuit-level evaluation functionality provided by the CACTI and Nvsim, you may be also interested in evaluate the temperature issue of the 3D stacked memory. For that kind of evaluation, you may need to use [3D-ICE (3D Interlayer Cooling Emulator)](https://github.com/esl-epfl/3d-ice).
 
 
 References
