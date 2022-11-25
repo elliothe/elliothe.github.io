@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICRG @ Shanghai Jiao Tong University - Memory Simulator</title>
+  <meta name="description" content="MS">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/tutorial/2022/08/03/memory-simulator.html">
+  <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+  <!--KaTeX-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">ICRG @ Shanghai Jiao Tong University</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">Team</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Memory Simulator</li>
+    </ol>
+    </nav>
+</div>
+
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="Memory Simulator">Memory Simulator</h2>
+    <span class="post-meta">
+      <span class="post-date">
+        3 AUG 2022
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      3 mins read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <hr>
+  <p></p> 
+
+  <article class="post-content">
+    <p>List of the Content:</p>
+<ul>
+  <li><a href="##Introduction">Introduction</a></li>
+  <li><a href="##Memory_Simulators">Memory Simulators</a></li>
+</ul>
+
+<h2 id="-introduction"><a name="Introduction"></a> Introduction</h2>
+<p align="center">
+<img src="/images/blog/42-years-of-microprocessor-trend-data.png" alt="drawing" width="700" />
+</p>
+<p align="center">
+    <em>Figure: The development of computer processor in last 42 years.</em>
+</p>
+
+<p>The performance of the general-purporse processor (i.e., CPU with Von-Neumann architecture) has been significantly improved in the last ~40 years (since 1970s), however gradually slowing down in recent years. In addition to the cause of “End of Dennard Scaling” and “End of Moore’s Law” (which is actually not, due to 3D-transistor and 3D-stacking technology), the “memory wall” is the main bottleneck.</p>
+
+<p align="center">
+<img src="/images/blog/Memory-Access-vs-CPU-Speed.png" alt="drawing" width="500" />
+</p>
+<p align="center">
+    <em>Figure: The Performance (speed-up) gap between CPU and main memory (DRAM) [1].</em>
+</p>
+
+<p>As shown in the above figure, in the current trend, whatever how fast the CPU computes, it still need to communicate with the main memory (data read/write). In current memory hierarchy, normally one computation consumes much energy and latency, compared to one operation. Thus, in this blog, we plan to use the popular memory simulators, CACTI and Nvsim, to understand current memory hierarchy.</p>
+
+<h2 id="-memory-simulators"><a name="Memory Simulators"></a> Memory Simulators</h2>
+
+<p><a href="https://github.com/HewlettPackard/cacti">CACTI</a> is a tool to model caches/memories, 3D stacking, and off-chip IP. It is orginally develop by HP Lab (Dr. Jouppi who also lead the TPU design as well). <a href="https://github.com/SEAL-UCSB/NVSim">Nvsim</a> is its successor (developed by Dr. Yuan Xie’s group) which focus on the emerging memories.</p>
+
+<blockquote>
+  <p>The CACTI mainly used for cache, but support eDRAM lately. However, for different DRAM technology, <a href="https://github.com/CMU-SAFARI/ramulator">Ramulator</a> from Dr. Onur Mutlu’s group is a better option.</p>
+</blockquote>
+
+<p>Note that, CACTI has undergoing seven versions, it is better to fully understand the memory organization by go through the documents for different version. Their links are included as follows:</p>
+<ul>
+  <li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=509850">Version 1.0 @ 1996</a>: Enhanced cache access and cycle time model.</li>
+  <li><a href="https://arch.cs.utah.edu/cacti/cacti2.pdf">Version 2.0 @ 2000</a>: support for fully-associative caches, a cache power model, technology scaling, multi-ported caches, improved tag comparison circuits, and etc.</li>
+  <li><a href="https://www.hpl.hp.com/research/cacti/cacti3.pdf">Version 3.0 @ 2001</a>: Integrating models of cache access time, cycle time, area, aspect ratio and power.</li>
+  <li><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.124.5177&amp;rep=rep1&amp;type=pdf">Version 4.0 @ 2004</a>: Add a model for leakage power and update\s the basic circuit structure and device parameters to better reflect the advances in scaling semiconductors.</li>
+  <li><a href="https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.408.4036&amp;rep=rep1&amp;type=pdf">Verison 5.1 @ 2008</a>:
+    <ul>
+      <li>Due to technology scaling is in deep-submicro, change base technology modeling from simple linear scaling to models of ITRS roadmap.</li>
+      <li>Supprot DRAM memory modeling.</li>
+      <li>Modular code re-organization for fair comparison of SRAM and DRAM.</li>
+    </ul>
+  </li>
+  <li><a href="https://www.hpl.hp.com/techreports/2009/HPL-2009-85.pdf">Version 6.0 @ 2009</a>:
+    <ul>
+      <li>Add interconnect design for large caches.</li>
+      <li>Support NUCA (Non-unifrom Cache Access is for multi-processor chip)</li>
+      <li>model different types of wires (e.g., RC based wires with different power, delay, and area; plus differential low-swing buses.)</li>
+    </ul>
+  </li>
+  <li><a href="https://dl.acm.org/doi/abs/10.1145/3085572">Version 7.0 @ 2017</a>:
+    <ul>
+      <li>CACTI 7: New Tools for Interconnect Exploration in Innovative Off-Chip Memories</li>
+      <li>CACTI-IO: CACTI With OFF-chip Power-Area-Timing Models</li>
+      <li>MemCAD: An Interconnect Exploratory Tool for Innovative Memories Beyond DDR4</li>
+      <li>CACTI-3DD: Architecture-level modeling for 3D die-stacked DRAM main memory</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Based on the above evolution, the technical report of version 5.1 is the best option to understand the cache and memory.</p>
+
+<p>In addition to the circuit-level evaluation functionality provided by the CACTI and Nvsim, you may be also interested in evaluate the temperature issue of the 3D stacked memory. For that kind of evaluation, you may need to use <a href="https://github.com/esl-epfl/3d-ice">3D-ICE (3D Interlayer Cooling Emulator)</a>.</p>
+
+<h2 id="references">References</h2>
+<p>[1] Bahi, Mouad, and Christine Eisenbeis. “High performance by exploiting information locality through reverse computing.” 2011 23rd International Symposium on Computer Architecture and High Performance Computing. IEEE, 2011.</p>
+
+<p>[2] Muralimanohar, Naveen, Rajeev Balasubramonian, and Norman P. Jouppi. “CACTI 6.0: A tool to model large caches.” HP laboratories 27 (2009): 28.</p>
+
+<p>[3] CACTI 7.0 webpage: https://www.cs.utah.edu/~rajeev/cacti7/</p>
+
+<p>[4] CACTI and NVSIM tutorial: https://blog.csdn.net/m0_37921318/article/details/124721894</p>
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2022/08/03/memory-simulator.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2022/08/03/memory-simulator.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/tutorial/2022/08/03/memory-simulator.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2022/08/03/memory-simulator.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>ICRG@SJTU</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<!-- <p></p> 
+					<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+					 style="max-width: 275px;"> -->
+					<p style="width: 250px;">
+						<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&cl=ffffff&w=a"></script> -->
+						<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+					</p>
+				</div>
+				<!-- <p>ICRG@SJTU is currently at Department of Computer Science and Engineering at Shanghai Jiao Tong University</p> -->
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<li><a href="/vacancies">Vacancies</a></li>
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhi.he@sjtu.edu.cn"><i class="fas fa-paper-plane"></i></a> zhezhi.he at sjtu dot edu dot cn</p>
+				<p><a href="https://j.map.baidu.com/fc/Sil"><i class="fas fa-map-marked-alt"></i></a> 800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2022 ICRG@SJTU. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+
+		<div>
+			<p class="text-center">
+			<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+			style="max-width: 275px;">
+			</p>
+		</div>
+
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
