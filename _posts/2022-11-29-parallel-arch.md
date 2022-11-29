@@ -1,9 +1,12 @@
 ---
 layout: post
-title: 'Parallel Computer Architecture -- SIMT and SIMD  '
-excerpt: PA
+title: "Parallel Computer Architecture -- SIMT and SIMD"
+excerpt: "some discussion about SIMD and SIMT"
+date:   2022-11-29 15:0:0
 categories:
-    - tutorial
+    - [discussion]
+tags:
+    - [discussion]
 author: 'Elliot He'
 comments: true
 ---  
@@ -37,7 +40,7 @@ This blog we mainly focus on discussing the difference between SMID and SIMT.
 Based on the description in wikipedia, SIMD denotes a single insturction is simutaneously applied to multiple different data stream. SIMD improve the data-level parallelism as it allow multiple data to be processed simutaneously (reduce #clock-cycles compared to its sequential counterpart).
 
 <p align="center">
-<img src="../images/blog/SIMT/SIMD.png" alt="drawing" width="300"/>
+<img src="/images/blog/SIMT/SIMD.png" alt="drawing" width="300"/>
 </p>
 <p align="center">
     <em>Figure: Illustration of SIMD architecture, and each Processing Unit (PU) is shown for a uni-core or multi-core computer. As all the PUs fetch the data from the data pool (central memory), we can consider it is a pipelined processor under the SIMD category. The cluster of PUs can be considered as a vector unit.</em>
@@ -57,7 +60,7 @@ In Flynn's paper (1972), the SIMD architeture is further divided into:
 SMIT is defined in Flynn's taxonomy, which cites SOLOMON and ILLIAC IV as the representative SIMT processor in its paper.
 
 <p align="center">
-<img src="../images/blog/SIMT/SIMD-and-SIMT-data-parallelism.webp" alt="drawing" width="700"/>
+<img src="/images/blog/SIMT/SIMD-and-SIMT-data-parallelism.webp" alt="drawing" width="700"/>
 </p>
 <p align="center">
     <em>Figure: CPU use SIMD and GPU use SIMT for parallel processing. </em>
@@ -68,13 +71,13 @@ SMIT is defined in Flynn's taxonomy, which cites SOLOMON and ILLIAC IV as the re
 
 ASP consider itself as "massive wide SIMD" but had bit-level ALUs and bit-level prediction (i.e., associative processing). Need an additional blog to discuss the details of ASP.
 
-> One thing I notice which is interesting that the writer show the ASP achieve 100~1000MOPS/\$1000, where we should always focus on computing power/\$. This also leads the memory industry as well (bit/\$).
+> One thing I notice which is interesting that the writer show the ASP achieve 100~1000MOPS/$\\$ 1000$, where we should always focus on computing power/$\\$ $. This also leads the memory industry as well (bit/$\\$ $).
 
 ## Simutaneous Multithreading (SMT) and Hyperthreading (HT) for ILP
 SMT and HT are the same but used/introduced by differnet companies, where SMT is introduced by AMD, and HT is introduced by Intel. The SMT is a technique to improve the efficiency of superscalar CPU with hardware multi-threading.
 
 <p align="center">
-<img src="../images/blog/SIMT/2way_superscalar.png" alt="drawing" width="500"/>
+<img src="/images/blog/SIMT/2way_superscalar.png" alt="drawing" width="500"/>
 </p>
 <p align="center">
     <em>Figure: Two way superscalar processor. Two instructions are fetched and decoded in two-way superscalar CPU. 1st instruction is an integer or memory access, and 2nd instruction is floating-point instruction. </em>
@@ -82,9 +85,9 @@ SMT and HT are the same but used/introduced by differnet companies, where SMT is
 
 
 <p align="center">
-<img src="../images/blog/SIMT/SMT1.png" alt="drawing" width="200"/>
-<img src="../images/blog/SIMT/SMT2.png" alt="drawing" width="200"/>
-<img src="../images/blog/SIMT/SMT3.png" alt="drawing" width="200"/>
+<img src="/images/blog/SIMT/SMT1.png" alt="drawing" width="250"/>
+<img src="/images/blog/SIMT/SMT2.png" alt="drawing" width="250"/>
+<img src="/images/blog/SIMT/SMT3.png" alt="drawing" width="250"/>
 </p>
 <p align="center">
     <em>Figure: Without SMT, only single thread can run at any given time. Even with SMT, INT/FP arithmetic unit cannot run two operations both in INT/FP.
@@ -95,7 +98,7 @@ SMT and HT are the same but used/introduced by differnet companies, where SMT is
 
 
 <p align="center">
-<img src="../images/blog/SIMT/VLIW.webp" alt="drawing" width="500"/>
+<img src="/images/blog/SIMT/VLIW.webp" alt="drawing" width="500"/>
 </p>
 <p align="center">
     <em>Figure: A classic architecture with VLIW execution model. </em>
