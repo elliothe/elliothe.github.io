@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICRG @ Shanghai Jiao Tong University - Parallel Computer Architecture -- SIMT and SIMD  </title>
+  <meta name="description" content="PA">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/tutorial/2022/11/29/parallel-arch.html">
+  <!-- <link rel="shortcut icon" type ="image/x-icon" href="/images/favicon.ico"> -->
+  <link rel="shortcut icon" type ="image/x-icon" href="/images/logo/sjtu_square_logo.ico">
+  <script src="https://kit.fontawesome.com/a24320d871.js" crossorigin="anonymous"></script>
+
+  <!--KaTeX-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+
+
+
+</head>
+
+
+
+
+
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+		<span class="sr-only">Toggle navigation</span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+
+    <a class="navbar-brand" href="/">ICRG @ Shanghai Jiao Tong University</a>
+	</div>
+	<div class="collapse navbar-collapse" id="navbar-collapse-1">
+	  <ul class="nav navbar-nav navbar-right">
+		<li><a href="/">Home</a></li>
+		<li><a href="/people">Team</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/research">Research</a></li>
+		<li><a href="/publications">Publications</a></li>
+	  </ul>
+	</div>
+  </div>
+</div>
+
+
+    <div class="container-fluid">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class=row>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+        <li class="breadcrumb-item text-capitalize"><a href="/blog#tutorial">tutorial</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Parallel Computer Architecture -- SIMT and SIMD  </li>
+    </ol>
+    </nav>
+</div>
+
+
+
+
+<div id="post">
+  <header class="post-header">
+    <h2 title="Parallel Computer Architecture -- SIMT and SIMD  ">Parallel Computer Architecture -- SIMT and SIMD  </h2>
+    <span class="post-meta">
+      <span class="post-date">
+        29 NOV 2022
+      </span>
+      •
+      <span class="read-time" title="Estimated read time">
+    
+    
+      4 mins read
+    
+  </span>
+    </span>
+  </header>
+
+  <!-- add dummy space -->
+  <hr>
+  <p></p> 
+
+  <article class="post-content">
+    <!-- List of the Content:
+- [Introduction](##Introduction )
+- [Memory Simulators](##Memory_Simulators ) -->
+
+<h2 id="-introduction"><a name="Introduction"></a> Introduction</h2>
+
+<p>In modern data intensive computing, the parallel computing capability is critical for high-performance computing architecture. According to the <a href="https://en.wikipedia.org/wiki/Flynn%27s_taxonomy">Flynn’ taxonomy</a>, based on their execution model, the computer architecture can be classified into:</p>
+<ul>
+  <li>Single Instruction, Single Data (SISD)</li>
+  <li>Single Instruction, Multiple Data (SIMD)</li>
+  <li>Multiple Instruction, Single Data (MISD)</li>
+  <li>Multiple Instruction, Multiple Data (MIMD)
+and</li>
+  <li>Single Instruction, Single Thread (SIST)</li>
+  <li>Single Instruction, Multiple Thread (SIMT).</li>
+</ul>
+
+<blockquote>
+  <p>A <strong>thread</strong> is the smallest sequence of programmed instructions that can be managed independently. Threads within the same process share the resource, and in contrast, threads in different processes do not share the resource.</p>
+</blockquote>
+
+<h3 id="-smid-vs-simt"><a name="SIMD vs SIMT"></a> SMID vs SIMT</h3>
+
+<p>This blog we mainly focus on discussing the difference between SMID and SIMT.</p>
+
+<h4 id="simd">SIMD</h4>
+<p>Based on the description in wikipedia, SIMD denotes a single insturction is simutaneously applied to multiple different data stream. SIMD improve the data-level parallelism as it allow multiple data to be processed simutaneously (reduce #clock-cycles compared to its sequential counterpart).</p>
+
+<p align="center">
+<img src="../images/blog/SIMT/SIMD.png" alt="drawing" width="300" />
+</p>
+<p align="center">
+    <em>Figure: Illustration of SIMD architecture, and each Processing Unit (PU) is shown for a uni-core or multi-core computer. As all the PUs fetch the data from the data pool (central memory), we can consider it is a pipelined processor under the SIMD category. The cluster of PUs can be considered as a vector unit.</em>
+</p>
+
+<p>In Flynn’s paper (1972), the SIMD architeture is further divided into:</p>
+<ul>
+  <li>Array Processor (SIMT): multiple PEs recieve the identical instruction to execute, and each PE has its own seperate and distinct memory and register file.</li>
+  <li>Pipelined processor: multiple PEs recieve the identical instruction to execute, and PEs share the same memory (read and write fragment of data from/to the memory).</li>
+  <li>Associative processor (aka predicted/masked SIMD): PEs receive the identical instruction, but each PE decides whether to perform the execution or skip it w.r.t the local data.</li>
+</ul>
+
+<blockquote>
+  <p>According to description, there are multiple SIMT processor appears before the NVIDIA GPU (e.g., SOLOMON, Aspex’s ASP), why only NVIDIA GPU is considered as the first SIMT processor? Is that the NVIDIA GPU is the first commercial GPU that is widely used in the industry?</p>
+</blockquote>
+
+<h4 id="some-extension-on-the-simt">Some extension on the SIMT.</h4>
+
+<p>SMIT is defined in Flynn’s taxonomy, which cites SOLOMON and ILLIAC IV as the representative SIMT processor in its paper.</p>
+
+<p align="center">
+<img src="../images/blog/SIMT/SIMD-and-SIMT-data-parallelism.webp" alt="drawing" width="700" />
+</p>
+<p align="center">
+    <em>Figure: CPU use SIMD and GPU use SIMT for parallel processing. </em>
+</p>
+
+<h5 id="aspex-microelectronics-associative-string-processor-asp">Aspex Microelectronics Associative String Processor (ASP)</h5>
+
+<p>ASP consider itself as “massive wide SIMD” but had bit-level ALUs and bit-level prediction (i.e., associative processing). Need an additional blog to discuss the details of ASP.</p>
+
+<blockquote>
+  <p>One thing I notice which is interesting that the writer show the ASP achieve 100~1000MOPS/$1000, where we should always focus on computing power/$. This also leads the memory industry as well (bit/$).</p>
+</blockquote>
+
+<h2 id="simutaneous-multithreading-smt-and-hyperthreading-ht-for-ilp">Simutaneous Multithreading (SMT) and Hyperthreading (HT) for ILP</h2>
+<p>SMT and HT are the same but used/introduced by differnet companies, where SMT is introduced by AMD, and HT is introduced by Intel. The SMT is a technique to improve the efficiency of superscalar CPU with hardware multi-threading.</p>
+
+<p align="center">
+<img src="../images/blog/SIMT/2way_superscalar.png" alt="drawing" width="500" />
+</p>
+<p align="center">
+    <em>Figure: Two way superscalar processor. Two instructions are fetched and decoded in two-way superscalar CPU. 1st instruction is an integer or memory access, and 2nd instruction is floating-point instruction. </em>
+</p>
+
+<p align="center">
+<img src="../images/blog/SIMT/SMT1.png" alt="drawing" width="200" />
+<img src="../images/blog/SIMT/SMT2.png" alt="drawing" width="200" />
+<img src="../images/blog/SIMT/SMT3.png" alt="drawing" width="200" />
+</p>
+<p align="center">
+    <em>Figure: Without SMT, only single thread can run at any given time. Even with SMT, INT/FP arithmetic unit cannot run two operations both in INT/FP.
+ </em>
+</p>
+
+<blockquote>
+  <p>Superscalar processor is a CPU that can execute multiple instructions per clock cycle. The superscalar processor can be super-pipelined processor. besides, VLIW is interesting, need a specific blog to discuss it.</p>
+</blockquote>
+
+<p align="center">
+<img src="../images/blog/SIMT/VLIW.webp" alt="drawing" width="500" />
+</p>
+<p align="center">
+    <em>Figure: A classic architecture with VLIW execution model. </em>
+</p>
+
+<p>For both the VLIW (Very Large Instruction Window) and superscalar processor, they launch and execute multiple instructions per clock cycle. However, a distinct difference between superscalar and VLIW is that VLIW is a static instruction scheduling (relying on compiler), while superscalar is a dynamic instruction scheduling (relying on hardware) for identify paralleable instructions.</p>
+
+<h2 id="references">References</h2>
+<p>[1] https://en.wikipedia.org/wiki/Flynn%27s_taxonomy</p>
+
+<p>[2] https://www.hardwaretimes.com/simd-vs-simt-vs-smt-whats-the-difference-between-parallel-processing-models/</p>
+
+<p>[3] Simultaneous Multithreading: Maximizing On-Chip Parallelism. https://www.princeton.edu/~rblee/ELE572Papers/SMT_Eggers.pdf</p>
+
+<p>[4] VLIW processor. (in chinese) https://zhuanlan.zhihu.com/p/337749676</p>
+
+<p>[5] Lea, R. M. (1988). “ASP: A Cost-Effective Parallel Microcomputer”. IEEE Micro. 8 (5): 10–29. doi:10.1109/40.87518. S2CID 25901856.</p>
+
+  </article>
+</div>
+
+<!-- <div class="share-buttons">
+  <h6>Share on: </h6>
+  <ul>
+    <li>
+      <a href="https://twitter.com/intent/tweet?text=/tutorial/2022/11/29/parallel-arch.html" class="twitter btn" title="Share on Twitter"><i class="fa fa-twitter"></i><span> Twitter</span></a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/tutorial/2022/11/29/parallel-arch.html" class="facebook btn" title="Share on Facebook"><i class="fa fa-facebook"></i><span> Facebook</span></a>
+    </li>
+    <li>
+      <a href="https://plus.google.com/share?url=/tutorial/2022/11/29/parallel-arch.html" class="google-plus btn" title="Share on Google Plus"><i class="fa fa-google-plus"></i><span> Google+</span></a>
+    </li>
+    <li>
+      <a href="https://www.reddit.com/submit?url=/tutorial/2022/11/29/parallel-arch.html" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
+    </li>
+  </ul>
+</div> -->
+<!-- end share-buttons -->
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-4">
+				<!-- <p>ICRG@SJTU</p> -->
+				<div class="text-center">
+					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
+					 style="max-width: 100px;"> -->
+					<!-- <p></p> 
+					<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+					 style="max-width: 275px;"> -->
+					<p style="width: 250px;">
+						<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&cl=ffffff&w=a"></script> -->
+						<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
+					</p>
+				</div>
+				<!-- <p>ICRG@SJTU is currently at Department of Computer Science and Engineering at Shanghai Jiao Tong University</p> -->
+			</div>
+
+			<div class="col-sm-4">
+				<p>Links</p>
+				<ul class="list-unstyled">
+					<li><a href="/vacancies">Vacancies</a></li>
+					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
+					<!-- <li><a href="">Link</a></li>
+					<li><a href="">Link</a></li> -->
+				</ul>
+			</div>
+
+			<div class="col-sm-4">
+				<p>Contact</p>
+				<p><a href="mailto:zhezhi.he@sjtu.edu.cn"><i class="fas fa-paper-plane"></i></a> zhezhi.he at sjtu dot edu dot cn</p>
+				<p><a href="https://j.map.baidu.com/fc/Sil"><i class="fas fa-map-marked-alt"></i></a> 800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai  </p>
+			</div>
+		</div>
+
+		<div class="row mt-3">
+			<p class="text-center">
+				&copy; 2022 ICRG@SJTU. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
+			</p>
+			<!-- <p class="text-center">Copyright, 2019</p> -->
+		</div>
+
+		<div>
+			<p class="text-center">
+			<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
+			style="max-width: 275px;">
+			</p>
+		</div>
+
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+  </body>
+
+</html>
