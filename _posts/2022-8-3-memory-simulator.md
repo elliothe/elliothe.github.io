@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  "Memory Simulator"
-excerpt: "MS"
-categories: [tutorial]
+excerpt: "Introduction of CACTI and Nvsim"
+date:   2022-8-3 12:0:0
+categories: [s]
+tags: [tutorial]
 author: Elliot He
 comments: true
 ---
