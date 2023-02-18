@@ -3,7 +3,7 @@ layout: post
 title:  "Memory Simulator"
 excerpt: "Introduction of CACTI and Nvsim"
 date:   2022-8-3 12:0:0
-categories: [s]
+categories: [tutorial]
 tags: [tutorial]
 author: Elliot He
 comments: true
