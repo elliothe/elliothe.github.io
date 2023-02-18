@@ -33,7 +33,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout master
-        ls -Q | grep -v _site | xargs rm -rf
+        ls -Q | grep -v _site | xargs rm -rf -0
         mv _site/* .
         rm -rf _site
         [[ -n "$(git status --porcelain)" ]] || exit 0
