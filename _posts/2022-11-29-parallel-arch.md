@@ -3,11 +3,9 @@ layout: post
 title: "Parallel Computer Architecture -- SIMT and SIMD"
 excerpt: "some discussion about SIMD and SIMT"
 date:   2022-11-29 15:0:0
-categories:
-    - [discussion]
-tags:
-    - [discussion]
-author: 'Elliot He'
+categories: [discussion]
+tags: [discussion]
+author: Elliot He
 comments: true
 ---  
   
