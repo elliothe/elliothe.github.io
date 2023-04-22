@@ -33,7 +33,7 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout master
-        find . -maxdepth 1 ! -name '_site' -type f -delete
+        ls -Q | grep -v _site | xargs -0 rm -rf
         mv _site/* .
         rm -rf _site
         git add .
