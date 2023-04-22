@@ -104,7 +104,11 @@ permalink: /people/
                             <h4 class="card-title">{{ member.title }}</h4>
                             <p class="card-text">{{ member.c_name }}</p>
                             <p class="card-text">{{ member.role }}</p>
-                            <!-- <p class="card-text">{{ member.current_location }}</p> -->
+                            <!-- if the member.current_location is not empty, display it -->
+                            {% if member.current_location %}
+                                <p class="card-text">{{ member.current_location }}</p>
+                            {% endif %}
+                            
                             </div>
                         </div>
                     </div>
