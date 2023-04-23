@@ -30,7 +30,15 @@ In ICRG, our objective is to design **next-generation heterogenous general-purpo
 ----
 ### Brian-inspired Neuromorphic Computing （脑启发神经模态计算）
 
-----
-### Machine Learning Aided Electronics Design Automation (机器学习辅助电子设计自动化)
+Brian-inspired neuromorphic computing is a field of research that focuses on developing algorithms and hardware that mimic the functionality of the human brain using spiking neural networks (SNNs).
 
-Electronic Design Automation (EDA)
+From an algorithm perspective, current research in SNNs involves developing more efficient and accurate models for tasks such as pattern recognition, classification, and decision-making. This includes developing new learning rules and optimization algorithms that can adjust the weights of the connections between neurons to improve the accuracy of the network.
+
+From a hardware perspective, researchers are working on developing specialized neuromorphic hardware that can efficiently and accurately simulate SNNs. This includes developing neuromorphic chips and systems that can handle the high-speed, low-power requirements of SNNs, as well as developing new methods for integrating these chips into larger computing systems.
+
+Overall, the goal of Brian-inspired neuromorphic computing is to create more efficient and powerful computing systems that can perform complex tasks with low power consumption, similar to how the human brain operates. This field of research has the potential to revolutionize the way we approach computing, leading to more intelligent and efficient systems in a variety of applications, such as robotics, autonomous vehicles, and medical devices.
+
+----
+### AI for Electronics Design Automation (机器学习辅助电子设计自动化)
+
+AI for EDA (Electronic Design Automation) is an emerging field that uses artificial intelligence (AI) and machine learning (ML) techniques to optimize and streamline the process of designing electronic circuits and systems. EDA is a complex and time-consuming process that involves a range of tasks such as logic synthesis, placement and routing, analog circuit sizing, design space exploration of architecture, and etc. AI for EDA aims to automate many of these tasks and improve the efficiency and accuracy of the design process.

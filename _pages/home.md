@@ -34,7 +34,7 @@ Current research interests focuses on:
 We are constantly looking for new group members (graduats and undergraduates) who are interested in intelligent computing, electronic design automation and computer architecture! Email me or drop by my office if you are interested.
 
 招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
-- <font color=red>Multiple funded graduate research assistant positions available. 现有2023年硕士研究生名额，欢迎对ICRG的研究感兴趣的同学尽早联系。</font>
+- <font color=red>Multiple funded graduate research assistant positions available. 
 - 招收本科研究助理，从事芯片架构设计，电子设计自动化(EDA)的研究。
 
 
