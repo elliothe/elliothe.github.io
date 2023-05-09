@@ -19,10 +19,11 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2023 &nbsp; B.S., Software Engineering, South China University of Technology
+- 2023 &nbsp; B.S., Software Engineering, [South China University of Technology](https://www.scut.edu.cn/)
 
 
 ### Expertise
-- Computer Vision
+- Computer Vision (Stereo Vision)
 - Machine Learning
-- FPGA
+- Reinforcement Learning
+- Vision System
