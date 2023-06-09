@@ -16,7 +16,8 @@ gem install bundler jekyll
 Clone this repository, then install the dependencies:
 
 ``` bash
-bundle install
+# bundle install
+bundle install --path vendor/bundle
 bundle add webrick
 ```
 
