@@ -6,7 +6,7 @@ c_name: 魏子陵
 image: ziling_wei.jpg
 role: Master Student
 permalink: 'people/ziling-wei'
-research_topic: 'SW of Processing-in-Memory'
+research_topic: 'SW of Processing-in-Memory & ML4EDA'
 social:
     twitter: https://twitter.com/svenblocker
     github: https://github.com/andyblocker
@@ -17,4 +17,3 @@ social:
 
 ### Expertise
 - Machine Learning
-- Computer Vision
