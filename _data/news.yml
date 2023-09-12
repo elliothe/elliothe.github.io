@@ -1,19 +1,11 @@
 - date: Aug./25/2021
-  title: "Two paper are accepted by ICCD 2023"
+  title: "Two papers are accepted by ICCD 2023"
   tags:
     - Publication
-  content: Congrat to Chen Nie and Chenyang Lv for their paper about PIM for GNN and GPT for logic synthesis (AI4EDA) are accepted by ICCD 2023 (CCF-B).
-
-
-# - date: Aug./23/2021
-#   title: "One paper is accepted by Nature Communication"
-#   tags:
-#     - Publication
-#   content: Our collabrated paper with Dr. Rui Yang's group is accepted by Nature Communication. The paper's title is "Monolithic 3D Integration of 2D Transistors and Vertical RRAMs in 1T–4R Structure for High-Density Memory".
-
+  content: Congrat to Chen Nie and Chenyang Lv for their papers about PIM for GNN and GPT for logic synthesis (AI4EDA) which are accepted by ICCD 2023.
 
 - date: June/1/2022
-  title: "One paper of processing-in-memory accept by IEEE Transaction on Computers"
+  title: "One paper of processing-in-memory accept by IEEE Transaction on Computers (TC)"
   tags:
     - Publication
   content: ICRG has one paper titled "VSPIM, SRAM Processing-in-Memory DNN Acceleration via Vector-Scalar Operations" accpeted by IEEE Transcations on Computers.
