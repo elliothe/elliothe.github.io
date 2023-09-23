@@ -1,16 +1,22 @@
-- date: Aug./25/2021
+- date: Sep./24/2023
+  title: "Our collabrated paper about 1T4R high-density ReRAM is accepted by Nature Communication"
+  tags:
+    - Publication
+  content: Our collabrated work with Dr. Rui Yang's group is accepted by Nature Communication is officially online. This work is about the low-temperature integration of ReRAM and 2D material MoS_2 as 1T4R high density memory cell. 
+
+- date: Aug./25/2023
   title: "Two papers are accepted by ICCD 2023"
   tags:
     - Publication
   content: Congrat to Chen Nie and Chenyang Lv for their papers about PIM for GNN and GPT for logic synthesis (AI4EDA) which are accepted by ICCD 2023.
 
-- date: June/1/2022
+- date: June/1/2023
   title: "One paper of processing-in-memory accept by IEEE Transaction on Computers (TC)"
   tags:
     - Publication
   content: ICRG has one paper titled "VSPIM, SRAM Processing-in-Memory DNN Acceleration via Vector-Scalar Operations" accpeted by IEEE Transcations on Computers.
 
-- date: March/1/2022
+- date: March/1/2023
   title: "Zhezhi serves as PC member for ICCAD 2023"
   tags:
     - Misc
