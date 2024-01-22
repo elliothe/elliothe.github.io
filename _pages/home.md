@@ -9,7 +9,7 @@ permalink: /
 ------------------------
 <!-- ### About the Group -->
 
-The mission of __Intelligent Computing Research Group (ICRG)__, a subgroup under the Advanced Computer Architecture Laboratory (ACA-Lab), is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ICRG conduct the interdisciplinary research which spans across algorithms, software stack, architecture, circuit, and device.
+The mission of __Intelligent Computing Research Group (ICRG)__ is to make fundamental and groundbreaking contributions in the state-of-the-art computing infrastructures and bridge the gap between software and hardware. Members of ICRG conduct the interdisciplinary research which spans across algorithms, software stack, architecture, circuit, and device.
 
 
 
@@ -36,7 +36,7 @@ We are constantly looking for new group members (graduats and undergraduates) wh
 招生详情与期许见<a href="{{ site.url }}{{ site.baseurl }}/vacancies">招生信息</a>:
 - <font color=red>Multiple funded graduate research assistant positions available. 
 - 本团队长期招收博士生、硕士生、本科研究助理，如果你对课题组相关研究内容感兴趣，欢迎邮件交流沟通。
-- **目前2024年尚有一个硕士名额, 请已获得交大计算机系保研/考研录用的同学联系我**
+<!-- - **目前2024年尚有一个硕士名额, 请已获得交大计算机系保研/考研录用的同学联系我** -->
 
 <p align="right">
 <small><a href="{{ site.url }}{{ site.baseurl }}/vacancies"> ... see more</a></small>

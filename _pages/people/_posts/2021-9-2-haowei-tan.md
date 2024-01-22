@@ -4,7 +4,7 @@ category: former
 title: Tan Hao Wei
 c_name: 陈浩惟
 image: haowei_tan.jpeg
-role: Master Student
+role: Master Student (2021)
 permalink: 'people/haowei-tan'
 research_topic: Intelligent Vision System
 social:

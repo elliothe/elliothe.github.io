@@ -4,7 +4,7 @@ category: staff
 title: Chenyang Lv
 c_name: 吕晨阳
 image: chenyang_lv.jpg
-role: Master Student
+role: Master Student (2021-now)
 permalink: 'people/chenyang-lv'
 research_topic: ML for EDA
 social:

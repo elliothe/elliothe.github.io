@@ -4,7 +4,7 @@ category: staff
 title: Jun Yan Lee
 c_name: 黎俊延
 image: junyan_lee.jpeg
-role: Master Student
+role: Master Student (2023-now)
 permalink: 'people/junyan-lee'
 research_topic: 'Circuit of Neuromorphic Computing'
 social:

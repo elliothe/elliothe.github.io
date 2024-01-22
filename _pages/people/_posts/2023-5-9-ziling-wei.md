@@ -4,7 +4,7 @@ category: staff
 title: Ziling Wei
 c_name: 魏子陵
 image: ziling_wei.jpg
-role: Master Student
+role: Master Student (2023-now)
 permalink: 'people/ziling-wei'
 research_topic: 'SW of Processing-in-Memory & ML4EDA'
 social:
