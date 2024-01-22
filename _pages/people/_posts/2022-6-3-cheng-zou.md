@@ -4,7 +4,7 @@ category: staff
 title: Cheng Zou
 c_name: 邹铖
 image: cheng_zou.jpg
-role: Master Student
+role: Master Student (2022-now)
 permalink: 'people/cheng-zou'
 research_topic: 'Domain Specific Accelerator'
 social:

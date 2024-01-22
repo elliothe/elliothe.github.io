@@ -4,7 +4,7 @@ category: staff
 title: Chenyu Tang
 c_name: 汤晨宇
 image: chenyu_tang.jpg
-role: Master Student
+role: Master Student (2021-now)
 permalink: 'people/chenyu-tang'
 research_topic: SW of Processing-in-Memory
 social:

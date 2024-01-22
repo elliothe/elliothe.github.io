@@ -4,7 +4,7 @@ category: staff
 title: Boning Zhang
 c_name: 张博宁
 image: boning_zhang.jpeg
-role: Master Student
+role: Master Student (2022-now)
 permalink: 'people/boning-zhang'
 research_topic: 'Intelligent Vision System'
 social:
