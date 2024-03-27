@@ -1,10 +1,12 @@
 ---
 layout: member
-category: staff
+# category: staff
+category: former
 title: Chenyu Tang
 c_name: 汤晨宇
 image: chenyu_tang.jpg
-role: Master Student (2021-now)
+role: Master Student (2021-2024)
+current_location: 小红书 （并行计算开发）
 permalink: 'people/chenyu-tang'
 research_topic: SW of Processing-in-Memory
 social:

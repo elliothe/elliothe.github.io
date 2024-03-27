@@ -1,10 +1,11 @@
 ---
 layout: member
-category: staff
+category: former
 title: Chenyang Lv
 c_name: 吕晨阳
 image: chenyang_lv.jpg
-role: Master Student (2021-now)
+role: Master Student (2021-2024)
+current_location: 鸿芯微纳 （AI4EDA研发）
 permalink: 'people/chenyang-lv'
 research_topic: ML for EDA
 social:
