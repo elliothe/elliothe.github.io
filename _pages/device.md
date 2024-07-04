@@ -6,6 +6,16 @@ sitemap: false
 permalink: /research/device/
 ---
 
+# Device
+
+<p align="center">
+<img src="/images/research_intro/device_mindmap.png" alt="drawing" width="500"/>
+</p>
+<p align="center">
+    <em>Figure: Mind map of our research in device.</em>
+</p>
+
+
 
 ### Post-CMOS Emerging Devices
 

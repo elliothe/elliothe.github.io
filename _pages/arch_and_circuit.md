@@ -6,14 +6,23 @@ sitemap: false
 permalink: /research/arch-and-circuit/
 ---
 
-# Architecture and Circuit
+# Architecture and Circuit (系统结构与电路)
 
 ----
 
 In ICRG, we currently focus on designing brain-inspired computers and tools for cross-layer design and optimization.
 
+<p align="center">
+<img src="/images/research_intro/arch_circuit_mindmap.png" alt="drawing" width="800"/>
+</p>
+<p align="center">
+    <em>Figure: Mind map of our research in architecture and circuit.</em>
+</p>
+
+
+
 ----
-### Processing-in-Memory (存内计算，存算一体)
+### 1. Processing-in-Memory (存内计算，存算一体)
 <p align="center">
 <img src="/images/research_intro/architecture_evolve.png" alt="drawing" width="600"/>
 </p>
@@ -28,7 +37,7 @@ Processing-in-Memory (aka. In-Memory Computing) is a emerging computing architec
 In ICRG, our objective is to design **next-generation heterogenous general-purpose processor with processing-in-memory supported**.
 
 ----
-### Brian-inspired Neuromorphic Computing （脑启发神经模态计算）
+### 2. Brian-inspired Neuromorphic Computing （脑启发神经模态计算）
 
 Brian-inspired neuromorphic computing is a field of research that focuses on developing algorithms and hardware that mimic the functionality of the human brain using spiking neural networks (SNNs).
 
@@ -39,6 +48,6 @@ From a hardware perspective, researchers are working on developing specialized n
 Overall, the goal of Brian-inspired neuromorphic computing is to create more efficient and powerful computing systems that can perform complex tasks with low power consumption, similar to how the human brain operates. This field of research has the potential to revolutionize the way we approach computing, leading to more intelligent and efficient systems in a variety of applications, such as robotics, autonomous vehicles, and medical devices.
 
 ----
-### AI for Electronics Design Automation (机器学习辅助电子设计自动化)
+### 3. AI for Electronics Design Automation (机器学习辅助电子设计自动化)
 
 AI for EDA (Electronic Design Automation) is an emerging field that uses artificial intelligence (AI) and machine learning (ML) techniques to optimize and streamline the process of designing electronic circuits and systems. EDA is a complex and time-consuming process that involves a range of tasks such as logic synthesis, placement and routing, analog circuit sizing, design space exploration of architecture, and etc. AI for EDA aims to automate many of these tasks and improve the efficiency and accuracy of the design process.

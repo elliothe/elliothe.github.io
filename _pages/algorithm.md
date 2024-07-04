@@ -10,6 +10,15 @@ permalink: /research/algorithm/
 
 ----
 
+<p align="center">
+<img src="/images/research_intro/algorithm_mindmap.png" alt="drawing" width="800"/>
+</p>
+<p align="center">
+    <em>Figure: Mind map of our research in algorithm</em>
+</p>
+
+
+
 ## 1. Efficient and Secure Artificial Intelligence
 
 **Introduction:** Efficiency and Security are two important topics in the modern artifical intelligence (AI), as AI systems become more prevalent in our daily lives. The goal of efficient AI is to develop algorithms and models that can perform complex tasks while using minimal computational resources. On the other hand, secure AI focuses on developing techniques and methods that ensure the privacy and security of data used by AI systems. As AI systems rely on large amounts of data, often personal and sensitive information, protecting this data is crucial for maintaining user trust and preventing malicious attacks. 
