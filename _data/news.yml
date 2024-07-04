@@ -1,4 +1,10 @@
 - date: May/2/2024
+  title: "Work about SNN Training is accepted by ECCV 2024"
+  tags:
+    - Publication
+  content: "Congrat to Zekai for his work titled \"BKDSNN: Enhancing the Performance of Learning-based Spiking Neural Networks Training with Blurred Knowledge Distillation\" is accepted by ECCV 2024"
+
+- date: May/2/2024
   title: "Work about SNN and LLM are accepted by ICML 2024!"
   tags:
     - Publication
