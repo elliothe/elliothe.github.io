@@ -6,7 +6,7 @@ c_name: 杨迤尧
 image: yiyao_yang.jpg
 role: Master Student (2024-now)
 permalink: 'people/yiyao-yang'
-research_topic: 'Machine Learning System'
+research_topic: 'ML4EDA'
 social:
     github: https://github.com/YiyaoYang1
 ---
@@ -16,4 +16,4 @@ social:
 
 ### Expertise
 - Artifical Intelligence
-- Machine Learning
+- LLM for Code Generation
