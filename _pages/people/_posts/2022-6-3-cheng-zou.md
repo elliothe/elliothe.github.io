@@ -6,7 +6,7 @@ c_name: 邹铖
 image: cheng_zou.jpg
 role: Master Student (2022-now)
 permalink: 'people/cheng-zou'
-research_topic: 'Domain Specific Accelerator'
+research_topic: 'RISC-V SoC, Processing-in-Memory'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -25,4 +25,5 @@ social:
 
 ### Expertise
 - Domain Specific Accelerator
+- RISC-V SoC
 - FPGA
