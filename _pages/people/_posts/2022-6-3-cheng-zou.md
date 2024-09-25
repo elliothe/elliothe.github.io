@@ -4,7 +4,7 @@ category: staff
 title: Cheng Zou
 c_name: 邹铖
 image: cheng_zou.jpg
-role: Master Student (2022-now)
+role: PhD Student (2022-now)
 permalink: 'people/cheng-zou'
 research_topic: 'RISC-V SoC, Processing-in-Memory'
 social:
