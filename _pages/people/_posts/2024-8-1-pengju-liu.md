@@ -4,7 +4,7 @@ category: RA
 title: Pengju Liu
 c_name: 刘鹏举
 image: pengju_liu.jpeg
-role: Master Student (2024-now)
+role: Research Assistant
 permalink: 'people/pengju-liu'
 research_topic: 'ML4EDA'
 social:

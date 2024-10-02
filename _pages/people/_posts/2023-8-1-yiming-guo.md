@@ -4,8 +4,8 @@ category: former
 title: Yiming Guo
 c_name: 郭一鸣
 image: yiming_guo.jpeg
-role: Undergraduate Student (2023-now)
-current_location: SJTU Master Student
+role: Undergraduate RA
+current_location: Master at SJTU
 permalink: 'people/yiming-guo'
 research_topic: 'Computer Architecture'
 social:
