@@ -1,3 +1,15 @@
+- date: Nov/19/2024
+  title: "Work about LLM-based Verilog Generation is Accepted by DATE 2025"
+  tags:
+    - Publication
+  content: "Congrat to Yiyao, Fu and Pengju for their work titled \"HaVen: Hallucination-Mitigated LLM for Verilog Code Generation Aligned with HDL Engineers\" is accepted by DATE 2025"
+
+- date: Nov/9/2024
+  title: "Work about Compilation for General Purpose PIM is Accepted by TCAD"
+  tags:
+    - Publication
+  content: "Congrat to Xinyue for her work titled \"A Recursive Partition-Based In-Memory SIMD Computation Scheduler for Memory Footprint Minimization\" is accepted by TCAD"
+
 - date: July/2/2024
   title: "Work about SNN Training is accepted by ECCV 2024"
   tags:
