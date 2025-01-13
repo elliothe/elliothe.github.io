@@ -11,3 +11,4 @@ gem 'kramdown-math-katex'
 gem 'katex'
 gem 'execjs'
 gem "webrick", "~> 1.7"
+gem 'csv'
