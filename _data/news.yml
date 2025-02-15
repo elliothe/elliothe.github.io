@@ -1,3 +1,16 @@
+- date: Feb/15/2024
+  title: "Two papers of process-in-memory are accpeted by DAC 2025"
+  tags:
+    - Misc
+  content: "Congrat to our lab's work of SRAM-PIM for point cloud and ReRAM-PIM for SNN acceleration that accepted by DAC 2025 (CCF-A)."
+
+- date: Feb/8/2024
+  title: "Invited be part of the committee of ICCAD 2025"
+  tags:
+    - Misc
+  content: "Zhezhi He will serve as a program committee member for IEEE/ACM International Conference on Computer-Aided Design."
+
+
 - date: Nov/19/2024
   title: "Work about LLM-based Verilog Generation is Accepted by DATE 2025"
   tags:
