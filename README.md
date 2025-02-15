@@ -17,7 +17,10 @@ Clone this repository, then install the dependencies:
 
 ``` bash
 # bundle install
-bundle install --path vendor/bundle
+bundle config set --local path 'vendor/bundle'
+bundle install
+#bundle install --path vendor/bundle
+
 bundle add webrick
 ```
 
