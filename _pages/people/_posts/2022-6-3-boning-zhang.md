@@ -1,11 +1,12 @@
 ---
 layout: member
-category: staff
+category: former
 title: Boning Zhang
 c_name: 张博宁
 image: boning_zhang.jpeg
-role: Master Student (2022-now)
+role: Master Student (2022-2025)
 permalink: 'people/boning-zhang'
+current_location: 联想研究院 （MLsys研发）
 research_topic: 'Intelligent Vision System'
 social:
     twitter: https://twitter.com/

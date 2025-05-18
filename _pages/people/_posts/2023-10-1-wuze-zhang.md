@@ -1,6 +1,6 @@
 ---
 layout: member
-category: RA
+category: no
 title: Wuze Zhang
 c_name: 张吴泽
 image: wuze_zhang.jpeg
