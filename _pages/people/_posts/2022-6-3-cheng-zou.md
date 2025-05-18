@@ -4,7 +4,7 @@ category: staff
 title: Cheng Zou
 c_name: 邹铖
 image: cheng_zou.jpg
-role: PhD Student (2022-now)
+role: PhD Student (2024-now)
 permalink: 'people/cheng-zou'
 research_topic: 'RISC-V SoC, Processing-in-Memory'
 social:
@@ -20,6 +20,7 @@ social:
 
 ### <i class="fas fa-graduation-cap"></i> Education
 - 2022 &nbsp; B.S., Computer Science, Nanjing University of Finance & Economics.
+- 2024 &nbsp; M.S., Computer Science, Shanghai Jiao Tong University.
 
 
 

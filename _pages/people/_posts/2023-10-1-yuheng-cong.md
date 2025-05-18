@@ -1,6 +1,6 @@
 ---
 layout: member
-category: RA
+category: xx
 title: Yuheng Cong
 c_name: 丛煜恒
 image: yuheng_cong.jpeg

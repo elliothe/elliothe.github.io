@@ -1,13 +1,19 @@
+- date: May/15/2024
+  title: "Our paper is a Best Paper Award Nominee of DAC 2025 (CCF-A)"
+  tags:
+    - award
+  content: "Congrat to our lab's work of PICK, which using SRAM-PIM for KNN acceleration in point cloud, is nominated for best paper award for DAC 2025 (CCF-A)."
+
 - date: Feb/15/2024
   title: "Our paper of proposing the law-of-charge-conservation (LoCC) theory in SNN is accepted by CVPR 2025"
   tags:
-    - Misc
+    - Publication
   content: "Congrat to our lab's work of VISTREAM for using LoCC SNN for visual streaming perception is accepted by CVPR 2025 (CCF-A)."
 
 - date: Feb/15/2024
   title: "Two papers of process-in-memory are accpeted by DAC 2025"
   tags:
-    - Misc
+    - Publication
   content: "Congrat to our lab's work of SRAM-PIM for point cloud and ReRAM-PIM for SNN acceleration that accepted by DAC 2025 (CCF-A)."
 
 - date: Feb/8/2024
