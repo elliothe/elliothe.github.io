@@ -1,8 +1,15 @@
+
 - date: May/15/2024
   title: "Our paper is a Best Paper Award Nominee of DAC 2025 (CCF-A)"
   tags:
     - award
   content: "Congrat to our lab's work of PICK, which using SRAM-PIM for KNN acceleration in point cloud, is nominated for best paper award for DAC 2025 (CCF-A)."
+
+- date: May/15/2024
+  title: "Our paper is a Best Student Paper Award Nominee of IWLS 2025"
+  tags:
+    - award
+  content: "Our work about bit-serial based logic compilation is nominated as best student paper award of IWLS."
 
 - date: Feb/15/2024
   title: "Our paper of proposing the law-of-charge-conservation (LoCC) theory in SNN is accepted by CVPR 2025"
