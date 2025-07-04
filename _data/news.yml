@@ -1,29 +1,35 @@
+- date: June/30/2025
+  title: "Two papers are accepted by ICCAD 2025."
+  tags:
+    - Publication
+  content: "One of the publication is about the using reinforcement learning to boost LLM-based Verilog code generation."
 
-- date: May/15/2024
+
+- date: May/15/2025
   title: "Our paper is a Best Paper Award Nominee of DAC 2025 (CCF-A)"
   tags:
     - award
   content: "Congrat to our lab's work of PICK, which using SRAM-PIM for KNN acceleration in point cloud, is nominated for best paper award for DAC 2025 (CCF-A)."
 
-- date: May/15/2024
+- date: May/15/2025
   title: "Our paper is a Best Student Paper Award Nominee of IWLS 2025"
   tags:
     - award
   content: "Our work about bit-serial based logic compilation is nominated as best student paper award of IWLS."
 
-- date: Feb/15/2024
+- date: Feb/15/2025
   title: "Our paper of proposing the law-of-charge-conservation (LoCC) theory in SNN is accepted by CVPR 2025"
   tags:
     - Publication
   content: "Congrat to our lab's work of VISTREAM for using LoCC SNN for visual streaming perception is accepted by CVPR 2025 (CCF-A)."
 
-- date: Feb/15/2024
+- date: Feb/15/2025
   title: "Two papers of process-in-memory are accpeted by DAC 2025"
   tags:
     - Publication
   content: "Congrat to our lab's work of SRAM-PIM for point cloud and ReRAM-PIM for SNN acceleration that accepted by DAC 2025 (CCF-A)."
 
-- date: Feb/8/2024
+- date: Feb/8/2025
   title: "Invited be part of the committee of ICCAD 2025"
   tags:
     - Misc
