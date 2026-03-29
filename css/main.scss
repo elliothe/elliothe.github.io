@@ -37,6 +37,117 @@ figcaption {
   margin-bottom: 20px;
 }
 
+.people-page {
+  display: grid;
+  gap: 28px;
+}
+
+.people-header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e7ecf3;
+}
+
+.people-header h1 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.people-header p {
+  margin-bottom: 0;
+  color: #68768a;
+}
+
+.people-section {
+  display: grid;
+  gap: 16px;
+}
+
+.people-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.people-section-head h2 {
+  margin: 0;
+}
+
+.people-count {
+  min-width: 36px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2f8;
+  color: #55657c;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.member-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 18px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e3e8f2;
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+.member-avatar-link {
+  display: block;
+}
+
+.member-avatar {
+  display: block;
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 16px;
+  background: #f3f5f8;
+}
+
+.member-meta h3 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.member-meta h3 a {
+  color: inherit;
+}
+
+.member-meta p {
+  margin: 0 0 6px;
+}
+
+.member-subtitle {
+  color: #4f6480;
+  font-weight: 600;
+}
+
+.member-role-tag {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #3a5c8b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.member-topic {
+  color: #5c697d;
+}
+
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -169,3 +280,19 @@ figcaption {
 .bibliography li span.abstract.hidden.open { border-color: #828282; }
 .bibliography li span.notes { color: #828282; }
 .bibliography abbr { position: absolute; left: -7em; }
+
+@media (max-width: 767px) {
+  .people-grid,
+  .member-card {
+    grid-template-columns: 1fr;
+  }
+
+  .people-section-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .member-avatar {
+    max-width: 160px;
+  }
+}
