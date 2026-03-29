@@ -32,12 +32,19 @@ Run the local webserver with:
 bundle exec jekyll serve
 ```
 
+Validate the site build with:
+
+``` bash
+bundle exec jekyll build
+bundle exec jekyll doctor
+```
+
 ## Contribute
 
 ### Add a new member
 
 New members are stored as markdown files under
-[_pages/team/_posts](_pages/team/_posts).
+[_pages/people/_posts](_pages/people/_posts).
 
 Each new member `.md` file must look like this:
 
@@ -54,7 +61,7 @@ social:
     linkedin: https://www.linkedin.com/
     google-scholar: https://scholar.google.fr/
     github: https://github.com/
-    website:
+    website: https://example.com/
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
 education:
