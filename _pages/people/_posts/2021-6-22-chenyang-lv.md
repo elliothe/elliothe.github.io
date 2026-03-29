@@ -1,11 +1,13 @@
 ---
 layout: member
-category: graduate student
-title: Chenyu Tang
-c_name: 汤晨宇
-image: chenyu_tang.jpg
-role: Master Student
-permalink: 'people/chenyu-tang'
+category: former
+title: Chenyang Lv
+c_name: 吕晨阳
+image: chenyang_lv.jpg
+role: Master Student (2021-2024)
+current_location: 鸿芯微纳 （AI4EDA研发）
+permalink: 'people/chenyang-lv'
+research_topic: ML for EDA
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -18,10 +20,11 @@ social:
 
 
 ### <i class="fas fa-graduation-cap"></i> Education
-- 2021 &nbsp; B.S., Information Security, [Tongji University](https://www.tongji.edu.cn/), Shanghai, China.
+- 2014 &nbsp; B.S., Computer Science and Technology, [Hunan Normal University](https://www.hunnu.edu.cn/), Changsha, China.
 
 
 
 
 ### Expertise
-- Software-stack for Acceleration of Data-intensive Application
+- Machine Learning for electronics design automation
+- Reinforcement Learning

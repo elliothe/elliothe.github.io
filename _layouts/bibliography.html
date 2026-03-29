@@ -1,12 +1,23 @@
 ---
 ---
+<style>
+  .award {
+    color: red;
+    font-weight: bold;
+  }
 
+</style>
 
 <div class="text-justify">
   {% if entry.type == "thesis" %}
     {{reference}}
   {% else %}
-    <span class="title">{{entry.title}}</span>
+    {% if entry.award %}
+      <!-- <span class="title"> <strong class="award">&lt; {{entry.award}}&gt; </strong> {{entry.title}}</span> -->
+      <span class="title"> <strong class="award"> &#x272D;{{entry.award}}&#x272D; </strong> {{entry.title}}</span>
+    {% else %}
+      <span class="title">{{entry.title}}</span>
+    {% endif %}
     <span class="author">
       {% for author in entry.author_array %}
         {% assign trim_last = author.last | remove: "<sup>=</sup>" %}
@@ -58,6 +69,10 @@
     <a href="{{ entry.preprint }}"><input class="button2" type="button" value="Preprint" /></a>
 {% endif %}
  
+{% if entry.slides %}
+    <a href="{{ entry.slides }}"><input class="button5" type="button" value="slides" /></a>
+{% endif %}
+
 {% if entry.link %}
     <a href="{{ entry.link }}"><input class="button4" type="button" value="Link" /></a>
 {% endif %}

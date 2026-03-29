@@ -1,8 +1,168 @@
+- date: Sep/24/2025
+  title: "Prof. Zhezhi He has been on the worldwide TOP 2% Scientists' List for the past five years!"
+  tags:
+    - Misc
+  content: "Prof. Zhezhi He has been on the ELSEVIER and Standford University's worldwide TOP2% scientist list for the past five years."
+
+
+- date: Sep/9/2025
+  title: "Building Neurmorphic Computing Team in Shanghai AI Lab."
+  tags:
+    - Misc
+  content: "Dr. Zhezhi He joins Shanghai AI Lab to build the neuromorphic computing team, spanning from theory, algorithm, AI infra and chip design. We are recuriting talents (researcher, engineer, interns) in this area, please contact Dr. He if you are interested."
+
+
+- date: July/20/2025
+  title: "Zhezhi He serves as the Associate Editor of IEEE TCAD."
+  tags:
+    - Misc
+  content: "Professor Zhezhi starts his editorial work for IEEE TCAD, looking forward to receive the contributions from community in the field of Emerging Technology and Architecture Design & Optimization."
+
+- date: July/15/2025
+  title: "One paper is accepted by MICRO 2025."
+  tags:
+    - Publication
+  content: "Our work about RISC-V based Processing-in-Cache is accepted by MICRO 2025 (CCF-A)."
+
+- date: June/30/2025
+  title: "Two papers are accepted by ICCAD 2025."
+  tags:
+    - Publication
+  content: "One of the publication is about the using reinforcement learning to boost LLM-based Verilog code generation."
+
+
+- date: May/15/2025
+  title: "Our paper is a Best Paper Award Nominee of DAC 2025 (CCF-A)"
+  tags:
+    - award
+  content: "Congrat to our lab's work of PICK, which using SRAM-PIM for KNN acceleration in point cloud, is nominated for best paper award for DAC 2025 (CCF-A)."
+
+- date: May/15/2025
+  title: "Our paper is a Best Student Paper Award Nominee of IWLS 2025"
+  tags:
+    - award
+  content: "Our work about bit-serial based logic compilation is nominated as best student paper award of IWLS."
+
+- date: Feb/15/2025
+  title: "Our paper of proposing the law-of-charge-conservation (LoCC) theory in SNN is accepted by CVPR 2025"
+  tags:
+    - Publication
+  content: "Congrat to our lab's work of VISTREAM for using LoCC SNN for visual streaming perception is accepted by CVPR 2025 (CCF-A)."
+
+- date: Feb/15/2025
+  title: "Two papers of process-in-memory are accpeted by DAC 2025"
+  tags:
+    - Publication
+  content: "Congrat to our lab's work of SRAM-PIM for point cloud and ReRAM-PIM for SNN acceleration that accepted by DAC 2025 (CCF-A)."
+
+- date: Feb/8/2025
+  title: "Invited be part of the committee of ICCAD 2025"
+  tags:
+    - Misc
+  content: "Zhezhi He will serve as a program committee member for IEEE/ACM International Conference on Computer-Aided Design."
+
+
+- date: Nov/19/2024
+  title: "Work about LLM-based Verilog Generation is Accepted by DATE 2025"
+  tags:
+    - Publication
+  content: "Congrat to Yiyao, Fu and Pengju for their work titled \"HaVen: Hallucination-Mitigated LLM for Verilog Code Generation Aligned with HDL Engineers\" is accepted by DATE 2025"
+
+- date: Nov/9/2024
+  title: "Work about Compilation for General Purpose PIM is Accepted by TCAD"
+  tags:
+    - Publication
+  content: "Congrat to Xinyue for her work titled \"A Recursive Partition-Based In-Memory SIMD Computation Scheduler for Memory Footprint Minimization\" is accepted by TCAD"
+
+- date: July/2/2024
+  title: "Work about SNN Training is accepted by ECCV 2024"
+  tags:
+    - Publication
+  content: "Congrat to Zekai for his work titled \"BKDSNN: Enhancing the Performance of Learning-based Spiking Neural Networks Training with Blurred Knowledge Distillation\" is accepted by ECCV 2024"
+
+- date: May/2/2024
+  title: "Work about SNN and LLM are accepted by ICML 2024!"
+  tags:
+    - Publication
+  content: We have been working on next generation neuromorphic computing and our work about ANN-SNN conversion is accepted by ICML 2024. 
+
+- date: March/1/2024
+  title: "Zhezhi serves as PC member for ICCAD 2024"
+  tags:
+    - Misc
+  content: Zhezhi He will serve as a program committee member for IEEE/ACM International Conference on Computer-Aided Design.
+
+- date: Nov./8/2023
+  title: "Our work about PIM compiler is accepted by DATE 2024!"
+  tags:
+    - Publication
+  content: Congrat to Chenyu for his paper titled "PIMLC$:$ Logic Compiler for Bit-serial Based PIM" which is accepted by DATE 2024. 
+
+- date: Oct./15/2023
+  title: "Our ICCD-2023 paper receives the best paper nomination!"
+  tags:
+    - award
+  content: Our ICCD paper titled "GIM$:$ Versatile GNN Acceleration with Reconfigurable Processing-in-Memory" receives the best paper nomination!
+
+- date: Sep./24/2023
+  title: "Our collabrated paper about 1T4R high-density ReRAM is accepted by Nature Communication"
+  tags:
+    - Publication
+  content: Our collabrated work with Dr. Rui Yang's group is accepted by Nature Communication is officially online. This work is about the low-temperature integration of ReRAM and 2D material MoS_2 as 1T4R high density memory cell. 
+
+- date: Aug./25/2023
+  title: "Two papers are accepted by ICCD 2023"
+  tags:
+    - Publication
+  content: Congrat to Chen Nie and Chenyang Lv for their papers about PIM for GNN and GPT for logic synthesis (AI4EDA) which are accepted by ICCD 2023.
+
+- date: June/1/2023
+  title: "One paper of processing-in-memory accept by IEEE Transaction on Computers (TC)"
+  tags:
+    - Publication
+  content: ICRG has one paper titled "VSPIM, SRAM Processing-in-Memory DNN Acceleration via Vector-Scalar Operations" accpeted by IEEE Transcations on Computers.
+
+- date: March/1/2023
+  title: "Zhezhi serves as PC member for ICCAD 2023"
+  tags:
+    - Misc
+  content: Zhezhi He will serve as a program committee member for IEEE/ACM International Conference on Computer-Aided Design.
+
+- date: Oct./1/2022
+  title: "Zhezhi serves as PC member for DAC 2023"
+  tags:
+    - Misc
+  content: Zhezhi He will serve as a program committee member for design automation conference.
+
+- date: Oct/1/2022
+  title: "One project is funded by Ministry of Science and Technology of China"
+  tags:
+    - Misc
+  content: ICRG get one project working on the Neuromorphic Computing is funded by the Ministry of Science and Technology. Dr. Zhezhi He is the Co-PI of this project.
+
+- date: March/5/2022
+  title: "Zhezhi serves as PC member for ICCAD 2022"
+  tags:
+    - Misc
+  content: Zhezhi He will serve as a program committee member for 2022 IEEE/ACM International Conference on Computer-Aided Design.
+
+- date: Feb./5/2022
+  title: "Best Paper Award from DATE 2022"
+  tags:
+    - Award
+  content: Our paper titled "Self-Terminated Write of Multi-Level Cell ReRAM  for Efficient Neuromorphic Computing" receives Best Paper Award from DATE 2022.
+
+- date: Feb/2/2022
+  title: "Zhezhi serves as PC member for GLSVLSI 2022"
+  tags:
+    - Misc
+  content: Zhezhi He will serve as a program committee member for 32nd ACM Great Lakes Symposium on VLSI.
+
 - date: Oct./1/2021
   title: "Zhezhi serves as TPC for DAC 2022"
   tags:
     - Misc
-  content: Zhezhi He will serve as a technical program committee member for design automation coonference 2022.
+  content: Zhezhi He will serve as a technical program committee member for design automation conference 2022.
 
 
 - date: Aug./20/2021

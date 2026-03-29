@@ -7,3 +7,9 @@ gem 'jekyll-scholar', group: :jekyll_plugins
 gem 'jemoji' # Github-flavored emoji plugin for jekyll
 gem 'jekyll-sitemap' # Silently generate a sitemaps.org compliant sitemap
 
+gem 'kramdown-math-katex'
+gem 'katex'
+gem 'execjs'
+gem "webrick", "~> 1.7"
+gem 'csv'
+gem 'observer'

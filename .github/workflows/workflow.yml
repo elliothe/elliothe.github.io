@@ -13,10 +13,10 @@ jobs:
       uses: actions/checkout@v1
       with:
         ref: source
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+    - name: Set up Ruby 3.0
+      uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.x
+        ruby-version: 3.0
     - name: Build Jekyll site
       run: |
         set -xo pipefail
@@ -33,10 +33,9 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git checkout master
-        ls -Q | grep -v _site | xargs rm -rf
+        ls -1 | grep -v _site | xargs -I {} rm -rf {}
         mv _site/* .
         rm -rf _site
-        [[ -n "$(git status --porcelain)" ]] || exit 0
         git add .
         git commit -m "Build $(git rev-parse source | grep -o '^.\{10\}')"
         git push "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" master

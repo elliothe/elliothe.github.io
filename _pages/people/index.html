@@ -1,92 +1,95 @@
 ---
-title: "People"
+title: "Team"
 layout: default
 excerpt: "ICRG: Team members"
 sitemap: false
 permalink: /people/
 ---
 
-<h1>{{page.title}}</h1>
+<div class="people-page">
+  <header class="people-header">
+    <h1>{{ page.title }}</h1>
+    <p>Meet the faculty, students, and research collaborators across the lab.</p>
+  </header>
 
-<!-- Staff -->
-
-<h2><a id="staff"></a>Staff</h2>
-{% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
-{% for member in members %}
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(0%); max-width: 100px;"/>
-            </a>
-        </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.c_name }}</p>
-            <p class="card-text">{{ member.role }}</p>
-            </div>
-        </div>
+  <section class="people-section" id="staff">
+    {% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
+    <div class="people-section-head">
+      <h2>Staff</h2>
+      <span class="people-count">{{ members | size }}</span>
     </div>
+    <div class="people-grid">
+      {% for member in members %}
+        <article class="member-card">
+          <a class="member-avatar-link" href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">
+            <img
+              src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
+              alt="{{ member.title }}"
+              class="member-avatar"
+            />
+          </a>
+          <div class="member-meta">
+            <h3><a href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">{{ member.title }}</a></h3>
+            {% if member.c_name %}<p class="member-subtitle">{{ member.c_name }}</p>{% endif %}
+            {% if member.role %}<p class="member-role-tag">{{ member.role }}</p>{% endif %}
+            {% if member.research_topic %}<p class="member-topic">{{ member.research_topic }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="people-section" id="ra">
+    {% assign members = site.posts | where: 'category', 'RA' | sort: 'date' %}
+    <div class="people-section-head">
+      <h2>Current Research Assistants</h2>
+      <span class="people-count">{{ members | size }}</span>
+    </div>
+    <div class="people-grid">
+      {% for member in members %}
+        <article class="member-card">
+          <a class="member-avatar-link" href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">
+            <img
+              src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
+              alt="{{ member.title }}"
+              class="member-avatar"
+            />
+          </a>
+          <div class="member-meta">
+            <h3><a href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">{{ member.title }}</a></h3>
+            {% if member.c_name %}<p class="member-subtitle">{{ member.c_name }}</p>{% endif %}
+            {% if member.role %}<p class="member-role-tag">{{ member.role }}</p>{% endif %}
+            {% if member.research_topic %}<p class="member-topic">{{ member.research_topic }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="people-section" id="former">
+    {% assign members = site.posts | where: 'category', 'former' | sort: 'date' %}
+    <div class="people-section-head">
+      <h2>Former Visitors and Research Assistants</h2>
+      <span class="people-count">{{ members | size }}</span>
+    </div>
+    <div class="people-grid">
+      {% for member in members %}
+        <article class="member-card">
+          <a class="member-avatar-link" href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">
+            <img
+              src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
+              alt="{{ member.title }}"
+              class="member-avatar"
+            />
+          </a>
+          <div class="member-meta">
+            <h3><a href="{{ site.url }}{{ site.baseurl }}{{ member.url }}">{{ member.title }}</a></h3>
+            {% if member.c_name %}<p class="member-subtitle">{{ member.c_name }}</p>{% endif %}
+            {% if member.role %}<p class="member-role-tag">{{ member.role }}</p>{% endif %}
+            {% if member.current_location %}<p class="member-topic">{{ member.current_location }}</p>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 </div>
-{% endfor %}
-
-<!-- Graduate Students -->
-
-<h2><a id="Graduate Student"></a>Graduate Student</h2>
-<!-- <div class="card-deck two-col"> -->
-{% assign members = site.posts | where: 'category', 'graduate student' | sort: 'date' %}
-{% for member in members %}
-    <div class="card team-member-card">
-        <div class="row mt-3">
-            <div class="col-md-2">
-                <a href={{member.url}}>
-                    <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
-                        class="card-img img-responsive img-thumbnail"
-                        style="filter: grayscale(0%); max-width: 100px;"/>
-                </a>
-            </div>
-
-            <div class="col-md-10">
-                <div class="card-body">
-                <h4 class="card-title">{{ member.title }}</h4>
-                <p class="card-text">{{ member.c_name }}</p>
-                <p class="card-text">{{ member.role }}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-{% endfor %}
-
-<!-- </div> -->
-
-<!-- Undergraduate Students -->
-
-<h2><a id="Undergradudate Student"></a>Undergraduate Student</h2>
-{% assign members = site.posts | where: 'category', 'undergraduate student' | sort: 'date' %}
-{% for member in members %}
-<div class="card team-member-card">
-    <div class="row mt-3">
-        <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/people/{{ member.image }}"
-                    class="card-img img-responsive img-thumbnail"
-                    style="filter: grayscale(0%); max-width: 100px;"/>
-            </a>
-        </div>
-
-        <div class="col-md-10">
-            <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.c_name }}</p>
-            <p class="card-text">{{ member.role }}</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-{% endfor %}
