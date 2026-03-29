@@ -1,10 +1,11 @@
 ---
 layout: member
-category: RA
+category: former
 title: Pengju Liu
 c_name: 刘鹏举
 image: pengju_liu.jpeg
-role: Research Assistant
+role: Research Intern
+urrent_location: PhD at University of Minnesota Twin Cities
 permalink: 'people/pengju-liu'
 research_topic: 'ML4EDA'
 social:
