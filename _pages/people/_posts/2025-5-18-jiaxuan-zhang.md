@@ -6,7 +6,7 @@ c_name: 张家璇
 image: jiaxuan_zhang.jpg
 role: Master Student (2025-now)
 permalink: 'people/jiaxuan-zhang'
-research_topic: 'Neuromorphic Computing'
+research_topic: 'MLsys'
 social:
     twitter: 
     github: 
