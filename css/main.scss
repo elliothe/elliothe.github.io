@@ -162,6 +162,35 @@ figcaption {
   margin-top: 20px;
 }
 
+.sponsor-collaborator {
+  margin-top: 16px;
+}
+
+.sponsor-collaborator h4 {
+  margin-bottom: 16px;
+}
+
+.sponsor-logo {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  max-height: 68px;
+  margin: 14px auto;
+  object-fit: contain;
+  filter: grayscale(0%);
+}
+
+.sponsor-logo-tall {
+  max-width: 170px;
+  max-height: 88px;
+}
+
+@media (max-width: 767px) {
+  .sponsor-logo {
+    max-width: 240px;
+  }
+}
+
 
 
 @import "academicons.css";
