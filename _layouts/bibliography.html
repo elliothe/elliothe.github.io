@@ -14,32 +14,53 @@
   {% else %}
     {% if entry.award %}
       <!-- <span class="title"> <strong class="award">&lt; {{entry.award}}&gt; </strong> {{entry.title}}</span> -->
-      <span class="title"> <strong class="award"> &#x272D;{{entry.award}}&#x272D; </strong> {{entry.title}}</span>
+      <span class="title">
+        <strong class="award"> &#x272D;{{entry.award}}&#x272D; </strong> {{entry.title}}
+        {% if entry.ccf %}
+          <span class="ccf-badge ccf-{{ entry.ccf | downcase }}">CCF-{{ entry.ccf }}</span>
+        {% endif %}
+      </span>
     {% else %}
-      <span class="title">{{entry.title}}</span>
+      <span class="title">
+        {{entry.title}}
+        {% if entry.ccf %}
+          <span class="ccf-badge ccf-{{ entry.ccf | downcase }}">CCF-{{ entry.ccf }}</span>
+        {% endif %}
+      </span>
     {% endif %}
     <span class="author">
       {% for author in entry.author_array %}
         {% assign trim_last = author.last | remove: "<sup>=</sup>" %}
-        {% if forloop.length == 1 %}
+        {% assign author_full_name = author.first | append: " " | append: author.last %}
+        {% assign author_keys = author_full_name | team_author_keys %}
+        {% assign member_author = nil %}
+        {% for author_key in author_keys %}
+          {% if site.data.team_author_links[author_key] %}
+            {% assign member_author = site.data.team_author_links[author_key] %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+        {% capture author_name %}
           {% if author.first == site.scholar.first_name and author.last contains trim_last %}
             <em>{{author.first}} {{author.last}}</em>
           {% else %}
             {{author.first}} {{author.last}}
           {% endif %}
+        {% endcapture %}
+        {% capture rendered_author %}
+          {% if member_author %}
+            <a class="member-author-link" href="{{ member_author.url | relative_url }}">{{ author_name | strip }}</a>
+          {% else %}
+            {{ author_name | strip }}
+          {% endif %}
+        {% endcapture %}
+        {% if forloop.length == 1 %}
+          {{ rendered_author | strip }}
         {% else %}
           {% unless forloop.last %}            
-          {% if author.first == site.scholar.first_name and author.last contains trim_last %}
-              <em>{{author.first}} {{author.last}}</em>,
-            {% else %}
-              {{author.first}} {{author.last}},
-            {% endif %}
+            {{ rendered_author | strip }},
           {% else %}
-          {% if author.first == site.scholar.first_name and author.last contains trim_last %}
-              and <em>{{author.first}} {{author.last}}</em>
-            {% else %}
-              and {{author.first}} {{author.last}}
-            {% endif %}
+            and {{ rendered_author | strip }}
           {% endunless %}
         {% endif %}
       {% endfor %}
@@ -193,6 +214,4 @@ function toggleBibtex{{entry.key}}(parameter) {
     {% endif %}
   </div>
 </div> -->
-
-
 

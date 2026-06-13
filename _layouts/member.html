@@ -41,4 +41,54 @@ layout: default
             {{ content }}
         </div>
     </div>
+
+    {% assign member_publications = site.data.member_publications[page.url] %}
+    {% if member_publications == nil %}
+        {% assign member_publications = site.data.member_publications[page.permalink] %}
+    {% endif %}
+    {% if member_publications == nil %}
+        {% assign permalink_key = "/" | append: page.permalink %}
+        {% assign member_publications = site.data.member_publications[permalink_key] %}
+    {% endif %}
+
+    <div class="row">
+        <div class="col-12">
+            <section class="member-publications">
+                <h3>Publications</h3>
+                {% if member_publications and member_publications.size > 0 %}
+                    <ol class="member-publication-list">
+                        {% for publication in member_publications %}
+                            <li>
+                                <span class="member-publication-title">
+                                    {% if publication.link %}
+                                        <a href="{{ publication.link }}">{{ publication.title }}</a>
+                                    {% else %}
+                                        {{ publication.title }}
+                                    {% endif %}
+                                    {% if publication.ccf %}
+                                        <span class="ccf-badge ccf-{{ publication.ccf | downcase }}">CCF-{{ publication.ccf }}</span>
+                                    {% endif %}
+                                </span>
+                                <span class="member-publication-venue">
+                                    {% if publication.type == "article" %}
+                                        {{ publication.venue }}
+                                    {% elsif publication.venue %}
+                                        In {{ publication.venue }}
+                                    {% endif %}
+                                    {% if publication.year %}
+                                        ({{ publication.year }})
+                                    {% endif %}
+                                </span>
+                                {% if publication.award %}
+                                    <span class="member-publication-award">{{ publication.award }}</span>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ol>
+                {% else %}
+                    <p class="member-publication-empty">No publications listed yet.</p>
+                {% endif %}
+            </section>
+        </div>
+    </div>
 </div>
