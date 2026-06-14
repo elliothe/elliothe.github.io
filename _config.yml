@@ -9,8 +9,8 @@
 title: Intelligent Computing Research Group 
 title_abbr: ICRG@SJTU
 email: zhezhi.he@sjtu.edu.cn
-description: > # this means to ignore newlines until "baseurl:" Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-    Intelligent Computing Research Group at Shanghai Jiao Tong University
+description: >
+    Intelligent Computing Research Group at Shanghai Jiao Tong University, led by Prof. Zhezhi He, researches brain-inspired algorithms, AI infrastructure, computer architecture, circuits, and emerging devices.
 baseurl: ""
 url: "https://elliothe.github.io"
 

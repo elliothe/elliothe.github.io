@@ -2,83 +2,74 @@
 layout: default
 ---
 
-{% assign staff_members = site.posts | where: 'category', 'staff' %}
-{% assign ra_members = site.posts | where: 'category', 'RA' %}
-{% assign current_members = staff_members.size | plus: ra_members.size %}
-
 <div class="home-page">
 	<section class="home-hero" style="background-image: url('{{ '/images/slider/first-chip.jpg' | relative_url }}');">
 		<div class="home-hero-content">
-			<p class="home-eyebrow">{{ site.title_abbr }} · {{ site.department }}</p>
-			<h1>{{ site.title }}</h1>
+			<p class="home-eyebrow">Shanghai Jiao Tong University · Shanghai AI Lab</p>
+			<h1>Intelligent computing from algorithms to silicon</h1>
 			<p class="home-hero-lead">
-				Building next-generation intelligent computing systems across brain-inspired algorithms,
-				AI infrastructure, architecture, circuits, and emerging devices.
+				The Intelligent Computing Research Group builds efficient, secure, and scalable
+				computing systems across brain-inspired algorithms, AI infrastructure, computer
+				architecture, circuits, and emerging devices.
 			</p>
 			<div class="home-hero-actions">
-				<a class="home-button home-button-primary" href="{{ '/research/' | relative_url }}">Research Areas</a>
-				<a class="home-button home-button-secondary" href="{{ '/people/' | relative_url }}">Meet the Team</a>
+				<a class="home-button home-button-primary" href="{{ '/research/' | relative_url }}">Explore Research</a>
+				<a class="home-button home-button-secondary" href="{{ '/vacancies' | relative_url }}">Join the Group</a>
 			</div>
 			<dl class="home-metrics">
 				<div>
-					<dt>{{ current_members }}</dt>
-					<dd>Current members</dd>
+					<dt>ISCA 2026</dt>
+					<dd>Neuromorphic chips and near-memory processing</dd>
 				</div>
 				<div>
-					<dt>ISCA · MICRO · CVPR</dt>
-					<dd>Recent top-tier venues</dd>
+					<dt>MICRO · CVPR · DAC</dt>
+					<dd>Recent CCF-A results across architecture, AI, and EDA</dd>
 				</div>
 				<div>
-					<dt>9</dt>
-					<dd>Sponsors and collaborators</dd>
+					<dt>DATE Best Paper</dt>
+					<dd>Award winner with DAC and IWLS nominations</dd>
 				</div>
 			</dl>
+		</div>
+	</section>
+
+	<section class="home-proof-strip" aria-label="ICRG cross-layer research pipeline">
+		<div>
+			<strong>Theory and algorithms</strong>
+			<span>Brain-inspired learning, SNN theory, efficient AI, and secure machine learning.</span>
+		</div>
+		<div>
+			<strong>Systems and toolchains</strong>
+			<span>AI infrastructure, compilers, design automation, and model-to-hardware workflows.</span>
+		</div>
+		<div>
+			<strong>Architecture to silicon</strong>
+			<span>Processing-in-memory, neuromorphic chips, emerging devices, and prototype validation.</span>
 		</div>
 	</section>
 
 	<section class="home-showcase" aria-label="Group snapshots">
 		<div class="home-showcase-copy">
 			<p class="home-kicker">Inside the Lab</p>
-			<h2>From chip prototypes to research milestones</h2>
+			<h2>Research that moves between theory, systems, and hardware</h2>
 			<p>
-				The group brings together students and collaborators working across algorithms,
-				systems, architecture, circuits, and devices.
+				ICRG connects algorithm design, AI infrastructure, architecture exploration, circuit
+				implementation, and emerging-device research in one collaborative pipeline.
 			</p>
 		</div>
-		<div id="carousel" class="carousel slide home-carousel" data-ride="carousel" data-interval="5000" data-pause="hover">
-			<ol class="carousel-indicators">
-				<li data-target="#carousel" data-slide-to="0" class="active"></li>
-				<li data-target="#carousel" data-slide-to="1"></li>
-				<li data-target="#carousel" data-slide-to="2"></li>
-				<li data-target="#carousel" data-slide-to="3"></li>
-				<li data-target="#carousel" data-slide-to="4"></li>
-			</ol>
-
-			<div class="carousel-inner" markdown="0">
-				<div class="item active">
-					<img src="{{ '/images/slider/office_img.jpeg' | relative_url }}" alt="ICRG office and group workspace" />
-				</div>
-				<div class="item">
-					<img src="{{ '/images/slider/certificate.jpg' | relative_url }}" alt="Research certificate and award document" />
-				</div>
-				<div class="item">
-					<img src="{{ '/images/slider/trip-to-changzhou-cut.png' | relative_url }}" alt="ICRG group visit to Changzhou" />
-				</div>
-				<div class="item">
-					<img src="{{ '/images/slider/chip_layout.png' | relative_url }}" alt="Chip layout from group research" />
-				</div>
-				<div class="item">
-					<img src="{{ '/images/slider/slider-image.png' | relative_url }}" alt="ICRG research illustration" />
-				</div>
-			</div>
-			<a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
+		<div class="home-media-grid">
+			<figure class="home-media-large">
+				<img src="{{ '/images/slider/office_img.jpeg' | relative_url }}" alt="ICRG office and group workspace" />
+				<figcaption>Collaborative research environment</figcaption>
+			</figure>
+			<figure>
+				<img src="{{ '/images/research/die_photo3.jpg' | relative_url }}" alt="ICRG chip die photo" />
+				<figcaption>Chip and system prototypes</figcaption>
+			</figure>
+			<figure>
+				<img src="{{ '/images/slider/certificate.jpg' | relative_url }}" alt="ICRG research award certificate" />
+				<figcaption>Research recognition</figcaption>
+			</figure>
 		</div>
 	</section>
 
