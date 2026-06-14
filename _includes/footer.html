@@ -1,57 +1,38 @@
-<div id="footer" class="panel">
-  <div class="panel-footer">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4">
-				<!-- <p>{{ site.title_abbr }}</p> -->
-				<div class="text-center">
-					<!-- <img class="img-fluid" src="/images/logo/lab-logo.png"
-					 style="max-width: 100px;"> -->
-					<!-- <p></p> 
-					<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
-					 style="max-width: 275px;"> -->
-					<p style="width: 250px;">
-						<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&cl=ffffff&w=a"></script> -->
-						<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=cZgyhvWI7eq-9SnsSsJVkhMVioGtOr0YJqI3-Ejt9C8&co=ffffff&cmo=3acc3a&cmn=ff5353&ct=808080'></script>
-					</p>
-				</div>
-				<!-- <p>{{ site.title_abbr }} is currently at {{site.department}} at {{site.institution}}</p> -->
-			</div>
+<footer id="footer" class="site-footer">
+  <div class="container-fluid">
+    <div class="site-footer-grid">
+      <div class="site-footer-block site-footer-visits">
+        <p class="site-footer-heading">Visits</p>
+        <div class="footer-visitor-widget" aria-label="Website visitor map">
+          <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=1qLUp5PLO0CDgLoQDRPTEbTL9AxxL0jPUtekp427cdg&cl=ffffff&w=a"></script>
+        </div>
+        <noscript>
+          <a class="footer-visitor-fallback" href="https://mapmyvisitors.com/" target="_blank" rel="noopener">Visitor map</a>
+        </noscript>
+      </div>
 
-			<div class="col-sm-4">
-				<p>Links</p>
-				<ul class="list-unstyled">
-					<li><a href="{{ '/vacancies' | relative_url }}">Vacancies</a></li>
-					<li><a href="https://github.com/ericdaat/research-lab-website">Website template</a></li>
-					<!-- <li><a href="">Link</a></li>
-					<li><a href="">Link</a></li> -->
-				</ul>
-			</div>
+      <div class="site-footer-block">
+        <p class="site-footer-heading">Links</p>
+        <ul class="list-unstyled site-footer-links">
+          <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+          <li><a href="{{ '/vacancies' | relative_url }}">Vacancies</a></li>
+        </ul>
+      </div>
 
-			<div class="col-sm-4">
-				<p>Contact</p>
-				<p><a href="mailto:zhezhi.he@sjtu.edu.cn"><i class="fas fa-paper-plane"></i></a> zhezhi.he at sjtu dot edu dot cn</p>
-				<p><a href="https://j.map.baidu.com/fc/Sil"><i class="fas fa-map-marked-alt"></i></a> 800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai  </p>
-			</div>
-		</div>
+      <div class="site-footer-block">
+        <p class="site-footer-heading">Contact</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email | replace: '@', ' at ' | replace: '.', ' dot ' }}</a></p>
+        <p><a href="https://j.map.baidu.com/fc/Sil">800 DongChuan Road, SEIEE Building #03-501, Minhang District, Shanghai</a></p>
+      </div>
+    </div>
 
-		<div class="row mt-3">
-			<p class="text-center">
-				&copy; {{ site.time | date: '%Y' }} {{ site.title_abbr }}. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">bootstrap</a>.
-			</p>
-			<!-- <p class="text-center">Copyright, 2019</p> -->
-		</div>
-
-		<div>
-			<p class="text-center">
-			<img class="img-fluid" src="/images/logo/SJTU_logo_red.png"
-			style="max-width: 275px;">
-			</p>
-		</div>
-
-	</div>
+    <div class="site-footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title_abbr }}. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://getbootstrap.com/">Bootstrap</a>.</p>
+      <img class="site-footer-logo" src="{{ '/images/logo/SJTU_logo_red.png' | relative_url }}" alt="Shanghai Jiao Tong University">
+    </div>
   </div>
-</div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="{{ '/js/bootstrap.min.js' | relative_url }}"></script>

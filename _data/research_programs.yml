@@ -1,0 +1,140 @@
+- id: neuromorphic
+  title: Neuromorphic Intelligence
+  description: "Spiking neural networks, brain-inspired learning theory, visual perception, and efficient intelligent systems."
+  home_url: /research/algorithm/
+  links:
+    - label: Algorithm
+      url: /research/algorithm/
+    - label: Architecture & Circuit
+      url: /research/arch-and-circuit/
+  publication_terms:
+    - neuromorphic
+    - snn
+    - spiking
+    - spike
+    - neuron
+    - membrane
+    - brain-inspired
+    - charge-conserving
+    - charge-conservation
+    - elsa
+    - vistream
+    - spikezip
+    - bkdsnn
+    - bineuroram
+
+- id: pim
+  title: Processing-in-Memory Systems
+  description: "Near-memory acceleration, SRAM/ReRAM-based PIM, data-centric architecture, and compiler support."
+  home_url: /research/arch-and-circuit/
+  links:
+    - label: Architecture & Circuit
+      url: /research/arch-and-circuit/
+    - label: Device
+      url: /research/device/
+  publication_terms:
+    - processing-in-memory
+    - in-memory
+    - near-memory
+    - near-data
+    - processing-in-cache
+    - pim
+    - pic
+    - sram
+    - reram
+    - mram
+    - memory
+    - dimm
+    - cache
+    - naszip
+    - polymorpic
+    - apu
+    - pick
+    - vspim
+    - gim
+    - pimlc
+    - masim
+
+- id: ai_eda
+  title: AI for EDA and Chip Design
+  description: "Machine-learning-assisted EDA, LLM-based Verilog generation, logic synthesis, and design automation."
+  home_url: /research/arch-and-circuit/
+  links:
+    - label: Architecture & Circuit
+      url: /research/arch-and-circuit/
+    - label: Publications
+      url: /publications/
+  publication_terms:
+    - eda
+    - verilog
+    - hdl
+    - logic synthesis
+    - synthesis
+    - electronic design automation
+    - llm
+    - design automation
+    - gpt-ls
+    - erl-ls
+    - haven
+    - verirl
+    - compiler
+    - scheduling
+
+- id: efficient_secure
+  title: Efficient and Secure AI
+  description: "Model compression, dynamic inference, adversarial robustness, privacy, and trustworthy deployment."
+  home_url: /research/algorithm/
+  links:
+    - label: Algorithm
+      url: /research/algorithm/
+    - label: Architecture & Circuit
+      url: /research/arch-and-circuit/
+  publication_terms:
+    - secure
+    - security
+    - adversarial
+    - bit-flip
+    - attack
+    - defense
+    - defend
+    - model extraction
+    - split federated
+    - privacy
+    - dynamic inference
+    - quantization
+    - pruning
+    - compression
+    - consistency
+    - gaussian splatting
+    - point cloud
+    - slam
+    - visual perception
+    - streaming
+    - streamgrid
+    - seele
+    - splatonic
+
+- id: devices
+  title: Emerging Devices and Silicon
+  description: "Post-CMOS devices, device-aware computing, neuromorphic circuits, and chip prototype validation."
+  home_url: /research/device/
+  links:
+    - label: Device
+      url: /research/device/
+    - label: Architecture & Circuit
+      url: /research/arch-and-circuit/
+  publication_terms:
+    - post-cmos
+    - emerging device
+    - reram
+    - mram
+    - mos2
+    - spintronic
+    - skyrmion
+    - memristor
+    - threshold switching
+    - monolithic
+    - device
+    - silicon
+    - chip
+    - circuit
