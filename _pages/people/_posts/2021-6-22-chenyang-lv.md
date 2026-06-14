@@ -8,6 +8,8 @@ role: Master Student (2021-2024)
 current_location: 鸿芯微纳 （AI4EDA研发）
 permalink: 'people/chenyang-lv'
 research_topic: ML for EDA
+publication_names:
+    - Chengyang Lv
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/

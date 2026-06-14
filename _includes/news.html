@@ -1,29 +1,13 @@
-<!-- a division as the container of the html elements -->
-<div class="media"> 
-<h4> News </h4>
+<div class="home-side-panel news-panel">
+    <p class="home-kicker">Latest</p>
+    <h4>News</h4>
 
-<!-- larger space between entries -->
-<!-- <ul class="list-unstyled">
-{% for article in site.data.news limit: 3 %}
-    <li class="media">
-        <div class="media-body">
-        <small>{{ article.date }}</small>
+    {% for article in site.data.news limit: 5 %}
+    <article class="home-news-item">
+        <time>{{ article.date }}</time>
         <p>{{ article.title }}</p>
-        </div>
-    </li>
-{% endfor %}
-</ul>  -->
+    </article>
+    {% endfor %}
 
-<!-- small space between entries -->
-{% for article in site.data.news limit: 4 %}
-<p>
-    <small>[{{ article.date }}] {{ article.title }}.</small>
-</p>
-{% endfor %}
-
-<!-- link to news page -->
-<p align="right">
-<small><a href="{{ site.url }}{{ site.baseurl }}/news.html"> ... see all news</a></small>
-</p>
-
+    <a class="home-text-link" href="{{ '/news.html' | relative_url }}">All news</a>
 </div>
