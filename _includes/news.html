@@ -2,7 +2,7 @@
     <p class="home-kicker">Latest</p>
     <h4>News</h4>
 
-    {% for article in site.data.news limit: 5 %}
+    {% for article in site.data.latest_news limit: 5 %}
     <article class="home-news-item">
         <time>{{ article.date }}</time>
         <p>{{ article.title }}</p>

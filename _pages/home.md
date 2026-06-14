@@ -26,31 +26,13 @@ permalink: /
     <h2>Core research directions</h2>
   </div>
   <div class="research-focus-grid">
-    <a class="research-focus-card" href="{{ '/research/algorithm/' | relative_url }}">
-      <span class="research-focus-index">01</span>
-      <h3>Neuromorphic Intelligence</h3>
-      <p>Spiking neural networks, brain-inspired learning theory, visual perception, and efficient intelligent systems.</p>
+    {% for program in site.data.research_programs %}
+    <a class="research-focus-card" href="{{ program.home_url | relative_url }}">
+      <span class="research-focus-index">{{ program.index_label }}</span>
+      <h3>{{ program.title }}</h3>
+      <p>{{ program.description }}</p>
     </a>
-    <a class="research-focus-card" href="{{ '/research/arch-and-circuit/' | relative_url }}">
-      <span class="research-focus-index">02</span>
-      <h3>Processing-in-Memory Systems</h3>
-      <p>Near-memory acceleration, SRAM/ReRAM-based PIM, data-centric architecture, and compiler support.</p>
-    </a>
-    <a class="research-focus-card" href="{{ '/research/arch-and-circuit/' | relative_url }}">
-      <span class="research-focus-index">03</span>
-      <h3>AI for EDA and Chip Design</h3>
-      <p>Machine-learning-assisted EDA, LLM-based Verilog generation, logic synthesis, and design automation.</p>
-    </a>
-    <a class="research-focus-card" href="{{ '/research/algorithm/' | relative_url }}">
-      <span class="research-focus-index">04</span>
-      <h3>Efficient and Secure AI</h3>
-      <p>Model compression, dynamic inference, adversarial robustness, privacy, and trustworthy deployment.</p>
-    </a>
-    <a class="research-focus-card" href="{{ '/research/device/' | relative_url }}">
-      <span class="research-focus-index">05</span>
-      <h3>Emerging Devices and Silicon</h3>
-      <p>Post-CMOS devices, device-aware computing, neuromorphic circuits, and chip prototype validation.</p>
-    </a>
+    {% endfor %}
   </div>
 </section>
 
@@ -60,17 +42,18 @@ permalink: /
     <h2>Recent results in top research venues</h2>
   </div>
   <div class="home-highlight-list">
+    {% assign publication_overview = site.data.publication_overview %}
     <div class="home-highlight-item">
-      <span>2026</span>
-      <p>Two papers accepted by ISCA on neuromorphic chips and near-memory processing.</p>
+      <span>{{ publication_overview.latest_year }}</span>
+      <p>{{ publication_overview.latest_year_summary }}</p>
     </div>
     <div class="home-highlight-item">
-      <span>2025</span>
-      <p>Recent work appeared in MICRO, ICCAD, CVPR, DAC, ASPLOS, and DATE.</p>
+      <span>{{ publication_overview.recent_window_label }}</span>
+      <p>{{ publication_overview.recent_venues_summary }}</p>
     </div>
     <div class="home-highlight-item">
       <span>Awards</span>
-      <p>Best Paper Award at DATE 2022, with recent best-paper nominations at DAC and IWLS.</p>
+      <p>{{ publication_overview.award_summary }}</p>
     </div>
   </div>
 </section>
