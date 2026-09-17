@@ -33,6 +33,15 @@ layout: default
 		</div>
 	</section>
 
+	<section class="home-recruitment-notice" aria-labelledby="recruitment-notice-title" lang="zh-CN">
+		<div>
+			<h2 id="recruitment-notice-title">招生信息</h2>
+			<p class="home-recruitment-notice-intake"><strong>{{ site.data.recruitment.intake }}</strong>：<strong class="home-recruiting-quota">博士生{% if site.data.recruitment.previous_doctoral_places %}<del aria-hidden="true">{{ site.data.recruitment.previous_doctoral_places }}</del>{% endif %}{{ site.data.recruitment.doctoral_places }}名</strong>、<strong class="home-recruiting-quota">硕士生{{ site.data.recruitment.masters_places }}名</strong></p>
+			<p>请先认真了解本课题组的<a href="{{ '/research/' | relative_url }}">研究方向</a>与<a href="{{ '/publications/' | relative_url }}">近期工作</a>，<strong>确认研究兴趣匹配后再联系。</strong></p>
+		</div>
+		<a class="home-button home-button-primary" href="#recruitment">查看招生详情 <span aria-hidden="true">&nbsp;→</span></a>
+	</section>
+
 	<section class="home-proof-strip" aria-label="ICRG cross-layer research pipeline">
 		<div>
 			<strong>Theory and algorithms</strong>
