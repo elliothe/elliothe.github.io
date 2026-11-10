@@ -1,6 +1,6 @@
 ---
 layout: member
-category: staff
+category: former
 title: Yiyao Yang
 c_name: 杨迤尧
 image: yiyao_yang.jpg

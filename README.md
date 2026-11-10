@@ -8,14 +8,14 @@ It is derived from the great template provided by the
 
 ## Setup
 
-``` bash
+```bash
 brew install ruby
 gem install bundler jekyll
 ```
 
 Clone this repository, then install the dependencies:
 
-``` bash
+```bash
 # bundle install
 bundle config set --local path 'vendor/bundle'
 bundle install
@@ -28,13 +28,13 @@ bundle add webrick
 
 Run the local webserver with:
 
-``` bash
+```bash
 bundle exec jekyll serve
 ```
 
 Validate the site build with:
 
-``` bash
+```bash
 bundle exec jekyll build
 bundle exec jekyll doctor
 ```
@@ -48,7 +48,7 @@ New members are stored as markdown files under
 
 Each new member `.md` file must look like this:
 
-``` yaml
+```yaml
 ---
 layout: member
 category: staff
@@ -84,7 +84,7 @@ This json file is exported from [Zotero](https://www.zotero.org/) bibliography t
 
 Just add a new entry to the list like this:
 
-``` json
+```json
 {
   "id": "http://zotero.org/groups/2386072/items/NU9LTX7C",
   "type": "article-journal",
